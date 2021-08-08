@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../roboto-regular.woff2") format("woff2");
+}
+
+body {
+  font-family: "Roboto Regular", Fallback, sans-serif;
+  zoom: 1.5;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 100%
+  );
+  line-height: 1em;
+}
+
+/* .dark-mode {
+  background: linear-gradient(180deg, #474747 0%, #202020 100%) !important;
+  color: #fff !important;
+} */
+
+/* multiple select */
+/* #hsk {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+} */
+
+input[type="button"] {
+  font-family: "Roboto Regular", Fallback, sans-serif;
+  margin: 3px 0;
+}
+
+input[type="checkbox"] {
+  font-family: "Roboto Regular", Fallback, sans-serif;
+  vertical-align: middle;
+  margin: 3px 0;
+}
+
+label {
+  font-weight: normal;
+}
+
+/* selecting by #coloring id doesn't work */
+/* label:last-of-type {
+  color: gray !important;
+} */
+
+select:hover {
+  background-color: #eee;
+}
+
+#patreon {
+  background-color: #f96854;
+  color: white;
+  border-radius: 2px;
+  padding: 2px;
+  border: 1px solid #666;
+}
+
+#patreon:hover {
+  background-color: #fd4830;
+}
+
+#patreon:active {
+  background-color: #ff7e6d;
+}

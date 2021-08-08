@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style-popup.css" />
+  </head>
+  <body class="">
+    <label for="level">Level</label>
+    <select name="level" id="level">
+      <option value="hsk1">HSK 1</option>
+      <option value="hsk2">HSK 2</option>
+      <option value="hsk3">HSK 3</option>
+      <option value="hsk4">HSK 4</option>
+      <option value="hsk5">HSK 5</option>
+      <option value="hsk6">HSK 6</option></select
+    ><br />
+
+    <label for="char">Characters</label>
+    <select name="char" id="char">
+      <option value="simplified">Simplified</option>
+      <option value="traditional">Traditional</option></select
+    ><br />
+
+    <label for="theme">Theme</label>
+    <select name="theme" id="theme">
+      <option value="light">Light</option>
+      <option value="dark">Dark</option></select
+    ><br />
+
+    <label for="pinyin"><input type="checkbox" id="pinyin" name="pinyin" checked /> Show pinyin</label>
+
+    <label for="translation"><input type="checkbox" id="translation" name="translation" checked /> Show translation</label><br />
+
+    <!-- <label for="coloring"><input type="checkbox" id="coloring" name="coloring" disabled /> Tone coloring</label><br />
+
+    <input type="button" value="Set wallpaper" disabled/> -->
+    <input type="button" id="feedback" value="Feedback" />
+    <input type="button" id="patreon" value="Support on Patreon" />
+    <script src="src/popup.js"></script>
+  </body>
+</html>
