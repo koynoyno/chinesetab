@@ -15,8 +15,8 @@ body {
 .dark-mode .tone5 {
   background: linear-gradient(
     180deg,
-    rgba(237, 237, 237, 0.5) 0%,
-    rgb(237, 237, 237) 100%
+    rgba(255, 255, 255, 0.5) 0%,
+    rgb(255, 255, 255) 100%
   );
   padding-top: 1em;
   background-clip: text;
@@ -73,15 +73,15 @@ body {
 .tone3 {
   background: linear-gradient(
     180deg,
-    rgba(21, 16, 240, 0.5) 0%,
-    rgba(21, 16, 240, 1) 100%
+    rgba(36, 32, 255, 0.5) 0%,
+    rgb(36, 32, 255) 100%
   );
 }
 .tone4 {
   background: linear-gradient(
     180deg,
-    rgba(137, 0, 191, 0.5) 0%,
-    rgba(137, 0, 191, 1) 100%
+    rgba(160, 16, 218, 0.5) 0%,
+    rgb(160, 16, 218) 100%
   );
 }
 .tone5 {
