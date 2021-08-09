@@ -7,6 +7,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
     chrome.storage.sync.set({ 'theme': 'light' }); // can I detect it?
     chrome.storage.sync.set({ 'pinyin': true });
     chrome.storage.sync.set({ 'translation': true });
+    chrome.storage.sync.set({ 'color': false });
   } else if (details.reason === "update") {
     // When extension is updated
   } else if (details.reason === "chrome_update") {

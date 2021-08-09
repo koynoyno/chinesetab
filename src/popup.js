@@ -10,6 +10,7 @@ let saveSettings = (id, checkbox = false) => {
   chrome.storage.sync.set({ [id]: value });
 
   // console.log(`Set ${id}: ${value}`);
+  
   chrome.tabs.reload();
 };
 
@@ -21,14 +22,16 @@ let restoreSettings = () => {
       theme: theme,
       pinyin: pinyin,
       translation: translation,
+      color: color,
     },
     (items) => {
-      console.log(items);
+      // console.log(items);
       document.getElementById("level").value = items.level;
       document.getElementById("char").value = items.char;
       document.getElementById("theme").value = items.theme;
       document.getElementById("pinyin").checked = items.pinyin;
       document.getElementById("translation").checked = items.translation;
+      document.getElementById("color").checked = items.color;
     }
   );
 
@@ -61,7 +64,11 @@ document.getElementById("translation").addEventListener("click", () => {
   saveSettings("translation", true);
 });
 
-// button event listeners here
+document.getElementById("color").addEventListener("click", () => {
+  saveSettings("color", true);
+});
+
+// button event listeners
 document.getElementById("feedback").addEventListener("click", () => {
   chrome.tabs.update({
     url: 'https://forms.gle/cq75MmHtBFtGGauU9'

@@ -4,6 +4,7 @@
 }
 
 body {
+  user-select: none;
   font-family: "Roboto Regular", Fallback, sans-serif;
   zoom: 1.5;
   width: 150px;
