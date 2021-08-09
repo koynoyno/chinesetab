@@ -1,15 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
   chrome.storage.sync.get(null, async (items) => {
-    console.log(items);
+    // console.log(items);
 
     if (items.theme == "dark") {
       document.body.classList.add("dark-mode");
     }
 
-    const { default: hsk } = await import(`../hsk/${items.level}.json`, { assert: { type: "json" } })
-    let rand = Math.floor(Math.random() * 150);
-    let data = hsk.words[rand];
+    const { default: hsk } = await import(`../hsk/${items.level}.json`, {
+      assert: { type: "json" },
+    });
 
+    let rand = Math.floor(Math.random() * hsk.words.length);
+    let data = hsk.words[rand];
 
     let char = data["translation-data"][items.char];
     document.querySelector(".char").innerHTML = char;

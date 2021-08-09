@@ -7,11 +7,7 @@
   },
   "words": [
       {
-          "metadata": {
-              "id": "000",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "love",
               "pinyin-numbered": "ai4",
@@ -21,11 +17,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "001",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "eight",
               "pinyin-numbered": "ba1",
@@ -35,11 +27,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "002",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "Dad",
               "pinyin-numbered": "ba4ba5",
@@ -49,11 +37,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "003",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "cup; glass",
               "pinyin-numbered": "bei1zi5",
@@ -63,11 +47,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "004",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "Beijing",
               "pinyin-numbered": "Bei3jing1",
@@ -77,11 +57,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "005",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "measure word for books",
               "pinyin-numbered": "ben3",
@@ -91,11 +67,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "006",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "you're welcome; don't be polite",
               "pinyin-numbered": "bu2 ke4qi5",
@@ -105,11 +77,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "007",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "no; not",
               "pinyin-numbered": "bu4",
@@ -119,11 +87,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "008",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "dish (type of food); vegetables",
               "pinyin-numbered": "cai4",
@@ -133,11 +97,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "009",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "tea",
               "pinyin-numbered": "cha2",
@@ -147,11 +107,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "010",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "eat",
               "pinyin-numbered": "chi1",
@@ -161,11 +117,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "011",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "taxi; cab",
               "pinyin-numbered": "chu1zu1che1",
@@ -175,11 +127,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "012",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "make a phone call",
               "pinyin-numbered": "da3 dian4hua4",
@@ -189,11 +137,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "013",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "big; large",
               "pinyin-numbered": "da4",
@@ -203,11 +147,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "014",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "indicates possession, like adding 's to a noun",
               "pinyin-numbered": "de5",
@@ -217,11 +157,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "015",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "a dot; a little; o'clock",
               "pinyin-numbered": "dian3",
@@ -231,11 +167,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "016",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "computer",
               "pinyin-numbered": "dian4nao3",
@@ -245,11 +177,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "017",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "television; TV",
               "pinyin-numbered": "dian4shi4",
@@ -259,11 +187,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "018",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "movie; film",
               "pinyin-numbered": "dian4ying3",
@@ -273,11 +197,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "019",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "things; stuff",
               "pinyin-numbered": "dong1xi5",
@@ -287,11 +207,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "020",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "all; both",
               "pinyin-numbered": "dou1",
@@ -301,11 +217,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "021",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "to read; to study",
               "pinyin-numbered": "du2",
@@ -315,11 +227,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "022",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "sorry",
               "pinyin-numbered": "dui4bu5qi3",
@@ -329,11 +237,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "023",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "many",
               "pinyin-numbered": "duo1",
@@ -343,11 +247,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "024",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "how much?; how many?",
               "pinyin-numbered": "duo1shao5",
@@ -357,11 +257,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "025",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "son",
               "pinyin-numbered": "er2zi5",
@@ -371,11 +267,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "026",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "two",
               "pinyin-numbered": "er4",
@@ -385,11 +277,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "027",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "restaurant; hotel",
               "pinyin-numbered": "fan4dian4",
@@ -399,11 +287,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "028",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "airplane",
               "pinyin-numbered": "fei1ji1",
@@ -413,11 +297,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "029",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "minute; (measure word for time)",
               "pinyin-numbered": "fen1zhong1",
@@ -427,11 +307,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "030",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "happy; glad",
               "pinyin-numbered": "gao1xing4",
@@ -441,11 +317,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "031",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "general measure word",
               "pinyin-numbered": "ge5",
@@ -455,11 +327,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "032",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "work; a job",
               "pinyin-numbered": "gong1zuo4",
@@ -469,11 +337,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "033",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "dog",
               "pinyin-numbered": "gou3",
@@ -483,11 +347,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "034",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "Chinese language",
               "pinyin-numbered": "Han4yu3",
@@ -497,11 +357,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "035",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "good",
               "pinyin-numbered": "hao3",
@@ -511,11 +367,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "036",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "number; day of a month",
               "pinyin-numbered": "hao4",
@@ -525,11 +377,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "037",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "to drink",
               "pinyin-numbered": "he1",
@@ -539,11 +387,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "038",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "and; with",
               "pinyin-numbered": "he2",
@@ -553,11 +397,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "039",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "very; quite",
               "pinyin-numbered": "hen3",
@@ -567,11 +407,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "040",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "back; behind",
               "pinyin-numbered": "hou4mian5",
@@ -581,11 +417,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "041",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "to return; to reply; to go back",
               "pinyin-numbered": "hui2",
@@ -595,11 +427,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "042",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "know how to",
               "pinyin-numbered": "hui4",
@@ -609,11 +437,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "043",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "how many; several; a few",
               "pinyin-numbered": "ji3",
@@ -623,11 +447,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "044",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "family; home",
               "pinyin-numbered": "jia1",
@@ -637,11 +457,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "045",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "to be called",
               "pinyin-numbered": "jiao4",
@@ -651,11 +467,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "046",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "today",
               "pinyin-numbered": "jin1tian1",
@@ -665,11 +477,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "047",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "nine",
               "pinyin-numbered": "jiu3",
@@ -679,11 +487,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "048",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "to open; to start; to operate (a vehicle)",
               "pinyin-numbered": "kai1",
@@ -693,11 +497,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "049",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "see; look at; to watch",
               "pinyin-numbered": "kan4",
@@ -707,11 +507,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "050",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "see; catch sight of",
               "pinyin-numbered": "kan4jian4",
@@ -721,11 +517,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "051",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "lump; piece; sum of money",
               "pinyin-numbered": "kuai4",
@@ -735,11 +527,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "052",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "come; arrive; ever since; next",
               "pinyin-numbered": "lai2",
@@ -749,11 +537,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "053",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "teacher",
               "pinyin-numbered": "lao3shi1",
@@ -763,11 +547,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "054",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "indicates a completed or finished action",
               "pinyin-numbered": "le5",
@@ -777,11 +557,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "055",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "cold",
               "pinyin-numbered": "leng3",
@@ -791,11 +567,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "056",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "inside; Chinese mile (~.5 km)",
               "pinyin-numbered": "li3",
@@ -805,11 +577,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "057",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "six",
               "pinyin-numbered": "liu4",
@@ -819,11 +587,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "058",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "mom; mum",
               "pinyin-numbered": "ma1ma5",
@@ -833,11 +597,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "059",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "indicates a yes/no question (added to a statement)",
               "pinyin-numbered": "ma5",
@@ -847,11 +607,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "060",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "to buy",
               "pinyin-numbered": "mai3",
@@ -861,11 +617,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "061",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "cat",
               "pinyin-numbered": "mao1",
@@ -875,11 +627,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "062",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "it doesn't matter; never mind",
               "pinyin-numbered": "mei2 guan1xi5",
@@ -889,11 +637,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "063",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "not have; there is not",
               "pinyin-numbered": "mei2you3",
@@ -903,11 +647,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "064",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "(cooked) rice",
               "pinyin-numbered": "mi3fan4",
@@ -917,11 +657,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "065",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "tomorrow",
               "pinyin-numbered": "ming2tian1",
@@ -931,11 +667,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "066",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "name",
               "pinyin-numbered": "ming2zi5",
@@ -945,11 +677,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "067",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "which; how",
               "pinyin-numbered": "na3",
@@ -959,11 +687,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "068",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "where? (Beijing accent)",
               "pinyin-numbered": "na3r5",
@@ -973,11 +697,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "069",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "that; then",
               "pinyin-numbered": "na4",
@@ -987,11 +707,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "070",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "indicates a question; how about...?;",
               "pinyin-numbered": "ne5",
@@ -1001,11 +717,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "071",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "can; be able",
               "pinyin-numbered": "neng2",
@@ -1015,11 +727,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "072",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "you (singular)",
               "pinyin-numbered": "ni3",
@@ -1029,11 +737,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "073",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "year",
               "pinyin-numbered": "nian2",
@@ -1043,11 +747,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "074",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "daughter",
               "pinyin-numbered": "nv3'er2",
@@ -1057,11 +757,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "075",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "friend",
               "pinyin-numbered": "peng2you5",
@@ -1071,11 +767,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "076",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "pretty; beautiful",
               "pinyin-numbered": "piao4liang5",
@@ -1085,11 +777,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "077",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "apple",
               "pinyin-numbered": "ping2guo3",
@@ -1099,11 +787,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "078",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "seven",
               "pinyin-numbered": "qi1",
@@ -1113,11 +797,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "079",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "money; coin",
               "pinyin-numbered": "qian2",
@@ -1127,11 +807,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "080",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "in front",
               "pinyin-numbered": "qian2mian4",
@@ -1141,11 +817,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "081",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "please; invite; to treat someone to something",
               "pinyin-numbered": "qing3",
@@ -1155,11 +827,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "082",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "go; to leave",
               "pinyin-numbered": "qu4",
@@ -1169,11 +837,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "083",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "heat; hot",
               "pinyin-numbered": "re4",
@@ -1183,11 +847,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "084",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "person; man; people",
               "pinyin-numbered": "ren2",
@@ -1197,11 +857,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "085",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "recognize; know (a person)",
               "pinyin-numbered": "ren4shi5",
@@ -1211,11 +867,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "086",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "three",
               "pinyin-numbered": "san1",
@@ -1225,11 +877,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "087",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "shop; store",
               "pinyin-numbered": "shang1dian4",
@@ -1239,11 +887,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "088",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "above; up",
               "pinyin-numbered": "shang4",
@@ -1253,11 +897,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "089",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "late morning (before noon)",
               "pinyin-numbered": "shang4wu3",
@@ -1267,11 +907,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "090",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "few; little",
               "pinyin-numbered": "shao3",
@@ -1281,11 +917,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "091",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "who",
               "pinyin-numbered": "shei2",
@@ -1295,11 +927,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "092",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "what? (replaces the noun to turn a statement into a question)",
               "pinyin-numbered": "shen2me5",
@@ -1309,11 +937,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "093",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "ten",
               "pinyin-numbered": "shi2",
@@ -1323,11 +947,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "094",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "time",
               "pinyin-numbered": "shi2hou5",
@@ -1337,11 +957,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "095",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "be; is; are; am",
               "pinyin-numbered": "shi4",
@@ -1351,11 +967,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "096",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "book; letter",
               "pinyin-numbered": "shu1",
@@ -1365,11 +977,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "097",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "water",
               "pinyin-numbered": "shui3",
@@ -1379,11 +987,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "098",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "fruit",
               "pinyin-numbered": "shui3guo3",
@@ -1393,11 +997,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "099",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "to sleep; go to bed",
               "pinyin-numbered": "shui4 jiao4",
@@ -1407,11 +1007,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "100",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "speak",
               "pinyin-numbered": "shuo1",
@@ -1421,11 +1017,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "101",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "four",
               "pinyin-numbered": "si4",
@@ -1435,11 +1027,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "102",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "years old; age",
               "pinyin-numbered": "sui4",
@@ -1449,11 +1037,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "103",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "he; him",
               "pinyin-numbered": "ta1",
@@ -1463,11 +1047,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "104",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "she",
               "pinyin-numbered": "ta1",
@@ -1477,11 +1057,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "105",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "too (much)",
               "pinyin-numbered": "tai4",
@@ -1491,11 +1067,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "106",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "weather",
               "pinyin-numbered": "tian1qi4",
@@ -1505,11 +1077,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "107",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "listen; hear",
               "pinyin-numbered": "ting1",
@@ -1519,11 +1087,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "108",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "fellow student; schoolmate",
               "pinyin-numbered": "tong2xue2",
@@ -1533,11 +1097,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "109",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "hello (on the phone)",
               "pinyin-numbered": "wei4",
@@ -1547,11 +1107,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "110",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "I; me",
               "pinyin-numbered": "wo3",
@@ -1561,11 +1117,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "111",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "we; us",
               "pinyin-numbered": "wo3men5",
@@ -1575,11 +1127,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "112",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "five",
               "pinyin-numbered": "wu3",
@@ -1589,11 +1137,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "113",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "to like",
               "pinyin-numbered": "xi3huan5",
@@ -1603,11 +1147,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "114",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "fall; below",
               "pinyin-numbered": "xia4",
@@ -1617,11 +1157,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "115",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "afternoon",
               "pinyin-numbered": "xia4wu3",
@@ -1631,11 +1167,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "116",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "to rain",
               "pinyin-numbered": "xia4yu3",
@@ -1645,11 +1177,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "117",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "Mr.; Sir",
               "pinyin-numbered": "xian1sheng5",
@@ -1659,11 +1187,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "118",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "now",
               "pinyin-numbered": "xian4zai4",
@@ -1673,11 +1197,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "119",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "think; believe; suppose; would like to",
               "pinyin-numbered": "xiang3",
@@ -1687,11 +1207,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "120",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "small; young",
               "pinyin-numbered": "xiao3",
@@ -1701,11 +1217,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "121",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "young lady; miss; Ms.",
               "pinyin-numbered": "xiao3jie5",
@@ -1715,11 +1227,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "122",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "some; few; several",
               "pinyin-numbered": "xie1",
@@ -1729,11 +1237,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "123",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "to write; to compose",
               "pinyin-numbered": "xie3",
@@ -1743,11 +1247,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "124",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "thank you",
               "pinyin-numbered": "xie4xie5",
@@ -1757,11 +1257,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "125",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "week",
               "pinyin-numbered": "xing1qi1",
@@ -1771,11 +1267,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "126",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "student",
               "pinyin-numbered": "xue2sheng5",
@@ -1785,11 +1277,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "127",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "learn; to study",
               "pinyin-numbered": "xue2xi2",
@@ -1799,11 +1287,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "128",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "school",
               "pinyin-numbered": "xue2xiao4",
@@ -1813,11 +1297,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "129",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "one; once; a",
               "pinyin-numbered": "yi1",
@@ -1827,11 +1307,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "130",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "clothes",
               "pinyin-numbered": "yi1fu5",
@@ -1841,11 +1317,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "131",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "doctor",
               "pinyin-numbered": "yi1sheng1",
@@ -1855,11 +1327,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "132",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "hospital",
               "pinyin-numbered": "yi1yuan4",
@@ -1869,11 +1337,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "133",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "chair",
               "pinyin-numbered": "yi3zi5",
@@ -1883,11 +1347,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "134",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "a bit; a few",
               "pinyin-numbered": "yi4dian3r5",
@@ -1897,11 +1357,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "135",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "have",
               "pinyin-numbered": "you3",
@@ -1911,11 +1367,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "136",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "moon; month",
               "pinyin-numbered": "yue4",
@@ -1925,11 +1377,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "137",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "at; on; in; indicates an action in progress",
               "pinyin-numbered": "zai4",
@@ -1939,11 +1387,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "138",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "goodbye; see you later",
               "pinyin-numbered": "zai4jian4",
@@ -1953,11 +1397,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "139",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "how?",
               "pinyin-numbered": "zen3me5",
@@ -1967,11 +1407,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "140",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "how about?; how is/was it?",
               "pinyin-numbered": "zen3me5yang4",
@@ -1981,11 +1417,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "141",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "this",
               "pinyin-numbered": "zhe4",
@@ -1995,11 +1427,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "142",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "China",
               "pinyin-numbered": "Zhong1guo2",
@@ -2009,11 +1437,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "143",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "noon; midday",
               "pinyin-numbered": "zhong1wu3",
@@ -2023,11 +1447,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "144",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "to live; reside; to stop",
               "pinyin-numbered": "zhu4",
@@ -2037,11 +1457,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "145",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "table; desk",
               "pinyin-numbered": "zhuo1zi5",
@@ -2051,11 +1467,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "146",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "letter; character",
               "pinyin-numbered": "zi4",
@@ -2065,11 +1477,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "147",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "yesterday",
               "pinyin-numbered": "zuo2tian1",
@@ -2079,11 +1487,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "148",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "do; make",
               "pinyin-numbered": "zuo4",
@@ -2093,11 +1497,7 @@
           }
       },
       {
-          "metadata": {
-              "id": "149",
-              "learned": false,
-              "description": ""
-          },
+
           "translation-data": {
               "english": "sit",
               "pinyin-numbered": "zuo4",

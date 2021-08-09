@@ -9,7 +9,7 @@ let saveSettings = (id, checkbox = false) => {
 
   chrome.storage.sync.set({ [id]: value });
 
-  console.log(`3 Set ${id}: ${value}`);
+  // console.log(`Set ${id}: ${value}`);
   chrome.tabs.reload();
 };
 
@@ -32,7 +32,7 @@ let restoreSettings = () => {
     }
   );
 
-  console.log(`1 Settings restored!`);
+  // console.log(`Settings restored!`);
 };
 
 // multiple size="6"
@@ -40,7 +40,6 @@ let restoreSettings = () => {
 // -------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", restoreSettings);
-console.log("2 yo");
 
 document.getElementById("level").addEventListener("click", () => {
   saveSettings("level");
