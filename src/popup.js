@@ -44,15 +44,15 @@ let restoreSettings = () => {
 
 document.addEventListener("DOMContentLoaded", restoreSettings);
 
-document.getElementById("level").addEventListener("click", () => {
+document.getElementById("level").addEventListener("change", () => {
   saveSettings("level");
 });
 
-document.getElementById("char").addEventListener("click", () => {
+document.getElementById("char").addEventListener("change", () => {
   saveSettings("char");
 });
 
-document.getElementById("theme").addEventListener("click", () => {
+document.getElementById("theme").addEventListener("change", () => {
   saveSettings("theme");
 });
 

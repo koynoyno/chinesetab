@@ -1,11 +1,37 @@
-## Yo 😎
+# Chinese Tab | 中文标签页
 
-I'm glad to see you here.
+[![Chrome](https://storage.googleapis.com/chrome-gcs-uploader.appspot.com/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png)](https://chrome.google.com/extensions/detail/kpalceplnmfdppclclfnljimdjdbhcid/)
 
-Feel free to modify this extension at your own will. If your modifications are way too cool, feel free to [open a PR](https://github.com/koynoyno/chinese-tab)
+Chinese Tab is a Chrome extension that helps you to memorize Chinese words by displaying them ****every time you open a new tab****.
 
-I have a dream of living in Taiwan, learning Chinese and sharing everything I learn about the language and the country with people. You can [help me make this dream come true](https://www.patreon.com/koyno).
+## Highlights
 
-Or you can recommend this extension to your friends!
+🀄 Switch between simplified and traditional characters
 
-## Have a good day 🦄
+📚 Select HSK1 - HSK6 dictionary
+
+❤️💚💙💜 Turn on tone colors (like in Pleco)
+
+🤓 Disable pinyin and/or English translation (hardcore mode)
+
+## Mooore highlights
+
+🌌 Dark mode support
+
+📴 Works offline
+
+🔒 No analytics
+
+📛 No ads
+
+🈚️ Free
+
+## OMG!
+
+✨ **Star** this extension to help to list it on OpenCollective.com (100 stars requires)
+
+✨ **[Share](https://docs.google.com/forms/d/e/1FAIpQLSeEHeXCMW9OXlkBk0tG7lxZgNbXqe2xharlv0STSH94DuM6FA/viewform)** with me how I can improve this extension. What do you like? What do you hate? I read everything.
+
+✨ **[Sponsor](https://www.patreon.com/koyno)** this extension if you love it.
+
+### **Your support matters** 🦄
