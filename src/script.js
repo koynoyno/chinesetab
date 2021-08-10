@@ -10,6 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
       assert: { type: "json" },
     });
 
+    // display greeting
+    const { ifFirstLaunch } = await import("./firstLaunch.js");
+    ifFirstLaunch(items);
+
     // draw characters, pinyin, tones, translation
     const { draw } = await import("./draw.js");
     draw(hsk, items);

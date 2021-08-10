@@ -34,6 +34,13 @@ body {
   align-items: center;
   align-content: center;
 }
+
+#welcome {
+  font-family: "Roboto Regular", Fallback, sans-serif;
+  font-size: 2em;
+  padding-top: 2em;
+}
+
 .char {
   margin: 0.1em;
   font-size: 20rem;
