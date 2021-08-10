@@ -8,9 +8,11 @@ Chinese Tab is a Chrome extension that helps you to memorize Chinese words by di
 
 🀄 Switch between simplified and traditional characters
 
+🎯 Set number of words you want to learn per day
+
 📚 Select HSK1 - HSK6 dictionary
 
-❤️💚💙💜 Turn on tone colors (like in Pleco)
+🌈 Turn on tone colors (like in Pleco)
 
 🤓 Disable pinyin and/or English translation (hardcore mode)
 

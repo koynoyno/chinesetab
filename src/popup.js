@@ -13,7 +13,7 @@ let saveSettings = (id, checkbox = false) => {
   } else {
     value = document.getElementById(id).value;
   }
-  console.log(`${checkbox}`);
+  // console.log(`${checkbox}`);
 
   chrome.storage.sync.set({ [id]: value });
 
@@ -37,19 +37,21 @@ let restoreSettings = () => {
     {
       level: level,
       char: char,
-      darkMode: darkMode,
+      charDay: charDay,
+      color: color,
       pinyin: pinyin,
       translation: translation,
-      color: color,
+      darkMode: darkMode,
     },
     (items) => {
       // console.log(items);
       document.getElementById("level").value = items.level;
       document.getElementById("char").value = items.char;
-      document.getElementById("darkMode").checked = items.darkMode;
+      document.getElementById("charDay").value = items.charDay;
+      document.getElementById("color").checked = items.color;
       document.getElementById("pinyin").checked = items.pinyin;
       document.getElementById("translation").checked = items.translation;
-      document.getElementById("color").checked = items.color;
+      document.getElementById("darkMode").checked = items.darkMode;
     }
   );
 
@@ -69,6 +71,10 @@ document.getElementById("level").addEventListener("change", () => {
 
 document.getElementById("char").addEventListener("change", () => {
   saveSettings("char");
+});
+
+document.getElementById("charDay").addEventListener("change", () => {
+  saveSettings("charDay");
 });
 
 // checkboxes, set "true"

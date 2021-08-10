@@ -1,9 +1,19 @@
 import splitAndKeep from "./color.js";
+import { selectFromRandomWords } from "./randomWords.js";
+import { getRandomFrom } from "./getRandomFrom.js";
 
 export let draw = (hsk, items) => {
-  // select a random word
-  // TODO: display 3-5-10 words per day
-  let rand = Math.floor(Math.random() * hsk.words.length);
+  let rand;
+  let hskLength = hsk.words.length;
+
+  // select a random word if charDay is set
+  if (parseInt(items.charDay) !== 0) {
+    rand = selectFromRandomWords(hskLength, items);
+  } else {
+    chrome.storage.sync.set({ randomWords: [] });
+    rand = getRandomFrom(hskLength);
+  }
+
   let data = hsk.words[rand];
 
   // get characters
@@ -11,6 +21,7 @@ export let draw = (hsk, items) => {
 
   // black color magic
   if (items.color) {
+    // TODO: move to color.js, remove splitAndKeep import
     let pinyinNumbered = data["translation-data"]["pinyin-numbered"];
     let result = pinyinNumbered.splitAndKeep(["1", "2", "3", "4", "5"]);
     // console.log(result);
