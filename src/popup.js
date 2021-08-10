@@ -1,5 +1,6 @@
+// darkMode
 chrome.storage.sync.get(null, async (items) => {
-  if (items.theme == "dark") {
+  if (items.darkMode) {
     document.body.classList.add("dark-mode");
   }
 });
@@ -20,8 +21,9 @@ let saveSettings = (id, checkbox = false) => {
 
   chrome.tabs.reload();
 
-  if (id == "theme") {
-    if (value == "dark") {
+  if (id == "darkMode") {
+    console.log(`i check that, value=${value}`)
+    if (value) {
       document.body.classList.add("dark-mode");
     } else {
       document.body.classList.remove("dark-mode");
@@ -35,7 +37,7 @@ let restoreSettings = () => {
     {
       level: level,
       char: char,
-      theme: theme,
+      darkMode: darkMode,
       pinyin: pinyin,
       translation: translation,
       color: color,
@@ -44,7 +46,7 @@ let restoreSettings = () => {
       // console.log(items);
       document.getElementById("level").value = items.level;
       document.getElementById("char").value = items.char;
-      document.getElementById("theme").value = items.theme;
+      document.getElementById("darkMode").checked = items.darkMode;
       document.getElementById("pinyin").checked = items.pinyin;
       document.getElementById("translation").checked = items.translation;
       document.getElementById("color").checked = items.color;
@@ -60,6 +62,7 @@ let restoreSettings = () => {
 
 document.addEventListener("DOMContentLoaded", restoreSettings);
 
+// selects
 document.getElementById("level").addEventListener("change", () => {
   saveSettings("level");
 });
@@ -68,8 +71,9 @@ document.getElementById("char").addEventListener("change", () => {
   saveSettings("char");
 });
 
-document.getElementById("theme").addEventListener("change", () => {
-  saveSettings("theme");
+// checkboxes
+document.getElementById("darkMode").addEventListener("click", () => {
+  saveSettings("darkMode", true);
 });
 
 document.getElementById("pinyin").addEventListener("click", () => {

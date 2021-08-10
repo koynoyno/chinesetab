@@ -6,7 +6,8 @@ chrome.runtime.onInstalled.addListener(function (details) {
     // eg. open a tab with a url
     chrome.storage.sync.set({ level: "hsk1" });
     chrome.storage.sync.set({ char: "simplified" });
-    chrome.storage.sync.set({ theme: "light" }); // can I detect it?
+    // TODO: detect browser darkMode on install
+    chrome.storage.sync.set({ darkMode: false });
     chrome.storage.sync.set({ pinyin: true });
     chrome.storage.sync.set({ translation: true });
     chrome.storage.sync.set({ color: false });

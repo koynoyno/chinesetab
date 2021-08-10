@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   chrome.storage.sync.get(null, async (items) => {
     // TODO: fix flicker
-    if (items.theme == "dark") {
+    if (items.darkMode) {
       document.body.classList.add("dark-mode");
     }
 
