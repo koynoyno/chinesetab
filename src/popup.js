@@ -71,9 +71,10 @@ document.getElementById("char").addEventListener("change", () => {
   saveSettings("char");
 });
 
-// checkboxes
-document.getElementById("darkMode").addEventListener("click", () => {
-  saveSettings("darkMode", true);
+// checkboxes, set "true"
+
+document.getElementById("color").addEventListener("click", () => {
+  saveSettings("color", true);
 });
 
 document.getElementById("pinyin").addEventListener("click", () => {
@@ -84,14 +85,14 @@ document.getElementById("translation").addEventListener("click", () => {
   saveSettings("translation", true);
 });
 
-document.getElementById("color").addEventListener("click", () => {
-  saveSettings("color", true);
+document.getElementById("darkMode").addEventListener("click", () => {
+  saveSettings("darkMode", true);
 });
 
 // button event listeners
 document.getElementById("feedback").addEventListener("click", () => {
   chrome.tabs.update({
-    url: "https://forms.gle/cq75MmHtBFtGGauU9",
+    url: "https://forms.gle/A2j7TKjXwUfuALqz7",
   });
   window.close();
 });
