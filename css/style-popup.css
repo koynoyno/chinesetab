@@ -76,9 +76,9 @@ select,
 }
 
 /* TODO: add HSK 3.0 and delete this style*/
-#version {
+/* #version {
   cursor: unset !important;
-}
+} */
 
 #patron {
   color:rgba(255, 66, 77, 1)
