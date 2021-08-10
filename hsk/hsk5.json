@@ -330,7 +330,7 @@
 
           "translation-data": {
               "english": "quilt; blanket",
-              "pinyin-numbered": "bei4zi",
+              "pinyin-numbered": "bei4zi5",
               "pinyin": "bèizi",
               "simplified": "被子",
               "traditional": "被子"
@@ -560,8 +560,8 @@
 
           "translation-data": {
               "english": "glass; nylon; plastic",
-              "pinyin-numbered": "bo1li",
-              "pinyin": "bōli",
+              "pinyin-numbered": "bo1li2",
+              "pinyin": "bōlí",
               "simplified": "玻璃",
               "traditional": "玻璃"
           }
@@ -580,7 +580,7 @@
 
           "translation-data": {
               "english": "neck",
-              "pinyin-numbered": "bo2zi",
+              "pinyin-numbered": "bo2zi5",
               "pinyin": "bózi",
               "simplified": "脖子",
               "traditional": "脖子"
@@ -860,7 +860,7 @@
 
           "translation-data": {
               "english": "fork; cross",
-              "pinyin-numbered": "cha1zi",
+              "pinyin-numbered": "cha1zi5",
               "pinyin": "chāzi",
               "simplified": "叉子",
               "traditional": "叉子"
@@ -1070,7 +1070,7 @@
 
           "translation-data": {
               "english": "to call; address as; name",
-              "pinyin-numbered": "cheng1hu",
+              "pinyin-numbered": "cheng1hu5",
               "pinyin": "chēnghu",
               "simplified": "称呼",
               "traditional": "稱呼"
@@ -1270,7 +1270,7 @@
 
           "translation-data": {
               "english": "ruler (measuring instrument)",
-              "pinyin-numbered": "chi3zi",
+              "pinyin-numbered": "chi3zi5",
               "pinyin": "chǐzi",
               "simplified": "尺子",
               "traditional": "尺子"
@@ -1350,7 +1350,7 @@
 
           "translation-data": {
               "english": "drawer",
-              "pinyin-numbered": "chou1ti",
+              "pinyin-numbered": "chou1ti5",
               "pinyin": "chōuti",
               "simplified": "抽屉",
               "traditional": "抽屜"
@@ -1730,7 +1730,7 @@
 
           "translation-data": {
               "english": "to respond; to promise; to answer; agree",
-              "pinyin-numbered": "da1ying",
+              "pinyin-numbered": "da1ying5",
               "pinyin": "dāying",
               "simplified": "答应",
               "traditional": "答應"
@@ -1760,8 +1760,8 @@
 
           "translation-data": {
               "english": "come into contact with; to deal with",
-              "pinyin-numbered": "da3 jiao1dao",
-              "pinyin": "dǎ jiāodao",
+              "pinyin-numbered": "da3 jiao1dao4",
+              "pinyin": "dǎ jiāodào ",
               "simplified": "打交道",
               "traditional": "打交道"
           }
@@ -1780,7 +1780,7 @@
 
           "translation-data": {
               "english": "ask about; inquire about",
-              "pinyin-numbered": "da3ting",
+              "pinyin-numbered": "da3ting5",
               "pinyin": "dǎting",
               "simplified": "打听",
               "traditional": "打聽"
@@ -1790,7 +1790,7 @@
 
           "translation-data": {
               "english": "generous; poise; (-fang1: expert; scholar)",
-              "pinyin-numbered": "da4fang",
+              "pinyin-numbered": "da4fang5",
               "pinyin": "dàfang",
               "simplified": "大方",
               "traditional": "大方"
@@ -1940,7 +1940,7 @@
 
           "translation-data": {
               "english": "to delay; waste time",
-              "pinyin-numbered": "dan1wu",
+              "pinyin-numbered": "dan1wu5",
               "pinyin": "dānwu",
               "simplified": "耽误",
               "traditional": "耽誤"
@@ -2130,7 +2130,7 @@
 
           "translation-data": {
               "english": "authentic; genuine; (-dào: tunnel)",
-              "pinyin-numbered": "di4dao",
+              "pinyin-numbered": "di4dao5",
               "pinyin": "dìdao",
               "simplified": "地道",
               "traditional": "地道"
@@ -2200,7 +2200,7 @@
 
           "translation-data": {
               "english": "dim sum; light refreshments; snacks",
-              "pinyin-numbered": "dian3xin",
+              "pinyin-numbered": "dian3xin5",
               "pinyin": "diǎnxin",
               "simplified": "点心",
               "traditional": "點心"
@@ -2280,7 +2280,7 @@
 
           "translation-data": {
               "english": "tofu; bean curd",
-              "pinyin-numbered": "dou4fu",
+              "pinyin-numbered": "dou4fu5",
               "pinyin": "dòufu",
               "simplified": "豆腐",
               "traditional": "豆腐"
@@ -3410,8 +3410,8 @@
 
           "translation-data": {
               "english": "paternal aunt; father's sister",
-              "pinyin-numbered": "gu1gu",
-              "pinyin": "gūgu",
+              "pinyin-numbered": "gu1gu1",
+              "pinyin": "gūgū",
               "simplified": "姑姑",
               "traditional": "姑姑"
           }
@@ -3420,8 +3420,8 @@
 
           "translation-data": {
               "english": "young woman; girl",
-              "pinyin-numbered": "gun1iang",
-              "pinyin": "gūniang",
+              "pinyin-numbered": "gun1iang2",
+              "pinyin": "gūniáng",
               "simplified": "姑娘",
               "traditional": "姑娘"
           }
@@ -3460,8 +3460,8 @@
 
           "translation-data": {
               "english": "bone; moral character",
-              "pinyin-numbered": "gu3tou",
-              "pinyin": "gǔtou",
+              "pinyin-numbered": "gu3tou2",
+              "pinyin": "gǔtóu",
               "simplified": "骨头",
               "traditional": "骨頭"
           }
@@ -3590,7 +3590,7 @@
 
           "translation-data": {
               "english": "tube; pipe; drinking straw",
-              "pinyin-numbered": "guan3zi",
+              "pinyin-numbered": "guan3zi5",
               "pinyin": "guǎnzi",
               "simplified": "管子",
               "traditional": "管子"
@@ -3690,7 +3690,7 @@
 
           "translation-data": {
               "english": "rule; custom",
-              "pinyin-numbered": "gui1ju",
+              "pinyin-numbered": "gui1ju5",
               "pinyin": "guīju",
               "simplified": "规矩",
               "traditional": "規矩"
@@ -3930,8 +3930,8 @@
 
           "translation-data": {
               "english": "contract",
-              "pinyin-numbered": "he2tong",
-              "pinyin": "hétong",
+              "pinyin-numbered": "he2tong2",
+              "pinyin": "hétóng",
               "simplified": "合同",
               "traditional": "合同"
           }
@@ -4010,7 +4010,7 @@
 
           "translation-data": {
               "english": "monkey",
-              "pinyin-numbered": "hou2zi",
+              "pinyin-numbered": "hou2zi5",
               "pinyin": "hóuzi",
               "simplified": "猴子",
               "traditional": "猴子"
@@ -4110,7 +4110,7 @@
 
           "translation-data": {
               "english": "confused; bewildered; muddled",
-              "pinyin-numbered": "hu2tu",
+              "pinyin-numbered": "hu2tu5",
               "pinyin": "hútu",
               "simplified": "糊涂",
               "traditional": "糊塗"
@@ -4550,7 +4550,7 @@
 
           "translation-data": {
               "english": "clip; tongs; folder",
-              "pinyin-numbered": "jia1zi",
+              "pinyin-numbered": "jia1zi5",
               "pinyin": "jiāzi",
               "simplified": "夹子",
               "traditional": "夾子"
@@ -4820,7 +4820,7 @@
 
           "translation-data": {
               "english": "Be particular about; fastidious; stress; exquisite ; careful study",
-              "pinyin-numbered": "jiang3jiu",
+              "pinyin-numbered": "jiang3jiu5",
               "pinyin": "jiǎngjiu",
               "simplified": "讲究",
               "traditional": "講究"
@@ -4960,7 +4960,7 @@
 
           "translation-data": {
               "english": "sturdy; (also -shí: bear fruit)",
-              "pinyin-numbered": "jie1shi",
+              "pinyin-numbered": "jie1shi5",
               "pinyin": "jiēshi",
               "simplified": "结实",
               "traditional": "結實"
@@ -5060,7 +5060,7 @@
 
           "translation-data": {
               "english": "(finger) ring",
-              "pinyin-numbered": "jie4zhi",
+              "pinyin-numbered": "jie4zhi5",
               "pinyin": "jièzhi",
               "simplified": "戒指",
               "traditional": "戒指"
@@ -5260,8 +5260,8 @@
 
           "translation-data": {
               "english": "mother's brother; maternal uncle",
-              "pinyin-numbered": "jiu4jiu",
-              "pinyin": "jiùjiu",
+              "pinyin-numbered": "jiu4jiu4",
+              "pinyin": "jiùjiù",
               "simplified": "舅舅",
               "traditional": "舅舅"
           }
@@ -5280,7 +5280,7 @@
 
           "translation-data": {
               "english": "tangerine",
-              "pinyin-numbered": "ju2zi",
+              "pinyin-numbered": "ju2zi5",
               "pinyin": "júzi",
               "simplified": "桔子",
               "traditional": "桔子"
@@ -5780,8 +5780,8 @@
 
           "translation-data": {
               "english": "honest; sincere; naive; simpleminded",
-              "pinyin-numbered": "lao3shi",
-              "pinyin": "lǎoshi",
+              "pinyin-numbered": "lao3shi2",
+              "pinyin": "lǎoshí",
               "simplified": "老实",
               "traditional": "老實"
           }
@@ -5800,7 +5800,7 @@
 
           "translation-data": {
               "english": "maternal grandmother",
-              "pinyin-numbered": "lao3lao",
+              "pinyin-numbered": "lao3lao5",
               "pinyin": "lǎolao",
               "simplified": "姥姥",
               "traditional": "姥姥"
@@ -6019,9 +6019,9 @@
       {
 
           "translation-data": {
-              "english": "grain; food; cereals",
-              "pinyin-numbered": "liang2shi",
-              "pinyin": "liángshi",
+              "english": "grain; food; 食粮 - cereals",
+              "pinyin-numbered": "liang2shi2",
+              "pinyin": "liángshí",
               "simplified": "粮食",
               "traditional": "糧食"
           }
@@ -6240,7 +6240,7 @@
 
           "translation-data": {
               "english": "logic",
-              "pinyin-numbered": "luo2ji",
+              "pinyin-numbered": "luo2ji5",
               "pinyin": "luóji",
               "simplified": "逻辑",
               "traditional": "邏輯"
@@ -6280,8 +6280,8 @@
 
           "translation-data": {
               "english": "steamed bun/roll",
-              "pinyin-numbered": "man2tou",
-              "pinyin": "mántou",
+              "pinyin-numbered": "man2tou2",
+              "pinyin": "mántóu",
               "simplified": "馒头",
               "traditional": "饅頭"
           }
@@ -6340,8 +6340,8 @@
 
           "translation-data": {
               "english": "eyebrow",
-              "pinyin-numbered": "mei2mao",
-              "pinyin": "méimao",
+              "pinyin-numbered": "mei2mao2",
+              "pinyin": "méimáo",
               "simplified": "眉毛",
               "traditional": "眉毛"
           }
@@ -6410,8 +6410,8 @@
 
           "translation-data": {
               "english": "secretary",
-              "pinyin-numbered": "mi4shu",
-              "pinyin": "mìshu",
+              "pinyin-numbered": "mi4shu1",
+              "pinyin": "mìshū",
               "simplified": "秘书",
               "traditional": "秘書"
           }
@@ -6470,8 +6470,8 @@
 
           "translation-data": {
               "english": "slim; slender",
-              "pinyin-numbered": "miao2tiao",
-              "pinyin": "miáotiao",
+              "pinyin-numbered": "miao2tiao2",
+              "pinyin": "miáotiáo",
               "simplified": "苗条",
               "traditional": "苗條"
           }
@@ -6600,7 +6600,7 @@
 
           "translation-data": {
               "english": "vague; indistinct; fuzzy; foggy",
-              "pinyin-numbered": "mo2hu",
+              "pinyin-numbered": "mo2hu5",
               "pinyin": "móhu",
               "simplified": "模糊",
               "traditional": "模糊"
@@ -6650,8 +6650,8 @@
 
           "translation-data": {
               "english": "wood; log; timber",
-              "pinyin-numbered": "mu4tou",
-              "pinyin": "mùtou",
+              "pinyin-numbered": "mu4tou2",
+              "pinyin": "mùtóu",
               "simplified": "木头",
               "traditional": "木頭"
           }
@@ -6720,8 +6720,8 @@
 
           "translation-data": {
               "english": "head; mental capability; brains",
-              "pinyin-numbered": "nao3dai",
-              "pinyin": "nǎodai",
+              "pinyin-numbered": "nao3dai4",
+              "pinyin": "nǎodài",
               "simplified": "脑袋",
               "traditional": "腦袋"
           }
@@ -6970,8 +6970,8 @@
 
           "translation-data": {
               "english": "admire; to respect",
-              "pinyin-numbered": "pei4fu",
-              "pinyin": "pèifu",
+              "pinyin-numbered": "pei4fu2",
+              "pinyin": "pèifú",
               "simplified": "佩服",
               "traditional": "佩服"
           }
@@ -7930,7 +7930,7 @@
 
           "translation-data": {
               "english": "days; date; time; life",
-              "pinyin-numbered": "ri4zi",
+              "pinyin-numbered": "ri4zi5",
               "pinyin": "rìzi",
               "simplified": "日子",
               "traditional": "日子"
@@ -8000,7 +8000,7 @@
 
           "translation-data": {
               "english": "throat; voice",
-              "pinyin-numbered": "sang3zi",
+              "pinyin-numbered": "sang3zi5",
               "pinyin": "sǎngzi",
               "simplified": "嗓子",
               "traditional": "嗓子"
@@ -8090,7 +8090,7 @@
 
           "translation-data": {
               "english": "fan (for waving)",
-              "pinyin-numbered": "shan4zi",
+              "pinyin-numbered": "shan4zi5",
               "pinyin": "shànzi",
               "simplified": "扇子",
               "traditional": "扇子"
@@ -8350,7 +8350,7 @@
 
           "translation-data": {
               "english": "cord; string; rope",
-              "pinyin-numbered": "sheng2zi",
+              "pinyin-numbered": "sheng2zi5",
               "pinyin": "shéngzi",
               "simplified": "绳子",
               "traditional": "繩子"
@@ -8420,7 +8420,7 @@
 
           "translation-data": {
               "english": "lion",
-              "pinyin-numbered": "shi1zi",
+              "pinyin-numbered": "shi1zi5",
               "pinyin": "shīzi",
               "simplified": "狮子",
               "traditional": "獅子"
@@ -8440,8 +8440,8 @@
 
           "translation-data": {
               "english": "stone; rock",
-              "pinyin-numbered": "shi2tou",
-              "pinyin": "shítou",
+              "pinyin-numbered": "shi2tou2",
+              "pinyin": "shítóu",
               "simplified": "石头",
               "traditional": "石頭"
           }
@@ -8580,7 +8580,7 @@
 
           "translation-data": {
               "english": "exert all one's strength",
-              "pinyin-numbered": "shi3jin4r",
+              "pinyin-numbered": "shi3jin4r5",
               "pinyin": "shǐjìnr",
               "simplified": "使劲儿",
               "traditional": "使勁兒"
@@ -8780,7 +8780,7 @@
 
           "translation-data": {
               "english": "comb; hairbrush",
-              "pinyin-numbered": "shu1zi",
+              "pinyin-numbered": "shu1zi5",
               "pinyin": "shūzi",
               "simplified": "梳子",
               "traditional": "梳子"
@@ -9130,7 +9130,7 @@
 
           "translation-data": {
               "english": "wife; married woman; Madame; Mrs.",
-              "pinyin-numbered": "tai4tai",
+              "pinyin-numbered": "tai4tai5",
               "pinyin": "tàitai",
               "simplified": "太太",
               "traditional": "太太"
@@ -9430,8 +9430,8 @@
 
           "translation-data": {
               "english": "joyful; delighted; very happy; jolly",
-              "pinyin-numbered": "tong4kuai",
-              "pinyin": "tòngkuai",
+              "pinyin-numbered": "tong4kuai4",
+              "pinyin": "tòngkuài",
               "simplified": "痛快",
               "traditional": "痛快"
           }
@@ -9520,7 +9520,7 @@
 
           "translation-data": {
               "english": "rabbit; hare",
-              "pinyin-numbered": "tu4zi",
+              "pinyin-numbered": "tu4zi5",
               "pinyin": "tùzi",
               "simplified": "兔子",
               "traditional": "兔子"
@@ -9800,7 +9800,7 @@
 
           "translation-data": {
               "english": "tail",
-              "pinyin-numbered": "wei3ba",
+              "pinyin-numbered": "wei3ba5",
               "pinyin": "wěiba",
               "simplified": "尾巴",
               "traditional": "尾巴"
@@ -9810,8 +9810,8 @@
 
           "translation-data": {
               "english": "feel wronged; nurse a grievance",
-              "pinyin-numbered": "wei3qu",
-              "pinyin": "wěiqu",
+              "pinyin-numbered": "wei3qu1",
+              "pinyin": "wěiqū",
               "simplified": "委屈",
               "traditional": "委屈"
           }
@@ -9850,8 +9850,8 @@
 
           "translation-data": {
               "english": "position; place; seat",
-              "pinyin-numbered": "wei4zhi",
-              "pinyin": "wèizhi",
+              "pinyin-numbered": "wei4zhi4",
+              "pinyin": "wèizhì",
               "simplified": "位置",
               "traditional": "位置"
           }
@@ -10010,7 +10010,7 @@
 
           "translation-data": {
               "english": "room; house",
-              "pinyin-numbered": "wu1zi",
+              "pinyin-numbered": "wu1zi5",
               "pinyin": "wūzi",
               "simplified": "屋子",
               "traditional": "屋子"
@@ -10830,8 +10830,8 @@
 
           "translation-data": {
               "english": "learning; knowledge",
-              "pinyin-numbered": "xue2wen",
-              "pinyin": "xuéwen",
+              "pinyin-numbered": "xue2wen4",
+              "pinyin": "xuéwèn",
               "simplified": "学问",
               "traditional": "學問"
           }
@@ -11040,7 +11040,7 @@
 
           "translation-data": {
               "english": "(for) a lifetime; all one's life",
-              "pinyin-numbered": "yi2bei4zi",
+              "pinyin-numbered": "yi2bei4zi5",
               "pinyin": "yíbèizi",
               "simplified": "一辈子",
               "traditional": "一輩子"
@@ -11310,7 +11310,7 @@
 
           "translation-data": {
               "english": "shadow; reflection",
-              "pinyin-numbered": "ying3zi",
+              "pinyin-numbered": "ying3zi5",
               "pinyin": "yǐngzi",
               "simplified": "影子",
               "traditional": "影子"
@@ -11320,7 +11320,7 @@
 
           "translation-data": {
               "english": "to cope with; deal with; handle; do sth. perfunctorily; do sth. after a fashion; make do",
-              "pinyin-numbered": "ying4fu",
+              "pinyin-numbered": "ying4fu5",
               "pinyin": "yìngfu",
               "simplified": "应付",
               "traditional": "應付"
@@ -11650,7 +11650,7 @@
 
           "translation-data": {
               "english": "luck",
-              "pinyin-numbered": "yun4qi",
+              "pinyin-numbered": "yun4qi5",
               "pinyin": "yùnqi",
               "simplified": "运气",
               "traditional": "運氣"
@@ -11700,8 +11700,8 @@
 
           "translation-data": {
               "english": "care about; be determined by; to mind",
-              "pinyin-numbered": "zai4hu",
-              "pinyin": "zàihu",
+              "pinyin-numbered": "zai4hu1",
+              "pinyin": "zàihū",
               "simplified": "在乎",
               "traditional": "在乎"
           }
@@ -12380,7 +12380,7 @@
 
           "translation-data": {
               "english": "bamboo",
-              "pinyin-numbered": "zhu2zi",
+              "pinyin-numbered": "zhu2zi5",
               "pinyin": "zhúzi",
               "simplified": "竹子",
               "traditional": "竹子"
