@@ -3,7 +3,6 @@
 chrome.runtime.onInstalled.addListener(function (details) {
   if (details.reason === "install") {
     // Code to be executed on first install
-    // eg. open a tab with a url
     chrome.storage.sync.set({ level: "hsk1" });
     chrome.storage.sync.set({ char: "simplified" });
     // TODO: detect browser darkMode on install
@@ -18,6 +17,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
     });
   } else if (details.reason === "update") {
     // When extension is updated
+    chrome.storage.sync.set({ updated: true });
   } else if (details.reason === "chrome_update") {
     // When browser is updated
   } else if (details.reason === "shared_module_update") {

@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const { ifFirstLaunch } = await import("./firstLaunch.js");
     ifFirstLaunch(items);
 
+    const { postUpdate } = await import("./postUpdate.js")
+    postUpdate(items);
+
     // draw characters, pinyin, tones, translation
     const { draw } = await import("./draw.js");
     draw(hsk, items);
