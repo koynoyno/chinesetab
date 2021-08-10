@@ -78,7 +78,14 @@ document.getElementById("feedback").addEventListener("click", () => {
 
 document.getElementById("patreon").addEventListener("click", () => {
   chrome.tabs.update({
-    url: 'https://www.patreon.com/koyno'
+    url: 'https://patreon.com/bePatron?u=13164518'
+  });
+  window.close();
+});
+
+document.getElementById("love").addEventListener("click", () => {
+  chrome.tabs.update({
+    url: 'https://github.com/koynoyno/chinese-tab'
   });
   window.close();
 });
