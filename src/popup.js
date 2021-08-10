@@ -1,19 +1,35 @@
+chrome.storage.sync.get(null, async (items) => {
+  if (items.theme == "dark") {
+    document.body.classList.add("dark-mode");
+  }
+});
+
+// apply settings
 let saveSettings = (id, checkbox = false) => {
-  let value
+  let value;
   if (checkbox) {
     value = document.getElementById(id).checked;
   } else {
     value = document.getElementById(id).value;
   }
-  console.log(`${checkbox}`)
+  console.log(`${checkbox}`);
 
   chrome.storage.sync.set({ [id]: value });
 
   // console.log(`Set ${id}: ${value}`);
-  
+
   chrome.tabs.reload();
+
+  if (id == "theme") {
+    if (value == "dark") {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  }
 };
 
+// get settings on window load
 let restoreSettings = () => {
   chrome.storage.sync.get(
     {
@@ -71,21 +87,14 @@ document.getElementById("color").addEventListener("click", () => {
 // button event listeners
 document.getElementById("feedback").addEventListener("click", () => {
   chrome.tabs.update({
-    url: 'https://forms.gle/cq75MmHtBFtGGauU9'
+    url: "https://forms.gle/cq75MmHtBFtGGauU9",
   });
   window.close();
 });
 
 document.getElementById("patreon").addEventListener("click", () => {
   chrome.tabs.update({
-    url: 'https://patreon.com/bePatron?u=13164518'
-  });
-  window.close();
-});
-
-document.getElementById("love").addEventListener("click", () => {
-  chrome.tabs.update({
-    url: 'https://github.com/koynoyno/chinese-tab'
+    url: "https://patreon.com/bePatron?u=13164518",
   });
   window.close();
 });
