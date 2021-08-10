@@ -18,6 +18,8 @@ body {
   line-height: 1em;
 }
 
+/* DARK MODE */
+
 .dark-mode {
   background: linear-gradient(180deg, #474747 0%, #202020 100%) !important;
   color: #fff !important;
@@ -25,6 +27,37 @@ body {
 
 .dark-mode #patreon {
   color: white;
+}
+
+.dark-mode select {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.dark-mode select:hover {
+  background-color: #111;
+}
+
+.dark-mode select option {
+  /* margin: 40px; */
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode input[type="button"] {
+  font-family: "Roboto Regular", Fallback, sans-serif;
+  margin: 0 0 5px 0;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border: 1px solid #707070;
+  border-radius: 1px;
+}
+
+.dark-mode input[type="button"]:hover {
+  background-color: #111;
+  border: 1px solid #aaa;
+
 }
 
 /* multiple select */
@@ -54,6 +87,11 @@ label {
   color: gray !important;
 } */
 
+select {
+  margin-top: 0.1em;
+  margin-bottom: 0.4em;
+}
+
 select:hover {
   background-color: #eee;
 }
@@ -75,11 +113,15 @@ select,
   cursor: pointer;
 }
 
+.disabled {
+  cursor: default !important;
+}
+
 /* TODO: add HSK 3.0 and delete this style*/
 /* #version {
   cursor: unset !important;
 } */
 
 #patron {
-  color:rgba(255, 66, 77, 1)
+  color: rgba(255, 66, 77, 1);
 }

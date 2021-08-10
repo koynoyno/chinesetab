@@ -9,7 +9,7 @@
     <select name="version" id="version">
       <option value="version2">HSK 2.0 (2010)</option>
       <option value="version3" disabled>HSK 3.0 (2021)</option></select
-    ><br />
+    >
 
     <label for="level">Level</label>
     <select name="level" id="level">
@@ -19,13 +19,26 @@
       <option value="hsk4">HSK 4</option>
       <option value="hsk5">HSK 5</option>
       <option value="hsk6">HSK 6</option></select
-    ><br />
+    >
 
     <label for="char">Characters</label>
     <select name="char" id="char">
       <option value="simplified">Simplified</option>
       <option value="traditional">Traditional</option></select
+    >
+
+    <label for="charDay">Show per day</label>
+    <select name="charDay" id="charDay">
+      <option value="5" disabled>5 characters</option>
+      <option value="10" disabled>10 characters</option>
+      <option value="15" disabled>15 characters</option>
+      <option value="20" disabled>20 characters</option>
+      <option value="0" selected>No limit</option></select
     ><br />
+
+    <label class="cb disabled" for="animation"
+      ><input type="checkbox" class="disabled" id="animation" name="animation" disabled /> Stroke animation</label
+    >
 
     <label class="cb" for="color"
       ><input type="checkbox" id="color" name="color" /> Tone colors</label
