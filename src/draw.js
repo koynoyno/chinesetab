@@ -55,7 +55,7 @@ export let draw = (hsk, items) => {
   }
 
   // show panda 🐼
-  if (rand % 100 == 0) {
+  if (getRandomFrom(100) % 100 == 0) {
     document
       .querySelector(".container")
       .insertAdjacentHTML(
@@ -64,7 +64,7 @@ export let draw = (hsk, items) => {
       );
     // hide on click
     panda.addEventListener("click", () => {
-      panda.classList.toggle("fade");
+      panda.classList.add("fade");
       // document.querySelector("#panda").remove();
     });
   }

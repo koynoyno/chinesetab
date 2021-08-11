@@ -5,39 +5,46 @@
     <link rel="stylesheet" href="css/style-popup.css" />
   </head>
   <body>
-    <label for="version">Version</label>
-    <select name="version" id="version">
-      <option value="version2">HSK 2.0 (2010)</option>
-      <option value="version3" disabled>HSK 3.0 (2021)</option></select
-    >
-
-    <label for="level">Level</label>
-    <select name="level" id="level">
-      <option value="hsk1">HSK 1</option>
-      <option value="hsk2">HSK 2</option>
-      <option value="hsk3">HSK 3</option>
-      <option value="hsk4">HSK 4</option>
-      <option value="hsk5">HSK 5</option>
-      <option value="hsk6">HSK 6</option></select
-    >
-
     <label for="char">Characters</label>
     <select name="char" id="char">
       <option value="simplified">Simplified</option>
-      <option value="traditional">Traditional</option></select
-    >
+      <option value="traditional">Traditional</option>
+    </select>
+
+    <label for="version">Version</label>
+    <select name="version" id="version">
+      <option value="version2">HSK 2.0 (2010)</option>
+      <option value="version3" disabled>HSK 3.0 (2021) Soon!</option>
+    </select>
+
+    <label for="level">Level</label>
+    <select name="level" id="level">
+      <option value="hsk1">HSK 1 — 150 words</option>
+      <option value="hsk2">HSK 2 — 150 words</option>
+      <option value="hsk3">HSK 3 — 300 words</option>
+      <option value="hsk4">HSK 4 — 600 words</option>
+      <option value="hsk5">HSK 5 — 1300 words</option>
+      <option value="hsk6">HSK 6 — 2500 words</option>
+    </select>
 
     <label for="charDay">Show per day</label>
     <select name="charDay" id="charDay">
       <option value="0">No limit</option>
-      <option value="5">5 characters</option>
-      <option value="10">10 characters</option>
-      <option value="15">15 characters</option>
-      <option value="20">20 characters</option></select
+      <option value="5">5 words</option>
+      <option value="10">10 words</option>
+      <option value="15">15 words</option>
+      <option value="20">20 words</option></select
     ><br />
 
     <label class="cb disabled" for="animation"
-      ><input type="checkbox" class="disabled" id="animation" name="animation" disabled /> Stroke animation</label
+      ><input
+        type="checkbox"
+        class="disabled"
+        id="animation"
+        name="animation"
+        disabled
+      />
+      Stroke animation (soon)</label
     >
 
     <label class="cb" for="color"
@@ -50,7 +57,7 @@
 
     <label class="cb" for="translation"
       ><input type="checkbox" id="translation" name="translation" checked />
-      English translation</label
+      Translation</label
     >
 
     <!-- <label class="cb" for="memes"

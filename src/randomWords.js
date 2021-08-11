@@ -5,8 +5,6 @@ export let selectFromRandomWords = (hskLength, items) => {
   const newDate = new Date().getDate();
   // const newDate = new Date().getMinutes(); // debug
 
-  console.log(`${items.randomWords.length}, ${items.charDay}`)
-
   if (items.randomWords.length !== parseInt(items.charDay)) {
     for (let i = 0; i < parseInt(items.charDay); i++) {
       randomWords[i] = getRandomFrom(hskLength);
@@ -24,7 +22,5 @@ export let selectFromRandomWords = (hskLength, items) => {
 
   return randomWords[getRandomFrom(randomWords.length)];
 };
-
-
 
 // TODO: omg please optimize this

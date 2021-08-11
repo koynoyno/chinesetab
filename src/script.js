@@ -21,5 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // draw characters, pinyin, tones, translation
     const { draw } = await import("./draw.js");
     draw(hsk, items);
+
+    const { consoleGreeting } = await import("./consoleGreeting.js");
+    consoleGreeting();
   });
 });
