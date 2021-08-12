@@ -26,7 +26,7 @@ body {
   color: #fff !important;
 }
 
-.dark-mode #patreon {
+.dark-mode #support {
   color: white;
 }
 
@@ -97,7 +97,7 @@ select:hover {
   background-color: #eee;
 }
 
-#patreon {
+#support {
   background: none;
   border: none;
   text-align: center;
@@ -106,7 +106,7 @@ select:hover {
   margin-bottom: 0;
 }
 
-#patreon,
+#support,
 input[type="button"],
 input[type="checkbox"],
 select,
@@ -114,23 +114,33 @@ select,
   cursor: pointer;
 }
 
+#supportLink {
+  color: #ef5592;
+  text-decoration: underline;
+}
+
 .disabled {
   cursor: default !important;
 }
 
-/* TODO: add HSK 3.0 and delete this style*/
-/* #version {
-  cursor: unset !important;
-} */
-
-#patron {
-  color: rgba(255, 66, 77, 1);
-  text-decoration: underline;
-}
-
 #panda {
   position: absolute;
-  bottom: 60px;
+  bottom: 70px;
   right: 0px !important;
-  width: 60px;
+  width: 70px;
+}
+
+/* #kofi {
+  position: absolute;
+  bottom: 60px;
+  right: 28px !important;
+  width: 30px;
+}
+
+#kofi:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+} */
+
+#beta {
+  color: #888
 }

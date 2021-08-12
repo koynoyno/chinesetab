@@ -1,6 +1,6 @@
 export let ifFirstLaunch = (items) => {
   if (items.firstLaunch) {
-    document.querySelector('.container').insertAdjacentHTML('afterbegin', '<div id="welcome">你好! Press <strong>Alt+Shift+C</strong> to open <strong>settings</strong></div>')
+    document.querySelector('.container').insertAdjacentHTML('afterbegin', '<div id="welcome">你好! Press <strong>Alt+S</strong> to open <strong>Settings</strong></div>')
     // hide forever
     chrome.storage.sync.set({ firstLaunch: false });
   }

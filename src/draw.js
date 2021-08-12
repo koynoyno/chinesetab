@@ -67,4 +67,11 @@ export let draw = (hsk, items) => {
       // document.querySelector("#panda").remove();
     });
   }
+
+  // open ArchChinese on click
+  document.querySelector(".char").addEventListener("click", () => {
+    chrome.tabs.update({
+      url: `https://www.archchinese.com/chinese_english_dictionary.html?find=${char}`,
+    });
+  });
 };

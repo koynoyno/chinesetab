@@ -39,7 +39,9 @@ body {
 #welcome {
   font-family: "Roboto Regular", Fallback, sans-serif;
   font-size: 2em;
-  padding-top: 2em;
+  /* padding-top: 2em; */
+  position: absolute;
+  top: 2em;
 }
 
 #panda {
@@ -58,6 +60,7 @@ body {
 .char {
   margin: 0.1em;
   font-size: 20rem;
+  cursor: pointer;
   /* align-self: initial; */
 }
 

@@ -6,7 +6,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
     chrome.storage.sync.set({ char: "simplified" });
 
     // characters per day
-    chrome.storage.sync.set({ charDay: "0" });
+    chrome.storage.sync.set({ charDay: "5" });
     chrome.storage.sync.set({ date: new Date().getDate() });
     // chrome.storage.sync.set({ date: new Date().getMinutes() }); // debug
     chrome.storage.sync.set({ randomWords: [] });

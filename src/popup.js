@@ -65,45 +65,45 @@ let restoreSettings = () => {
 document.addEventListener("DOMContentLoaded", restoreSettings);
 
 // selects
-document.getElementById("level").addEventListener("change", () => {
+document.querySelector("#level").addEventListener("change", () => {
   saveSettings("level");
 });
 
-document.getElementById("char").addEventListener("change", () => {
+document.querySelector("#char").addEventListener("change", () => {
   saveSettings("char");
 });
 
-document.getElementById("charDay").addEventListener("change", () => {
+document.querySelector("#charDay").addEventListener("change", () => {
   saveSettings("charDay");
 });
 
 // checkboxes, set "true"
 
-document.getElementById("color").addEventListener("click", () => {
+document.querySelector("#color").addEventListener("click", () => {
   saveSettings("color", true);
 });
 
-document.getElementById("pinyin").addEventListener("click", () => {
+document.querySelector("#pinyin").addEventListener("click", () => {
   saveSettings("pinyin", true);
 });
 
-document.getElementById("translation").addEventListener("click", () => {
+document.querySelector("#translation").addEventListener("click", () => {
   saveSettings("translation", true);
 });
 
-document.getElementById("darkMode").addEventListener("click", () => {
+document.querySelector("#darkMode").addEventListener("click", () => {
   saveSettings("darkMode", true);
 });
 
 // button event listeners
-document.getElementById("feedback").addEventListener("click", () => {
+document.querySelector("#feedback").addEventListener("click", () => {
   chrome.tabs.update({
     url: "https://forms.gle/A2j7TKjXwUfuALqz7",
   });
   window.close();
 });
 
-document.getElementById("patreon").addEventListener("click", () => {
+document.querySelector("#support").addEventListener("click", () => {
   chrome.tabs.update({
     url: "https://patreon.com/bePatron?u=13164518",
   });
