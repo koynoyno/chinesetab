@@ -1,6 +1,11 @@
+<img align="right" src=images/panda.png>
+
 # Chinese Tab | 中文标签页
 
 [![Chrome](images/web_store.png)](https://chrome.google.com/extensions/detail/kpalceplnmfdppclclfnljimdjdbhcid/)
+
+
+
 
 Memorize Chinese words ****every time you open a new tab****.
 
@@ -38,4 +43,6 @@ Memorize Chinese words ****every time you open a new tab****.
 
 ✨ **[Become a patron](https://www.patreon.com/koyno)** to sponsor the development.
 
-### **Your support matters** 🐼
+### **Your support matters**
+
+![Panda](images/panda_easter.png)
