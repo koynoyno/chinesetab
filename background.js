@@ -30,3 +30,5 @@ chrome.runtime.onInstalled.addListener(function (details) {
     // When a shared module is updated
   }
 });
+
+chrome.runtime.setUninstallURL('https://forms.gle/A2j7TKjXwUfuALqz7')

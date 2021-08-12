@@ -11,11 +11,11 @@
       <option value="traditional">Traditional</option>
     </select>
 
-    <label for="version">Version</label>
+    <!-- <label for="version">Version</label>
     <select name="version" id="version">
       <option value="version2">HSK 2.0 (2010)</option>
       <option value="version3" disabled>HSK 3.0 (2021) Soon!</option>
-    </select>
+    </select> -->
 
     <label for="level">Level</label>
     <select name="level" id="level">
@@ -36,16 +36,10 @@
       <option value="20">20 words</option></select
     ><br />
 
-    <label class="cb disabled" for="animation"
-      ><input
-        type="checkbox"
-        class="disabled"
-        id="animation"
-        name="animation"
-        disabled
-      />
-      Stroke animation (soon)</label
-    >
+    <!-- <label class="cb disabled" for="animation"
+      ><input type="checkbox" id="animation" name="animation" /> Stroke
+      animation (soon)</label
+    > -->
 
     <label class="cb" for="color"
       ><input type="checkbox" id="color" name="color" /> Tone colors</label
@@ -60,20 +54,18 @@
       Translation</label
     >
 
-    <!-- <label class="cb" for="memes"
-      ><input type="checkbox" id="memes" name="memes" /> Occasional memes</label
-    > -->
-
     <label class="cb" for="darkMode"
       ><input type="checkbox" id="darkMode" name="darkMode" /> Dark mode</label
     ><br />
 
     <!-- <input type="button" value="Set wallpaper" disabled/> -->
     <input type="button" id="feedback" value="Share feedback" />
-    <!-- <input type="button" id="patreon" value="Become a patron" /> -->
     <button id="patreon">
-      <strong>Tap panda to become a <span id="patron">patron</span> 🐼</strong>
+      <strong>ᴛʜɪs ᴘʀᴏᴊᴇᴄᴛ ɪs sᴘᴏɴsᴏʀᴇᴅ ʙʏ <span id="patron">ʏᴏᴜ</span></strong>
     </button>
+
+    <img src="images/panda.png" id="panda" />
+
     <script src="src/popup.js"></script>
   </body>
 </html>

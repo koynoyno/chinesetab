@@ -6,15 +6,16 @@
 body {
   user-select: none;
   font-family: "Roboto Regular", Fallback, sans-serif;
-  zoom: 1.6;
+  zoom: 1.7;
   width: 150px;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 0%,
     rgba(246, 246, 246, 1) 100%
-  );
+  ); */
+  background: linear-gradient(180deg, #ffffff 0%, #dddddd 100%);
   line-height: 1em;
 }
 
@@ -47,7 +48,8 @@ body {
 
 .dark-mode input[type="button"] {
   font-family: "Roboto Regular", Fallback, sans-serif;
-  margin: 0 0 5px 0;
+  /* margin: 0 0 5px 0; */
+  padding: 2px 0;
   background: rgba(0, 0, 0, 0.3);
   color: #fff;
   border: 1px solid #707070;
@@ -57,7 +59,6 @@ body {
 .dark-mode input[type="button"]:hover {
   background-color: #111;
   border: 1px solid #aaa;
-
 }
 
 /* multiple select */
@@ -124,4 +125,12 @@ select,
 
 #patron {
   color: rgba(255, 66, 77, 1);
+  text-decoration: underline;
+}
+
+#panda {
+  position: absolute;
+  bottom: 60px;
+  right: 0px !important;
+  width: 60px;
 }

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // import vocabulary
-    const { default: hsk } = await import(`../hsk/${items.level}.json`, {
+    const { default: hsk } = await import(`../hsk2/${items.level}.json`, {
       assert: { type: "json" },
     });
 
@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ifFirstLaunch(items);
 
     // if extension is updated
+    // TODO: fix, rn it's being called all the time
     // const { postUpdate } = await import("./postUpdate.js")
     // postUpdate(items);
 

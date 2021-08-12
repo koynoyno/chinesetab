@@ -54,13 +54,12 @@ export let draw = (hsk, items) => {
     document.querySelector(".english").innerHTML = english;
   }
 
-  // show panda 🐼
-  if (getRandomFrom(100) % 100 == 0) {
+  if (getRandomFrom(88) % 88 == 0) {
     document
       .querySelector(".container")
       .insertAdjacentHTML(
         "beforeend",
-        '<p id="panda" style="user-select: none; cursor: pointer;">🐼</p>'
+        '<img src="images/panda_easter.png" id="panda" />'
       );
     // hide on click
     panda.addEventListener("click", () => {

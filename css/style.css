@@ -7,7 +7,7 @@ body {
   background-color: #fff;
   color: #000;
   opacity: 0.87;
-  cursor:default;
+  cursor: default;
 }
 .dark-mode {
   background-color: #121212 !important;
@@ -43,10 +43,11 @@ body {
 }
 
 #panda {
-  font-family: "Roboto Regular", Fallback, sans-serif;
-  font-size: 5em;
+  position: absolute;
+  bottom: 0px;
   opacity: 1;
   transition: opacity 0.195s ease-in-out;
+  cursor: pointer;
 }
 
 #panda.fade {
