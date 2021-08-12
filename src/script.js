@@ -5,11 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.classList.add("dark-mode");
     }
 
-    // import vocabulary
-    const { default: hsk } = await import(`../${items.hsk}/${items.level}.json`, {
-      assert: { type: "json" },
-    });
-
     // display greeting
     const { ifFirstLaunch } = await import("./firstLaunch.js");
     ifFirstLaunch(items);
@@ -21,7 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // draw characters, pinyin, tones, translation
     const { draw } = await import("./draw.js");
-    draw(hsk, items);
+    // draw(hsk, items);
+    draw(items);
 
     const { consoleGreeting } = await import("./consoleGreeting.js");
     consoleGreeting();

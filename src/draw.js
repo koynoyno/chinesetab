@@ -2,7 +2,10 @@ import splitAndKeep from "./color.js";
 import { selectFromRandomWords } from "./randomWords.js";
 import { getRandomFrom } from "./getRandomFrom.js";
 
-export let draw = (hsk, items) => {
+export let draw = async (items) => {
+  const { default: hsk } = await import(`../${items.hsk}/${items.level}.json`, {
+    assert: { type: "json" },
+  }); // import required json vocabulary
   let rand;
   let hskLength = hsk.words.length;
 
@@ -69,11 +72,14 @@ export let draw = (hsk, items) => {
     });
   }
 
-  // open ArchChinese on click
+  // DISABLED: open ArchChinese on click
   // TODO: set option in popup, support traditional characters
   // document.querySelector(".char").addEventListener("click", () => {
   //   chrome.tabs.update({
   //     url: `https://www.archchinese.com/chinese_english_dictionary.html?find=${char}`,
   //   });
   // });
+  items.game.wordsSeen++;
+  chrome.storage.sync.set({ game: { wordsSeen: items.game.wordsSeen } });
+  console.log(items.game.wordsSeen)
 };

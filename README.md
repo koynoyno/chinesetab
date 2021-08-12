@@ -37,12 +37,14 @@ Memorize Chinese words ****every time you open a new tab****.
 
 ## OMG!
 
-✨ **[Share](https://docs.google.com/forms/d/e/1FAIpQLSeEHeXCMW9OXlkBk0tG7lxZgNbXqe2xharlv0STSH94DuM6FA/viewform)** with me how I can improve this extension. What do you like? What do you hate? I read everything.
+✨ **[Share](https://docs.google.com/forms/d/e/1FAIpQLSeEHeXCMW9OXlkBk0tG7lxZgNbXqe2xharlv0STSH94DuM6FA/viewform)** with me how I can improve this extension. What do you like? What do you hate? I read everything
 
 ✨ **Star** this extension to help to list it on OpenCollective.com (100 stars requires)
 
-✨ **[Become a patron](https://www.patreon.com/koyno)** to sponsor the development.
+✨ **[Become a patron](https://www.patreon.com/koyno)** to sponsor the development
 
-### **Your support matters**
+<!-- ### **Your support matters** -->
 
-![Panda](images/panda_easter.png)
+<!-- ![Panda](images/panda_easter.png) -->
+
+<img align="left" src=images/panda_easter.png><h1>Your support matters ~</h2>
