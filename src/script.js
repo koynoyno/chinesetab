@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // import vocabulary
-    const { default: hsk } = await import(`../hsk2/${items.level}.json`, {
+    const { default: hsk } = await import(`../${items.hsk}/${items.level}.json`, {
       assert: { type: "json" },
     });
 

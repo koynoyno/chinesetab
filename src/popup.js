@@ -35,7 +35,7 @@ let saveSettings = (id, checkbox = false) => {
 let restoreSettings = () => {
   chrome.storage.sync.get(
     {
-      hsk2021: hsk2021,
+      hsk: hsk,
       level: level,
       char: char,
       charDay: charDay,
@@ -46,10 +46,10 @@ let restoreSettings = () => {
     },
     (items) => {
       // console.log(items);
+      document.getElementById("hsk").value = items.hsk;
       document.getElementById("level").value = items.level;
       document.getElementById("char").value = items.char;
       document.getElementById("charDay").value = items.charDay;
-      document.getElementById("hsk2021").checked = items.hsk2021;
       document.getElementById("color").checked = items.color;
       document.getElementById("pinyin").checked = items.pinyin;
       document.getElementById("translation").checked = items.translation;
@@ -67,6 +67,10 @@ let restoreSettings = () => {
 document.addEventListener("DOMContentLoaded", restoreSettings);
 
 // selects
+document.querySelector("#hsk").addEventListener("click", () => {
+  saveSettings("hsk");
+});
+
 document.querySelector("#level").addEventListener("change", () => {
   saveSettings("level");
 });
@@ -80,10 +84,6 @@ document.querySelector("#charDay").addEventListener("change", () => {
 });
 
 // checkboxes, set "true"
-
-document.querySelector("#hsk2021").addEventListener("click", () => {
-  saveSettings("hsk2021", true);
-});
 
 document.querySelector("#color").addEventListener("click", () => {
   saveSettings("color", true);

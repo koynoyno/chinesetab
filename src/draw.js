@@ -17,12 +17,13 @@ export let draw = (hsk, items) => {
   let data = hsk.words[rand];
 
   // get characters
-  let char = data["translation-data"][items.char];
+  let char = data[items.char];
 
   // black color magic
-  if (items.color) {
+  // TODO: fix for hsk3.0
+  if (items.color && items.hsk == "hsk2") {
     // TODO: move to color.js, remove splitAndKeep import
-    let pinyinNumbered = data["translation-data"]["pinyin-numbered"];
+    let pinyinNumbered = data["pinyin-numbered"];
     let result = pinyinNumbered.splitAndKeep(["1", "2", "3", "4", "5"]);
     // console.log(result);
     let length = result.length / 2 - 1;
@@ -44,13 +45,13 @@ export let draw = (hsk, items) => {
 
   // show pinyin
   if (items.pinyin) {
-    let pinyin = data["translation-data"].pinyin;
+    let pinyin = data.pinyin;
     document.querySelector(".pinyin").innerHTML = pinyin;
   }
 
   // show translation
   if (items.translation) {
-    let english = data["translation-data"].english;
+    let english = data.english;
     document.querySelector(".english").innerHTML = english;
   }
 
