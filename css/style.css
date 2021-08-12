@@ -47,9 +47,13 @@ body {
 #panda {
   position: absolute;
   bottom: 0px;
-  opacity: 1;
+  opacity: 0.87;
   transition: opacity 0.195s ease-in-out;
   cursor: pointer;
+}
+
+#panda:hover {
+  opacity: 1;
 }
 
 #panda.fade {

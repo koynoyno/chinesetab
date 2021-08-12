@@ -7,6 +7,8 @@
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
+  "offline_enabled": true,
+  "minimum_chrome_version": "91",
   "permissions": ["storage"],
   "background": {
     "service_worker": "background.js"

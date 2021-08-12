@@ -5,6 +5,7 @@ chrome.storage.sync.get(null, async (items) => {
   }
 });
 
+// ==========================================
 // apply settings
 let saveSettings = (id, checkbox = false) => {
   let value;
@@ -18,11 +19,6 @@ let saveSettings = (id, checkbox = false) => {
   chrome.storage.sync.set({ [id]: value });
 
   // console.log(`Set ${id}: ${value}`);
-
-  // fallback to HSK6 from HSK7-9 when switching to HSK 2.0
-  if (value == "hsk2" && document.getElementById("level").value == "hsk7-9") {
-    chrome.storage.sync.set({ level: "hsk6" });
-  }
 
   // redraw index.html after storage.sync.set
   // TODO: add dynamic style changing for pinyin/translation/darkMode
@@ -42,13 +38,23 @@ let saveSettings = (id, checkbox = false) => {
   // redraw #level options if HSK version is toggled
   if (id == "hsk") {
     level = document.querySelector("#level");
+    levelValue = level.value;
     while (level.lastElementChild) {
       level.removeChild(level.lastElementChild);
     }
     redrawHSKLevels(value);
+
+    // fallback to HSK6 from HSK7-9 when switching to HSK 2.0
+    if (value == "hsk2" && levelValue == "hsk7-9") {
+      chrome.storage.sync.set({ level: "hsk6" });
+      level.value = "hsk6";
+    } else {
+      level.value = levelValue;
+    }
   }
 };
 
+// =============================================
 // get settings on window load
 let restoreSettings = () => {
   chrome.storage.sync.get(
@@ -93,6 +99,7 @@ let redrawHSKLevels = (hsk) => {
           '<option value="hsk6">HSK 6 / 2500 words</option>'
       );
   } else {
+    // if hsk3.0
     document
       .querySelector("#level")
       .insertAdjacentHTML(
@@ -115,7 +122,7 @@ let redrawHSKLevels = (hsk) => {
 document.addEventListener("DOMContentLoaded", restoreSettings);
 
 // selects
-document.querySelector("#hsk").addEventListener("click", () => {
+document.querySelector("#hsk").addEventListener("change", () => {
   saveSettings("hsk");
 });
 

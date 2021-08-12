@@ -105,6 +105,14 @@ select,
 #supportLink {
   color: #ef5592;
   text-decoration: underline;
+  opacity: 0.87;
+  transition: opacity 0.195s ease-in-out;
+}
+
+#supportLink:hover {
+  color: #c52464;
+  opacity: 1;
+
 }
 
 .disabled {
@@ -116,6 +124,12 @@ select,
   bottom: 70px;
   right: 0px !important;
   width: 70px;
+  opacity: 0.87;
+  transition: opacity 0.195s ease-in-out;
+}
+
+#panda:hover {
+  opacity: 1;
 }
 
 /* #kofi {

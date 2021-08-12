@@ -20,7 +20,7 @@ export let draw = (hsk, items) => {
   let char = data[items.char];
 
   // black color magic
-  // TODO: fix for hsk3.0
+  // TODO: fix for hsk 3.0
   if (items.color && items.hsk == "hsk2") {
     // TODO: move to color.js, remove splitAndKeep import
     let pinyinNumbered = data["pinyin-numbered"];
