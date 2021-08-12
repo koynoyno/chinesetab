@@ -123,7 +123,7 @@ select,
   position: absolute;
   bottom: 70px;
   right: 0px !important;
-  width: 70px;
+  width: 75px;
   opacity: 0.87;
   transition: opacity 0.195s ease-in-out;
 }

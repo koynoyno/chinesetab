@@ -2,24 +2,19 @@
 
 chrome.runtime.onInstalled.addListener(function (details) {
   if (details.reason === "install") {
-    chrome.storage.sync.set({ hsk: "hsk2" });
-    chrome.storage.sync.set({ level: "hsk1" });
-    chrome.storage.sync.set({ char: "simplified" });
-
-    // characters per day
-    chrome.storage.sync.set({ charDay: "5" });
-    chrome.storage.sync.set({ date: new Date().getDate() });
-    // chrome.storage.sync.set({ date: new Date().getMinutes() }); // debug
-    chrome.storage.sync.set({ randomWords: [] });
-
-    // TODO: detect browser darkMode on install
-    chrome.storage.sync.set({ color: true });
-    chrome.storage.sync.set({ pinyin: true });
-    chrome.storage.sync.set({ translation: true });
-    chrome.storage.sync.set({ darkMode: false });
-
-    // show new tab and greeting
-    chrome.storage.sync.set({ firstLaunch: true });
+    chrome.storage.sync.set({
+      hsk: "hsk2",
+      level: "hsk1",
+      char: "simplified",
+      charDay: "5",
+      date: new Date().getDate(), // chrome.storage.sync.set({ date: new Date().getMinutes() }); // debug
+      randomWords: [],
+      color: true,
+      pinyin: true,
+      translation: true,
+      darkMode: false, // TODO: detect browser darkMode on install
+      firstLaunch: true, // show new tab and greeting
+    });
     chrome.tabs.create({
       url: "chrome://newtab",
     });
@@ -32,4 +27,4 @@ chrome.runtime.onInstalled.addListener(function (details) {
   }
 });
 
-chrome.runtime.setUninstallURL('https://forms.gle/A2j7TKjXwUfuALqz7')
+chrome.runtime.setUninstallURL("https://forms.gle/A2j7TKjXwUfuALqz7");
