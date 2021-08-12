@@ -7,7 +7,7 @@ body {
   user-select: none;
   font-family: "Roboto Regular", Fallback, sans-serif;
   zoom: 1.7;
-  width: 155px;
+  width: 160px;
   display: flex;
   flex-direction: column;
   background: linear-gradient(180deg, #ffffff 0%, #dddddd 100%);
@@ -106,7 +106,7 @@ select,
   color: #ef5592;
   text-decoration: underline;
   opacity: 0.87;
-  transition: opacity 0.195s ease-in-out;
+  /* transition: opacity 0.195s ease-in-out; */
 }
 
 #supportLink:hover {

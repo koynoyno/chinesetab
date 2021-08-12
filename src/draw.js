@@ -70,9 +70,10 @@ export let draw = (hsk, items) => {
   }
 
   // open ArchChinese on click
-  document.querySelector(".char").addEventListener("click", () => {
-    chrome.tabs.update({
-      url: `https://www.archchinese.com/chinese_english_dictionary.html?find=${char}`,
-    });
-  });
+  // TODO: set option in popup, support traditional characters
+  // document.querySelector(".char").addEventListener("click", () => {
+  //   chrome.tabs.update({
+  //     url: `https://www.archchinese.com/chinese_english_dictionary.html?find=${char}`,
+  //   });
+  // });
 };
