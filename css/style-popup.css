@@ -7,7 +7,7 @@ body {
   user-select: none;
   font-family: "Roboto Regular", Fallback, sans-serif;
   zoom: 1.7;
-  width: 150px;
+  width: 155px;
   display: flex;
   flex-direction: column;
   background: linear-gradient(180deg, #ffffff 0%, #dddddd 100%);
