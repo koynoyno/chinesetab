@@ -10,11 +10,6 @@ body {
   width: 150px;
   display: flex;
   flex-direction: column;
-  /* background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(246, 246, 246, 1) 100%
-  ); */
   background: linear-gradient(180deg, #ffffff 0%, #dddddd 100%);
   line-height: 1em;
 }
@@ -40,7 +35,6 @@ body {
 }
 
 .dark-mode select option {
-  /* margin: 40px; */
   background: rgba(0, 0, 0, 0.3);
   color: #fff;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
@@ -48,7 +42,6 @@ body {
 
 .dark-mode input[type="button"] {
   font-family: "Roboto Regular", Fallback, sans-serif;
-  /* margin: 0 0 5px 0; */
   padding: 2px 0;
   background: rgba(0, 0, 0, 0.3);
   color: #fff;
@@ -82,11 +75,6 @@ input[type="checkbox"] {
 label {
   font-weight: normal;
 }
-
-/* selecting by #coloring id doesn't work */
-/* label:last-of-type {
-  color: gray !important;
-} */
 
 select {
   margin-top: 0.1em;
@@ -142,5 +130,16 @@ select,
 } */
 
 #beta {
-  color: #888
+  margin-left: 0.2em;
+  color: #888;
+  /* z-index: -100; */
+  /* display:inline-block; */
+}
+
+#beta:hover {
+  color: #000
+}
+
+.dark-mode #beta:hover {
+  color: #fff
 }

@@ -4,6 +4,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
   if (details.reason === "install") {
     chrome.storage.sync.set({ level: "hsk1" });
     chrome.storage.sync.set({ char: "simplified" });
+    chrome.storage.sync.set({ hsk2021: false });
 
     // characters per day
     chrome.storage.sync.set({ charDay: "5" });

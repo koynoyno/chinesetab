@@ -35,6 +35,7 @@ let saveSettings = (id, checkbox = false) => {
 let restoreSettings = () => {
   chrome.storage.sync.get(
     {
+      hsk2021: hsk2021,
       level: level,
       char: char,
       charDay: charDay,
@@ -48,6 +49,7 @@ let restoreSettings = () => {
       document.getElementById("level").value = items.level;
       document.getElementById("char").value = items.char;
       document.getElementById("charDay").value = items.charDay;
+      document.getElementById("hsk2021").checked = items.hsk2021;
       document.getElementById("color").checked = items.color;
       document.getElementById("pinyin").checked = items.pinyin;
       document.getElementById("translation").checked = items.translation;
@@ -79,6 +81,10 @@ document.querySelector("#charDay").addEventListener("change", () => {
 
 // checkboxes, set "true"
 
+document.querySelector("#hsk2021").addEventListener("click", () => {
+  saveSettings("hsk2021", true);
+});
+
 document.querySelector("#color").addEventListener("click", () => {
   saveSettings("color", true);
 });
@@ -96,6 +102,13 @@ document.querySelector("#darkMode").addEventListener("click", () => {
 });
 
 // button event listeners
+// document.querySelector("#beta").addEventListener("click", () => {
+//   chrome.tabs.update({
+//     url: "https://www.google.com/search?q=hsk+3.0",
+//   });
+//   window.close();
+// });
+
 document.querySelector("#feedback").addEventListener("click", () => {
   chrome.tabs.update({
     url: "https://forms.gle/A2j7TKjXwUfuALqz7",
