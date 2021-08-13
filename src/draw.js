@@ -1,11 +1,11 @@
 import splitAndKeep from "./color.js";
 import { selectFromRandomWords } from "./randomWords.js";
+import { getRandomFrom } from "./getRandomFrom.js";
 
-export let draw = async (items) => {
-  const { default: hsk } = await import(`../${items.hsk}/${items.level}.json`, {
-    assert: { type: "json" },
-  }); // import required json vocabulary
+export let draw = async (items, hsk) => {
 
+  let app = document.querySelector(".app");
+  let drawObject = ""; // used to call insertAdjacentHTML only once
   let rand;
   let hskLength = hsk.words.length;
 
@@ -22,48 +22,38 @@ export let draw = async (items) => {
   // get characters
   let char = data[items.char];
 
-  // black color magic
+  // draw colors
   // TODO: fix for hsk 3.0
   if (items.color && items.hsk == "hsk2") {
     // TODO: move to color.js, remove splitAndKeep import
     let pinyinNumbered = data["pinyin-numbered"];
     let result = pinyinNumbered.splitAndKeep(["1", "2", "3", "4", "5"]);
-    // console.log(result);
     let length = result.length / 2 - 1;
     let newChar = "";
-    // let newChar = docum
 
     for (let i = 0; i < length; i++) {
-      // console.log(i);
       if (char[i] !== undefined) {
         newChar += `<span class="tone${result[i * 2 + 1]}">${char[i]}</span>`;
-        // console.log(newChar, "\n");
       }
     }
-
-    document
-      .querySelector(".char")
-      .insertAdjacentHTML("beforeend", `${newChar}`);
+    drawObject += `<p class="char">${newChar}</p>`;
   } else {
     // just show characters
-    document.querySelector(".char").insertAdjacentHTML("beforeend", `${char}`);
+    drawObject += `<p class="char">${char}</p>`;
   }
 
   // show pinyin
   if (items.pinyin) {
-    let pinyin = data.pinyin;
-    document
-      .querySelector(".pinyin")
-      .insertAdjacentHTML("beforeend", `${pinyin}`);
+    drawObject += `<p class="pinyin">${data.pinyin}</p>`;
   }
 
   // show translation
   if (items.translation) {
-    let english = data.english;
-    document
-      .querySelector(".english")
-      .insertAdjacentHTML("beforeend", `${english}`);
+    drawObject += `<p class="english" align="center">${data.english}</p>`;
   }
+
+  // draw everything
+  app.insertAdjacentHTML("beforeend", drawObject);
 
   // TODO: set option in popup, support traditional characters
   document.querySelector(".char").addEventListener("click", () => {
@@ -72,8 +62,6 @@ export let draw = async (items) => {
     });
   });
 
-  // TODO: gamification system
   items.game.wordsSeen++;
   chrome.storage.sync.set({ game: { wordsSeen: items.game.wordsSeen } });
-  console.log(items.game.wordsSeen);
 };

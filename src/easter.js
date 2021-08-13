@@ -3,7 +3,7 @@
 export let easter = async (wordsSeen) => {
   // put panda on the page
   document
-    .querySelector(".container")
+    .querySelector(".app")
     .insertAdjacentHTML(
       "beforeend",
       '<img src="images/panda_easter.png" id="panda" />' +

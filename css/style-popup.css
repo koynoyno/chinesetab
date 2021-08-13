@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Roboto Regular";
+  font-family: "Noto Sans";
   src: url("../roboto-regular.woff2") format("woff2");
 }
 
 body {
   user-select: none;
-  font-family: "Roboto Regular", Fallback, sans-serif;
+  font-family: "Noto Sans", Fallback, sans-serif;
   zoom: 1.5;
   width: 155px;
   display: flex;
@@ -41,7 +41,7 @@ body {
 }
 
 .dark-mode input[type="button"] {
-  font-family: "Roboto Regular", Fallback, sans-serif;
+  font-family: "Noto Sans", Fallback, sans-serif;
   padding: 2px 0;
   background: rgba(0, 0, 0, 0.3);
   color: #fff;
@@ -62,12 +62,12 @@ body {
 } */
 
 input[type="button"] {
-  font-family: "Roboto Regular", Fallback, sans-serif;
+  font-family: "Noto Sans", Fallback, sans-serif;
   margin: 0 0 5px 0;
 }
 
 input[type="checkbox"] {
-  font-family: "Roboto Regular", Fallback, sans-serif;
+  font-family: "Noto Sans", Fallback, sans-serif;
   vertical-align: middle;
   margin: 3px 0;
 }

@@ -1,5 +1,5 @@
 // darkMode
-chrome.storage.sync.get(null, async (items) => {
+chrome.storage.sync.get(['darkMode'], async (items) => {
   if (items.darkMode) {
     document.body.classList.add("dark-mode");
   }
@@ -10,15 +10,19 @@ chrome.storage.sync.get(null, async (items) => {
 let saveSettings = (id, checkbox = false) => {
   let value;
   if (checkbox) {
-    value = document.getElementById(id).checked;
+    value = document.querySelector(`#${id}`).checked;
   } else {
-    value = document.getElementById(id).value;
+    value = document.querySelector(`#${id}`).value;
   }
   // console.log(`${checkbox}`);
 
   chrome.storage.sync.set({ [id]: value });
 
   // console.log(`Set ${id}: ${value}`);
+
+  if (id == "level") {
+    chrome.storage.sync.set({ randomWords: [] });
+  }
 
   // redraw index.html after storage.sync.set
   // TODO: add dynamic style changing for pinyin/translation/darkMode
@@ -70,15 +74,14 @@ let restoreSettings = () => {
     },
     (items) => {
       redrawHSKLevels(items.hsk);
-      // console.log(items);
-      document.getElementById("hsk").value = items.hsk;
-      document.getElementById("level").value = items.level;
-      document.getElementById("char").value = items.char;
-      document.getElementById("charDay").value = items.charDay;
-      document.getElementById("color").checked = items.color;
-      document.getElementById("pinyin").checked = items.pinyin;
-      document.getElementById("translation").checked = items.translation;
-      document.getElementById("darkMode").checked = items.darkMode;
+      document.querySelector("#hsk").value = items.hsk;
+      document.querySelector("#level").value = items.level;
+      document.querySelector("#char").value = items.char;
+      document.querySelector("#charDay").value = items.charDay;
+      document.querySelector("#color").checked = items.color;
+      document.querySelector("#pinyin").checked = items.pinyin;
+      document.querySelector("#translation").checked = items.translation;
+      document.querySelector("#darkMode").checked = items.darkMode;
     }
   );
 

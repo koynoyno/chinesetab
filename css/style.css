@@ -1,11 +1,14 @@
-@font-face {
-  font-family: "Roboto Regular";
+/* @font-face {
+  font-family: "Noto Sans";
   src: url("../roboto-regular.woff2") format("woff2");
+} */
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../noto-sans.woff2") format("woff2");
 }
 
 body {
-  background-color: #fff;
-  color: #000;
   opacity: 0.87;
   cursor: default;
 }
@@ -28,7 +31,7 @@ body {
   -moz-text-fill-color: transparent;
 }
 
-.container {
+.app {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,7 +40,7 @@ body {
 }
 
 #welcome {
-  font-family: "Roboto Regular", Fallback, sans-serif;
+  font-family: "Noto Sans", Fallback, sans-serif;
   font-size: 2em;
   /* padding-top: 2em; */
   position: absolute;
@@ -50,6 +53,7 @@ body {
   opacity: 0.87;
   transition: opacity 0.195s ease-in-out;
   cursor: pointer;
+  width: 200px;
 }
 
 #panda:hover {
@@ -62,7 +66,7 @@ body {
 }
 
 #wordsSeen {
-  font-family: "Roboto Regular", Fallback, sans-serif;
+  font-family: "Noto Sans", Fallback, sans-serif;
   font-size: 2em;
   position: absolute;
   bottom: 0px;
@@ -84,7 +88,7 @@ body {
 
 .pinyin,
 .english {
-  font-family: "Roboto Regular", Fallback, sans-serif;
+  font-family: "Noto Sans", Fallback, sans-serif;
   font-size: 2.5rem;
   margin: 0.1em;
 }

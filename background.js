@@ -1,5 +1,3 @@
-// TODO: fix flicker
-
 chrome.runtime.onInstalled.addListener(function (details) {
   if (details.reason === "install") {
     chrome.storage.sync.set({
@@ -7,16 +5,17 @@ chrome.runtime.onInstalled.addListener(function (details) {
       level: "hsk1",
       char: "simplified",
       charDay: "5",
-      date: new Date().getDate(), // chrome.storage.sync.set({ date: new Date().getMinutes() }); // debug
+      date: new Date().getDate(),
+      // date: new Date().getMinutes() }); // debug
       randomWords: [],
       color: true,
       pinyin: true,
       translation: true,
-      darkMode: false, // TODO: detect browser darkMode on install
-      firstLaunch: true, // show new tab and greeting
+      darkMode: false, // TODO: detect darkMode on install
+      firstLaunch: true,
       game: {
         wordsSeen: 0,
-      }
+      },
     });
     chrome.tabs.create({
       url: "chrome://newtab",
@@ -29,6 +28,10 @@ chrome.runtime.onInstalled.addListener(function (details) {
   // } else if (details.reason === "shared_module_update") {
   //   // When a shared module is updated
   // }
+
+  // TODO: fix flicker
+  // TODO: implement messaging to try localStorage approach
+  // window.localStorage.setItem("darkModeTest", "dark-mode");
 });
 
 // DISABLED: uninstall survey

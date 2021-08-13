@@ -23,6 +23,8 @@ Memorize Chinese words ****every time you open a new tab****.
 
 ## Moar highlights
 
+🔥 Opens 
+
 👌 Uses less resources than default Chrome new tab
 
 🌙 Dark mode support
