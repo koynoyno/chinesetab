@@ -1,11 +1,11 @@
 import splitAndKeep from "./color.js";
 import { selectFromRandomWords } from "./randomWords.js";
-import { getRandomFrom } from "./getRandomFrom.js";
 
 export let draw = async (items) => {
   const { default: hsk } = await import(`../${items.hsk}/${items.level}.json`, {
     assert: { type: "json" },
   }); // import required json vocabulary
+
   let rand;
   let hskLength = hsk.words.length;
 
@@ -31,6 +31,7 @@ export let draw = async (items) => {
     // console.log(result);
     let length = result.length / 2 - 1;
     let newChar = "";
+    // let newChar = docum
 
     for (let i = 0; i < length; i++) {
       // console.log(i);
@@ -40,36 +41,28 @@ export let draw = async (items) => {
       }
     }
 
-    document.querySelector(".char").innerHTML = newChar;
+    document
+      .querySelector(".char")
+      .insertAdjacentHTML("beforeend", `${newChar}`);
   } else {
     // just show characters
-    document.querySelector(".char").innerHTML = char;
+    document.querySelector(".char").insertAdjacentHTML("beforeend", `${char}`);
   }
 
   // show pinyin
   if (items.pinyin) {
     let pinyin = data.pinyin;
-    document.querySelector(".pinyin").innerHTML = pinyin;
+    document
+      .querySelector(".pinyin")
+      .insertAdjacentHTML("beforeend", `${pinyin}`);
   }
 
   // show translation
   if (items.translation) {
     let english = data.english;
-    document.querySelector(".english").innerHTML = english;
-  }
-
-  if (getRandomFrom(88) % 88 == 0) {
     document
-      .querySelector(".container")
-      .insertAdjacentHTML(
-        "beforeend",
-        '<img src="images/panda_easter.png" id="panda" />'
-      );
-    // hide on click
-    panda.addEventListener("click", () => {
-      panda.classList.add("fade");
-      // document.querySelector("#panda").remove();
-    });
+      .querySelector(".english")
+      .insertAdjacentHTML("beforeend", `${english}`);
   }
 
   // TODO: set option in popup, support traditional characters
@@ -82,5 +75,5 @@ export let draw = async (items) => {
   // TODO: gamification system
   items.game.wordsSeen++;
   chrome.storage.sync.set({ game: { wordsSeen: items.game.wordsSeen } });
-  console.log(items.game.wordsSeen)
+  console.log(items.game.wordsSeen);
 };

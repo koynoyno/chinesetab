@@ -61,6 +61,21 @@ body {
   cursor: default !important;
 }
 
+#wordsSeen {
+  font-family: "Roboto Regular", Fallback, sans-serif;
+  font-size: 2em;
+  position: absolute;
+  bottom: 0px;
+  z-index: -100;
+  opacity: 1;
+  padding-bottom: 1em;
+  transition: opacity 0.225s ease-in-out;
+}
+
+#wordsSeen.invisible {
+  opacity: 0;
+}
+
 .char {
   margin: 0.1em;
   font-size: 20rem;
