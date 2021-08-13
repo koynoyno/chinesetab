@@ -64,7 +64,7 @@ body {
 .char {
   margin: 0.1em;
   font-size: 20rem;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 .pinyin,

@@ -11,10 +11,12 @@
       <option value="traditional">Traditional</option>
     </select>
 
-    <label for="hsk">Version</label>
+    <label for="hsk"
+      >Version <span id="beta" title="HSK test was updated in 2021">🛈</span></label
+    >
     <select name="hsk" id="hsk">
-      <option value="hsk2">HSK 2.0 (2010)</option>
-      <option value="hsk3">HSK 3.0 (2021)</option>
+      <option value="hsk2">HSK 2.0</option>
+      <option value="hsk3">HSK 3.0 (no colors yet)</option>
     </select>
 
     <label for="level">Level</label>
@@ -28,8 +30,19 @@
       <option value="10">10 words</option>
       <option value="15">15 words</option>
       <option value="20">20 words</option>
-      <option value="0">No limit</option></select
-    ><br />
+      <option value="0">No limit</option>
+    </select>
+
+    <!-- TODO: logic for this select -->
+    <!-- <label for="charClick">Word on click</label>
+    <select name="charClick" id="charClick">
+      <option value="nothing">Do nothing</option>
+      <option value="sentenceExample">Sentence examples</option>
+      <option value="strokeAnimation">Stroke animation</option>
+      <option value="search">Search in Google</option>
+      <option value="copyChar">Copy</option>
+    </select> -->
+    <br />
 
     <!-- <label class="cb disabled" for="animation"
       ><input type="checkbox" id="animation" name="animation" /> Stroke
@@ -37,11 +50,7 @@
     > -->
 
     <!-- <label class="cb" for="hsk2021"
-      ><input type="checkbox" id="hsk2021" name="hsk2021" /> HSK 3.0<sup
-        id="beta"
-        title="HSK test was updated in 2021"
-        >🛈</sup
-      >
+      ><input type="checkbox" id="hsk2021" name="hsk2021" /> HSK 3.0
     </label> -->
 
     <label class="cb" for="color"
@@ -64,7 +73,8 @@
     <!-- <input type="button" value="Set wallpaper" disabled/> -->
     <button id="support">
       <strong
-        >ᴄʜɪɴᴇsᴇ ᴛᴀʙ ɪs sᴘᴏɴsᴏʀᴇᴅ ʙʏ <span id="supportLink">ʏᴏᴜ</span> 💕</strong
+        >ᴄʜɪɴᴇsᴇ ᴛᴀʙ ɪs sᴘᴏɴsᴏʀᴇᴅ ʙʏ
+        <span id="supportLink">ʏᴏᴜ</span> 💕</strong
       ></button
     ><br />
 

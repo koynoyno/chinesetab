@@ -91,12 +91,12 @@ let redrawHSKLevels = (hsk) => {
       .querySelector("#level")
       .insertAdjacentHTML(
         "afterbegin",
-        '<option value="hsk1">HSK 1 / 150 words</option>' +
-          '<option value="hsk2">HSK 2 / 150 words</option>' +
-          '<option value="hsk3">HSK 3 / 300 words</option>' +
-          '<option value="hsk4">HSK 4 / 600 words</option>' +
-          '<option value="hsk5">HSK 5 / 1300 words</option>' +
-          '<option value="hsk6">HSK 6 / 2500 words</option>'
+        '<option value="hsk1">HSK 1: 150 words</option>' +
+          '<option value="hsk2">HSK 2: 150 words</option>' +
+          '<option value="hsk3">HSK 3: 300 words</option>' +
+          '<option value="hsk4">HSK 4: 600 words</option>' +
+          '<option value="hsk5">HSK 5: 1300 words</option>' +
+          '<option value="hsk6">HSK 6: 2500 words</option>'
       );
   } else {
     // if hsk3.0
@@ -104,13 +104,13 @@ let redrawHSKLevels = (hsk) => {
       .querySelector("#level")
       .insertAdjacentHTML(
         "afterbegin",
-        '<option value="hsk1">HSK 1 / 500 words</option>' +
-          '<option value="hsk2">HSK 2 / 772 words</option>' +
-          '<option value="hsk3">HSK 3 / 973 words</option>' +
-          '<option value="hsk4">HSK 4 / 1000 words</option>' +
-          '<option value="hsk5">HSK 5 / 1071 words</option>' +
-          '<option value="hsk6">HSK 6 / 1140 words</option>' +
-          '<option value="hsk7-9">HSK 7-9 / 5636 words</option>'
+        '<option value="hsk1">HSK 1: 500 words</option>' +
+          '<option value="hsk2">HSK 2: 772 words</option>' +
+          '<option value="hsk3">HSK 3: 973 words</option>' +
+          '<option value="hsk4">HSK 4: 1000 words</option>' +
+          '<option value="hsk5">HSK 5: 1071 words</option>' +
+          '<option value="hsk6">HSK 6: 1140 words</option>' +
+          '<option value="hsk7-9">HSK 7-9: 5636 words</option>'
       );
   }
 };
@@ -157,13 +157,6 @@ document.querySelector("#darkMode").addEventListener("click", () => {
 });
 
 // button event listeners
-// document.querySelector("#beta").addEventListener("click", () => {
-//   chrome.tabs.update({
-//     url: "https://www.google.com/search?q=hsk+3.0",
-//   });
-//   window.close();
-// });
-
 document.querySelector("#feedback").addEventListener("click", () => {
   chrome.tabs.update({
     url: "https://forms.gle/A2j7TKjXwUfuALqz7",

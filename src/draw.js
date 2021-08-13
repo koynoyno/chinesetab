@@ -72,13 +72,14 @@ export let draw = async (items) => {
     });
   }
 
-  // DISABLED: open ArchChinese on click
   // TODO: set option in popup, support traditional characters
-  // document.querySelector(".char").addEventListener("click", () => {
-  //   chrome.tabs.update({
-  //     url: `https://www.archchinese.com/chinese_english_dictionary.html?find=${char}`,
-  //   });
-  // });
+  document.querySelector(".char").addEventListener("click", () => {
+    chrome.tabs.update({
+      url: `https://context.reverso.net/translation/chinese-english/${char}`,
+    });
+  });
+
+  // TODO: gamification system
   items.game.wordsSeen++;
   chrome.storage.sync.set({ game: { wordsSeen: items.game.wordsSeen } });
   console.log(items.game.wordsSeen)
