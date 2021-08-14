@@ -1,14 +1,10 @@
 const luck = 888;
 
-// See background.js TODO: fix flicker
-// document.body.classList.add(window.localStorage.getItem('darkModeTest'))
+document.body.classList.add(localStorage.getItem('darkMode'));
 
 chrome.storage.sync.get(null, async (items) => {
-  // TODO: fix flicker
-  if (items.darkMode) {
-    document.body.classList.add("dark-mode");
-  }
   // import vocabulary ASAP to avoid idle
+  // can I import it from background.js?
   const { default: hsk } = await import(`../${items.hsk}/${items.level}.json`, {
     assert: { type: "json" },
   });

@@ -53,6 +53,7 @@ export let draw = async (items, hsk) => {
   }
 
   // draw everything
+  // TODO: it takes 450-500ms, can I optimize it?
   app.insertAdjacentHTML("beforeend", drawObject);
 
   // TODO: set option in popup, support traditional characters

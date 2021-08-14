@@ -1,9 +1,5 @@
 // darkMode
-chrome.storage.sync.get(['darkMode'], async (items) => {
-  if (items.darkMode) {
-    document.body.classList.add("dark-mode");
-  }
-});
+document.body.classList.add(localStorage.getItem('darkMode'));
 
 // ==========================================
 // apply settings

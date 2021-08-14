@@ -29,9 +29,8 @@ chrome.runtime.onInstalled.addListener(function (details) {
   //   // When a shared module is updated
   // }
 
-  // TODO: fix flicker
-  // TODO: implement messaging to try localStorage approach
-  // window.localStorage.setItem("darkModeTest", "dark-mode");
+  // localStorage is the synchronous, this way white flash can be avoided
+  // TODO: implement messaging to localStorage approach
 });
 
 // DISABLED: uninstall survey
