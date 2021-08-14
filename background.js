@@ -16,6 +16,13 @@ chrome.runtime.onInstalled.addListener(function (details) {
       game: {
         wordsSeen: 0,
       },
+      cache: {
+        simplified: "你好",
+        traditional: "你好",
+        "pinyin-numbered": "ni3hao3",
+        pinyin: "nǐhǎo",
+        english: "Hello!",
+      }
     });
     chrome.tabs.create({
       url: "chrome://newtab",

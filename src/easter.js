@@ -1,14 +1,15 @@
 // Oh no, you're spoiling all the fun!
 
-export let easter = async (wordsSeen) => {
-  // put panda on the page
+export let easter = async (wordsSeen, color) => {
+  // check whether tone colors are turned on
+  let jiayou = color ? '<span class="tone1">加</span><span class="tone2">油</span>！</strong>' : '<span>加油</span>！</strong>'
   document
     .querySelector(".app")
     .insertAdjacentHTML(
       "beforeend",
-      '<img src="images/panda_easter.png" id="panda" />' +
+      '<img src="images/panda_easter.png" id="panda" draggable="false" />' +
         `<p id="wordsSeen" class="invisible" align="center">You opened <strong>${wordsSeen}</strong> Chinese tabs<br/>` +
-        '<strong><span class="tone1">加</span><span class="tone2">油</span>！</strong></p>'
+        `<strong>${jiayou}</p>`
     );
 
   // hide on click
@@ -22,6 +23,9 @@ export let easter = async (wordsSeen) => {
     confetti({
       angle: 120,
       origin: { x: 1 },
+    });
+    confetti({
+      origin: { x: 0.5, y: 1 },
     });
     setTimeout(function () {
       panda.remove();

@@ -8,7 +8,7 @@ Memorize Chinese words ****every time you open a new tab****
 
 ## What are the features?
 
-📚 Old and New HSK (2021) dictionaries
+📚 Standard and New HSK (2021) dictionaries
 
 🀄 Simplified and traditional characters
 
@@ -36,11 +36,11 @@ Memorize Chinese words ****every time you open a new tab****
 
 💖 Open source
 
-## OMG! Is it free?
+## OMG! How much does it cost?
 
-✨ **Yes!** I will be happy if you find this extension useful and tell about it your friends.
+✨ **It's free!** I will be happy if you find this extension useful and tell your friends about it.
 
-✨ **Star** this repository to help to list it on OpenCollective (100 stars requires)
+✨ **Star** this repository to help to list it on OpenCollective, they require 100 stars
 
 ✨ **[Sponsor](https://ko-fi.com/chinesetab)** the development if you love Chinese Tab. I have plans to develop another awesome Chinese extension, that's why
 

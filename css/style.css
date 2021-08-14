@@ -76,7 +76,7 @@ body {
 }
 
 .char {
-  margin: 0.1em;
+  margin: 0 0.1em;
   font-size: 20rem;
   cursor: pointer;
 }
