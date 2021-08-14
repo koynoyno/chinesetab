@@ -1,7 +1,7 @@
 export let ifFirstLaunch = () => {
-  document
-    .querySelector(".app")
-    .insertAdjacentHTML(
+  // document
+  //   .querySelector(".app")
+    app.insertAdjacentHTML(
       "afterbegin",
       '<div id="welcome">Press <strong>Alt+S</strong> to open <strong>Settings</strong></div>'
     );

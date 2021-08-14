@@ -1,10 +1,9 @@
-const luck = 888;
+document.body.classList.add(localStorage.getItem("darkMode"));
 
-document.body.classList.add(localStorage.getItem('darkMode'));
+const luck = 88;
 
 chrome.storage.sync.get(null, async (items) => {
   // TODO: fetch cached character (update on settings changes)
-  // then you import JSON _after_ the draw, on DOMContentLoaded
   const { default: hsk } = await import(`../${items.hsk}/${items.level}.json`, {
     assert: { type: "json" },
   });
@@ -16,7 +15,6 @@ chrome.storage.sync.get(null, async (items) => {
 
   // draw characters, pinyin, tones, translation
   const { draw } = await import("./draw.js");
-  // draw(hsk, items);
   draw(items, hsk);
 
   // display first launch greeting or seen words message
@@ -28,9 +26,14 @@ chrome.storage.sync.get(null, async (items) => {
     const { showSeenWords } = await import("./showSeenWords.js");
     showSeenWords(items.game.wordsSeen, items.color);
   }
+
+  items.game.wordsSeen++;
+  chrome.storage.sync.set({ game: { wordsSeen: items.game.wordsSeen } });
 });
 
-document.addEventListener("DOMContentLoaded", async () => {
+window.addEventListener("load", async () => {
   const { consoleGreeting } = await import("./consoleGreeting.js");
   consoleGreeting();
+
+  // TODO: load JSON .225s after to not to interrupt animation
 });

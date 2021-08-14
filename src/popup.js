@@ -1,5 +1,5 @@
 // darkMode
-document.body.classList.add(localStorage.getItem('darkMode'));
+// document.body.classList.add(localStorage.getItem("darkMode"));
 
 // ==========================================
 // apply settings
@@ -21,13 +21,12 @@ let saveSettings = (id, checkbox = false) => {
   }
 
   // redraw index.html after storage.sync.set
-  // TODO: add dynamic style changing for pinyin/translation/darkMode
+  // TODO: add dynamic style changing for pinyin/translation/darkMode + animation
   // See: https://stackoverflow.com/questions/38561136/chrome-extension-to-change-dom-with-a-button-in-extension-popup
   chrome.tabs.reload();
 
   // redraw popup if darkMode is toggled
   if (id == "darkMode") {
-    console.log(`i check that, value=${value}`);
     if (value) {
       document.body.classList.add("dark-mode");
     } else {
@@ -37,6 +36,7 @@ let saveSettings = (id, checkbox = false) => {
 
   // redraw #level options if HSK version is toggled
   if (id == "hsk") {
+    chrome.storage.sync.set({ randomWords: [] }); // bug fix
     level = document.querySelector("#level");
     levelValue = level.value;
     while (level.lastElementChild) {
@@ -71,48 +71,43 @@ let restoreSettings = () => {
     },
     (items) => {
       redrawHSKLevels(items.hsk);
-      document.querySelector("#hsk").value = items.hsk;
-      document.querySelector("#level").value = items.level;
-      document.querySelector("#char").value = items.char;
-      document.querySelector("#charDay").value = items.charDay;
-      document.querySelector("#sentenceExamples").checked = items.sentenceExamples;
-      document.querySelector("#color").checked = items.color;
-      document.querySelector("#pinyin").checked = items.pinyin;
-      document.querySelector("#translation").checked = items.translation;
-      document.querySelector("#darkMode").checked = items.darkMode;
+      hsk.value = items.hsk;
+      level.value = items.level;
+      char.value = items.char;
+      charDay.value = items.charDay;
+      sentenceExamples.checked = items.sentenceExamples;
+      color.checked = items.color;
+      pinyin.checked = items.pinyin;
+      translation.checked = items.translation;
+      darkMode.checked = items.darkMode;
     }
   );
-
-  // console.log(`Settings restored!`);
 };
 
+// TODO: it takes 250ms, can I optimize it?
 let redrawHSKLevels = (hsk) => {
   if (hsk == "hsk2") {
-    document
-      .querySelector("#level")
-      .insertAdjacentHTML(
-        "afterbegin",
-        '<option value="hsk1">HSK 1: 150 words</option>' +
-          '<option value="hsk2">HSK 2: 150 words</option>' +
-          '<option value="hsk3">HSK 3: 300 words</option>' +
-          '<option value="hsk4">HSK 4: 600 words</option>' +
-          '<option value="hsk5">HSK 5: 1300 words</option>' +
-          '<option value="hsk6">HSK 6: 2500 words</option>'
-      );
+    level.insertAdjacentHTML(
+      "afterbegin",
+      '<option value="hsk1">HSK 1: 150 words</option>' +
+        '<option value="hsk2">HSK 2: 150 words</option>' +
+        '<option value="hsk3">HSK 3: 300 words</option>' +
+        '<option value="hsk4">HSK 4: 600 words</option>' +
+        '<option value="hsk5">HSK 5: 1300 words</option>' +
+        '<option value="hsk6">HSK 6: 2500 words</option>'
+    );
   } else {
     // if hsk3.0
-    document
-      .querySelector("#level")
-      .insertAdjacentHTML(
-        "afterbegin",
-        '<option value="hsk1">HSK 1: 500 words</option>' +
-          '<option value="hsk2">HSK 2: 772 words</option>' +
-          '<option value="hsk3">HSK 3: 973 words</option>' +
-          '<option value="hsk4">HSK 4: 1000 words</option>' +
-          '<option value="hsk5">HSK 5: 1071 words</option>' +
-          '<option value="hsk6">HSK 6: 1140 words</option>' +
-          '<option value="hsk7-9">HSK 7-9: 5636 words</option>'
-      );
+    level.insertAdjacentHTML(
+      "afterbegin",
+      '<option value="hsk1">HSK 1: 500 words</option>' +
+        '<option value="hsk2">HSK 2: 772 words</option>' +
+        '<option value="hsk3">HSK 3: 973 words</option>' +
+        '<option value="hsk4">HSK 4: 1000 words</option>' +
+        '<option value="hsk5">HSK 5: 1071 words</option>' +
+        '<option value="hsk6">HSK 6: 1140 words</option>' +
+        '<option value="hsk7-9">HSK 7-9: 5636 words</option>'
+    );
   }
 };
 
@@ -120,58 +115,63 @@ let redrawHSKLevels = (hsk) => {
 
 // -------------------------------------------------------------
 
-document.addEventListener("DOMContentLoaded", restoreSettings);
+document.addEventListener("DOMContentLoaded", async () => {
+  document.body.classList.add(localStorage.getItem("darkMode"));
+  restoreSettings();
 
-// selects
-document.querySelector("#hsk").addEventListener("change", () => {
-  saveSettings("hsk");
-});
+  // TODO: optimize with event delegation
+  // https://davidwalsh.name/event-delegate
 
-document.querySelector("#level").addEventListener("change", () => {
-  saveSettings("level");
-});
-
-document.querySelector("#char").addEventListener("change", () => {
-  saveSettings("char");
-});
-
-document.querySelector("#charDay").addEventListener("change", () => {
-  saveSettings("charDay");
-});
-
-// checkboxes, set "true"
-
-document.querySelector("#sentenceExamples").addEventListener("click", () => {
-  saveSettings("sentenceExamples", true);
-});
-
-document.querySelector("#color").addEventListener("click", () => {
-  saveSettings("color", true);
-});
-
-document.querySelector("#pinyin").addEventListener("click", () => {
-  saveSettings("pinyin", true);
-});
-
-document.querySelector("#translation").addEventListener("click", () => {
-  saveSettings("translation", true);
-});
-
-document.querySelector("#darkMode").addEventListener("click", () => {
-  saveSettings("darkMode", true);
-});
-
-// button event listeners
-document.querySelector("#feedback").addEventListener("click", () => {
-  chrome.tabs.update({
-    url: "https://forms.gle/A2j7TKjXwUfuALqz7",
+  // selects
+  hsk.addEventListener("change", () => {
+    saveSettings("hsk");
   });
-  window.close();
-});
 
-document.querySelector("#support").addEventListener("click", () => {
-  chrome.tabs.update({
-    url: "https://patreon.com/bePatron?u=13164518",
+  level.addEventListener("change", () => {
+    saveSettings("level");
   });
-  window.close();
+
+  char.addEventListener("change", () => {
+    saveSettings("char");
+  });
+
+  charDay.addEventListener("change", () => {
+    saveSettings("charDay");
+  });
+
+  // checkboxes
+  sentenceExamples.addEventListener("click", () => {
+    saveSettings("sentenceExamples", { checkbox: true });
+  });
+
+  color.addEventListener("click", () => {
+    saveSettings("color", { checkbox: true });
+  });
+
+  pinyin.addEventListener("click", () => {
+    saveSettings("pinyin", { checkbox: true });
+  });
+
+  translation.addEventListener("click", () => {
+    saveSettings("translation", { checkbox: true });
+  });
+
+  darkMode.addEventListener("click", () => {
+    saveSettings("darkMode", { checkbox: true });
+  });
+
+  // button event listeners
+  feedback.addEventListener("click", () => {
+    chrome.tabs.update({
+      url: "https://forms.gle/A2j7TKjXwUfuALqz7",
+    });
+    window.close();
+  });
+
+  support.addEventListener("click", () => {
+    chrome.tabs.update({
+      url: "https://ko-fi.com/chinesetab",
+    });
+    window.close();
+  });
 });

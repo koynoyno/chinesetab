@@ -17,11 +17,10 @@ export let selectFromRandomWords = (hskLength, items) => {
     chrome.storage.sync.set({ randomWords: randomWords });
     chrome.storage.sync.set({ date: newDate });
   } else {
-    randomWords = items.randomWords; // bug here
+    randomWords = items.randomWords;
   }
 
   return randomWords[getRandomFrom(randomWords.length)];
 };
 
 // TODO: omg please optimize this
-// TODO: fix bug - switch from 2500 words to 300 words

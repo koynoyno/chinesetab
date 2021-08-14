@@ -531,7 +531,7 @@
         return animationObj.promise;
       }
 
-      function fire(options) {
+      function fire(options) { // expensive
         var disableForReducedMotion =
           globalDisableForReducedMotion ||
           prop(options, "disableForReducedMotion", Boolean);
@@ -574,7 +574,6 @@
 
         function onResize() {
           if (worker) {
-            // TODO this really shouldn't be immediate, because it is expensive
             var obj = {
               getBoundingClientRect: function () {
                 if (!isLibCanvas) {

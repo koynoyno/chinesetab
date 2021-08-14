@@ -26,7 +26,7 @@ body {
   -moz-text-fill-color: transparent;
 }
 
-.app {
+#app {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,6 +49,12 @@ body {
   transition: opacity 0.195s ease-in-out;
   cursor: pointer;
   width: 200px;
+  animation: fadeInPanda 0.195s;
+}
+
+@keyframes fadeInPanda {
+  from { opacity: 0; }
+  to   { opacity: 0.87; }
 }
 
 #panda:hover {
@@ -68,26 +74,37 @@ body {
   z-index: -100;
   opacity: 1;
   padding-bottom: 1em;
-  transition: opacity 0.225s ease-in-out;
+  transition: opacity 0.195s ease-in-out;
 }
 
 #wordsSeen.invisible {
   opacity: 0;
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 .char {
   margin: 0 0.1em;
   font-size: 20rem;
+  /* animation: fadeIn 0.195s; */
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .charClickable {
   cursor: pointer;
-  transition: transform 0.195s ease-in;
+  transition: transform 0.195s ease-in-out;
 }
 
 .charClickable:hover {
+  transition: transform 0.225s ease-in;
   transform: scale(1.01);
-  transition: transform 0.225s ease-out;
 }
 
 .pinyin,
@@ -95,6 +112,7 @@ body {
   font-family: "Noto Sans", Fallback, sans-serif;
   font-size: 2.5rem;
   margin: 0.1em;
+  /* animation: fadeIn 0.195s; */
 }
 .english {
   font-weight: bold;
