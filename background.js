@@ -7,7 +7,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
       charDay: "5",
       date: new Date().getDate(),
       // date: new Date().getMinutes() }); // debug
-      getRandomWord: [],
+      randomWords: [],
       sentenceExamples: false,
       color: true,
       pinyin: true,

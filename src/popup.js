@@ -17,7 +17,7 @@ let saveSettings = (id, checkbox = false) => {
   // console.log(`Set ${id}: ${value}`);
 
   if (id == "level") {
-    chrome.storage.sync.set({ getRandomWord: [] });
+    chrome.storage.sync.set({ randomWords: [], cache: {} });
   }
 
   // redraw index.html after storage.sync.set
@@ -34,11 +34,10 @@ let saveSettings = (id, checkbox = false) => {
       localStorage.removeItem("darkMode");
     }
   }
-  chrome.tabs.reload();
 
   // redraw #level options if HSK version is toggled
   if (id == "hsk") {
-    chrome.storage.sync.set({ getRandomWord: [] }); // bug fix
+    chrome.storage.sync.set({ randomWords: [], cache: {} }); // bug fix
     level = document.querySelector("#level");
     levelValue = level.value;
     while (level.lastElementChild) {
@@ -54,6 +53,8 @@ let saveSettings = (id, checkbox = false) => {
       level.value = levelValue;
     }
   }
+  chrome.tabs.reload();
+
 };
 
 // =============================================

@@ -12,9 +12,13 @@ export let cacheUpdate = async (items) => {
   if (parseInt(items.charDay) !== 0) {
     rand = getRandomWord(hskLength, items);
   } else {
-    chrome.storage.sync.set({ getRandomWord: [] });
+    chrome.storage.sync.set({ randomWords: [] });
     rand = getRandomNumber(hskLength);
   }
 
-  chrome.storage.sync.set({ cache: hsk.words[rand] });
+  // update and return items?
+  items.cache = hsk.words[rand]
+  // let newCache = hsk.words[rand]
+  // return newCache
+  return items
 };
