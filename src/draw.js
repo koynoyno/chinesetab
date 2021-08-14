@@ -1,6 +1,6 @@
 import splitAndKeep from "./color.js";
-// import { selectFromRandomWords } from "./randomWords.js";
-// import { getRandomFrom } from "./getRandomFrom.js";
+// import { selectFromgetRandomWord } from "./getRandomWord.js";
+// import { getRandomNumber } from "./getRandomNumber.js";
 
 export let draw = async (items, cache) => {
   let drawObject = ""; // used to call insertAdjacentHTML only once
@@ -9,10 +9,10 @@ export let draw = async (items, cache) => {
 
   // // select a random word if charDay is set
   // if (parseInt(items.charDay) !== 0) {
-  //   rand = selectFromRandomWords(hskLength, items);
+  //   rand = selectFromgetRandomWord(hskLength, items);
   // } else {
-  //   chrome.storage.sync.set({ randomWords: [] });
-  //   rand = getRandomFrom(hskLength);
+  //   chrome.storage.sync.set({ getRandomWord: [] });
+  //   rand = getRandomNumber(hskLength);
   // }
 
   //  let data = hsk.words[rand];

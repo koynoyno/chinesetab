@@ -17,26 +17,28 @@ let saveSettings = (id, checkbox = false) => {
   // console.log(`Set ${id}: ${value}`);
 
   if (id == "level") {
-    chrome.storage.sync.set({ randomWords: [] });
+    chrome.storage.sync.set({ getRandomWord: [] });
   }
 
   // redraw index.html after storage.sync.set
   // TODO: add dynamic style changing for pinyin/translation/darkMode + animation
   // See: https://stackoverflow.com/questions/38561136/chrome-extension-to-change-dom-with-a-button-in-extension-popup
-  chrome.tabs.reload();
 
   // redraw popup if darkMode is toggled
   if (id == "darkMode") {
     if (value) {
       document.body.classList.add("dark-mode");
+      localStorage.setItem("darkMode", "dark-mode");
     } else {
       document.body.classList.remove("dark-mode");
+      localStorage.removeItem("darkMode");
     }
   }
+  chrome.tabs.reload();
 
   // redraw #level options if HSK version is toggled
   if (id == "hsk") {
-    chrome.storage.sync.set({ randomWords: [] }); // bug fix
+    chrome.storage.sync.set({ getRandomWord: [] }); // bug fix
     level = document.querySelector("#level");
     levelValue = level.value;
     while (level.lastElementChild) {

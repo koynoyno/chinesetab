@@ -1,13 +1,16 @@
 document.body.classList.add(localStorage.getItem("darkMode"));
 
-import { getRandomFrom } from "./getRandomFrom.js";
+// import { getRandomNumber } from "./getRandomNumber.js";
 
 // to repopulate cache, TODO: move to another file
-import { selectFromRandomWords } from "./randomWords.js";
+// import { selectFromgetRandomWord } from "./getRandomWord.js";
 
 const luck = 88;
 
 chrome.storage.sync.get(null, async (items) => {
+  // if (items.darkMode) {
+  //   document.body.classList.add("dark-mode")
+  // }
   // TODO: fetch cached character (update on settings changes)
   // const { default: hsk } = await import(`../${items.hsk}/${items.level}.json`, {
   //   assert: { type: "json" },
@@ -25,10 +28,11 @@ chrome.storage.sync.get(null, async (items) => {
   draw(items, items.cache);
 
   // display first launch greeting or seen words message
+  // const { getRandomNumber } = await import("./getRandomNumber.js");
   if (items.firstLaunch) {
     const { ifFirstLaunch } = await import("./firstLaunch.js");
     ifFirstLaunch();
-  } else if (getRandomFrom(luck) % luck == 0) {
+  } else if (Math.floor(Math.random() * luck) % luck == 0) {
     const { confetti } = await import("./npm/confetti.browser.js");
     const { showSeenWords } = await import("./showSeenWords.js");
     showSeenWords(items.game.wordsSeen, items.color);
@@ -38,21 +42,23 @@ chrome.storage.sync.get(null, async (items) => {
   chrome.storage.sync.set({ game: { wordsSeen: items.game.wordsSeen } });
 
   // repopulate cache
-  const { default: hsk } = await import(`../${items.hsk}/${items.level}.json`, {
-    assert: { type: "json" },
-  });
-  let rand;
-  let hskLength = hsk.words.length;
+  // const { default: hsk } = await import(`../${items.hsk}/${items.level}.json`, {
+  //   assert: { type: "json" },
+  // });
+  // let rand;
+  // let hskLength = hsk.words.length;
 
-  // select a random word if charDay is set
-  if (parseInt(items.charDay) !== 0) {
-    rand = selectFromRandomWords(hskLength, items);
-  } else {
-    chrome.storage.sync.set({ randomWords: [] });
-    rand = getRandomFrom(hskLength);
-  }
+  // // select a random word if charDay is set
+  // if (parseInt(items.charDay) !== 0) {
+  //   rand = selectFromgetRandomWord(hskLength, items);
+  // } else {
+  //   chrome.storage.sync.set({ getRandomWord: [] });
+  //   rand = getRandomNumber(hskLength);
+  // }
 
-  chrome.storage.sync.set({ cache: hsk.words[rand] });
+  // chrome.storage.sync.set({ cache: hsk.words[rand] });
+  const { cacheUpdate } = await import("./cacheUpdate.js");
+  cacheUpdate(items);
 
 });
 

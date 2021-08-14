@@ -4,13 +4,13 @@
 }
 
 body {
-  opacity: 0.87;
+  /* opacity: 0.87; wtf */
   cursor: default;
 }
-.dark-mode {
+/* .dark-mode {
   background-color: #121212 !important;
   color: #fff !important;
-}
+} */
 .dark-mode .tone5 {
   background: linear-gradient(
     180deg,

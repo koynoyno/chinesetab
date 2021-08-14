@@ -7,7 +7,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
       charDay: "5",
       date: new Date().getDate(),
       // date: new Date().getMinutes() }); // debug
-      randomWords: [],
+      getRandomWord: [],
       sentenceExamples: false,
       color: true,
       pinyin: true,
@@ -30,6 +30,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
     });
   } else if (details.reason === "update") {
     chrome.storage.sync.set({ updated: true });
+    // TODO: messaging instead of storage?
   }
   // } else if (details.reason === "chrome_update") {
   //   // When browser is updated
