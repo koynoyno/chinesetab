@@ -18,19 +18,19 @@ chrome.runtime.onInstalled.addListener(function (details) {
         wordsSeen: 0,
       },
       cache: {
-        simplified: "你好",
-        traditional: "你好",
+        english: "Hello!",
         "pinyin-numbered": "ni3hao3",
         pinyin: "nǐhǎo",
-        english: "Hello!",
-      }
+        simplified: "你好",
+        traditional: "你好",
+      },
     });
     chrome.tabs.create({
       url: "chrome://newtab",
     });
+  } else if (details.reason === "update") {
+    chrome.storage.sync.set({ updated: true });
   }
-  // } else if (details.reason === "update") {
-  //   chrome.storage.sync.set({ updated: true });
   // } else if (details.reason === "chrome_update") {
   //   // When browser is updated
   // } else if (details.reason === "shared_module_update") {

@@ -118,7 +118,9 @@ let redrawHSKLevels = (hsk) => {
 document.addEventListener("DOMContentLoaded", async () => {
   document.body.classList.add(localStorage.getItem("darkMode"));
   restoreSettings();
+});
 
+window.addEventListener("load", async () => {
   // TODO: optimize with event delegation
   // https://davidwalsh.name/event-delegate
 
@@ -163,6 +165,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   // button event listeners
   feedback.addEventListener("click", () => {
     chrome.tabs.update({
+      // TODO: replace, google forms sucks with popups and stuff
       url: "https://forms.gle/A2j7TKjXwUfuALqz7",
     });
     window.close();
