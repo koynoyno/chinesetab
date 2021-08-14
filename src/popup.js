@@ -1,5 +1,5 @@
 // darkMode
-// document.body.classList.add(localStorage.getItem("darkMode"));
+document.body.classList.add(localStorage.getItem("darkMode"));
 
 // ==========================================
 // apply settings
@@ -10,12 +10,10 @@ let saveSettings = (id, checkbox = false) => {
   } else {
     value = document.querySelector(`#${id}`).value;
   }
-  // console.log(`${checkbox}`);
 
   chrome.storage.sync.set({ [id]: value });
 
-  // console.log(`Set ${id}: ${value}`);
-
+  // remove cache if level is changed
   if (id == "level") {
     chrome.storage.sync.set({ randomWords: [], cache: {} });
   }
@@ -35,7 +33,7 @@ let saveSettings = (id, checkbox = false) => {
     }
   }
 
-  // redraw #level options if HSK version is toggled
+  // remove cache and redraw #level options if HSK version is toggled
   if (id == "hsk") {
     chrome.storage.sync.set({ randomWords: [], cache: {} }); // bug fix
     level = document.querySelector("#level");
@@ -119,7 +117,7 @@ let redrawHSKLevels = (hsk) => {
 // -------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", async () => {
-  document.body.classList.add(localStorage.getItem("darkMode"));
+  // document.body.classList.add(localStorage.getItem("darkMode"));
   restoreSettings();
 });
 

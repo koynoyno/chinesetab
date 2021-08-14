@@ -16,9 +16,7 @@ export let cacheUpdate = async (items) => {
     rand = getRandomNumber(hskLength);
   }
 
-  // update and return items?
+  // update and return items
   items.cache = hsk.words[rand]
-  // let newCache = hsk.words[rand]
-  // return newCache
   return items
 };
