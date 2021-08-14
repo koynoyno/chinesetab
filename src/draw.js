@@ -56,12 +56,15 @@ export let draw = async (items, hsk) => {
   // TODO: it takes 450-500ms, can I optimize it?
   app.insertAdjacentHTML("beforeend", drawObject);
 
-  // TODO: set option in popup, support traditional characters
-  document.querySelector(".char").addEventListener("click", () => {
-    chrome.tabs.update({
-      url: `https://context.reverso.net/translation/chinese-english/${char}`,
+  if (items.sentenceExamples) {
+    let charNode = document.querySelector(".char")
+    charNode.classList.add("charClickable");
+    charNode.addEventListener("click", () => {
+      chrome.tabs.update({
+        url: `https://context.reverso.net/translation/chinese-english/${char}`,
+      });
     });
-  });
+  }
 
   items.game.wordsSeen++;
   chrome.storage.sync.set({ game: { wordsSeen: items.game.wordsSeen } });

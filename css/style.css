@@ -78,7 +78,16 @@ body {
 .char {
   margin: 0 0.1em;
   font-size: 20rem;
+}
+
+.charClickable {
   cursor: pointer;
+  transition: transform 0.195s ease-in;
+}
+
+.charClickable:hover {
+  transform: scale(1.01);
+  transition: transform 0.225s ease-out;
 }
 
 .pinyin,
@@ -101,35 +110,35 @@ body {
   /* background-image: rgb(227,0,0); */
   background: linear-gradient(
     180deg,
-    rgba(227, 0, 0, 0.5) 0%,
+    rgba(227, 0, 0, 0.67) 0%,
     rgba(227, 0, 0, 1) 100%
   );
 }
 .tone2 {
   background: linear-gradient(
     180deg,
-    rgba(2, 179, 28, 0.5) 0%,
+    rgba(2, 179, 28, 0.67) 0%,
     rgba(2, 179, 28, 1) 100%
   );
 }
 .tone3 {
   background: linear-gradient(
     180deg,
-    rgba(36, 32, 255, 0.5) 0%,
+    rgba(36, 32, 255, 0.67) 0%,
     rgb(36, 32, 255) 100%
   );
 }
 .tone4 {
   background: linear-gradient(
     180deg,
-    rgba(160, 16, 218, 0.5) 0%,
+    rgba(160, 16, 218, 0.67) 0%,
     rgb(160, 16, 218) 100%
   );
 }
 .tone5 {
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.67) 0%,
     rgba(0, 0, 0, 1) 100%
   );
 }
@@ -139,7 +148,7 @@ body {
 .tone3,
 .tone4,
 .tone5 {
-  padding-top: 1em;
+  padding-top: 0.3em;
   background-clip: text;
   background-size: 100%;
   -webkit-background-clip: text;

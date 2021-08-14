@@ -1,6 +1,6 @@
-// Oh no, you're spoiling all the fun!
+// oh no, you're spoiling the fun!
 
-export let easter = async (wordsSeen, color) => {
+export let showSeenWords = async (wordsSeen, color) => {
   // check whether tone colors are turned on
   let jiayou = color ? '<span class="tone1">加</span><span class="tone2">油</span>！</strong>' : '<span>加油</span>！</strong>'
   document
@@ -16,15 +16,15 @@ export let easter = async (wordsSeen, color) => {
   panda.addEventListener("click", () => {
     panda.classList.add("fade");
     // TODO: add random colors from tones
-    confetti({ // confetti, duh
+    confetti({ // left
       angle: 60,
       origin: { x: 0 },
     });
-    confetti({
+    confetti({ // right
       angle: 120,
       origin: { x: 1 },
     });
-    confetti({
+    confetti({ // bottom
       origin: { x: 0.5, y: 1 },
     });
     setTimeout(function () {

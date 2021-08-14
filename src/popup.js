@@ -63,6 +63,7 @@ let restoreSettings = () => {
       level: level,
       char: char,
       charDay: charDay,
+      sentenceExamples: sentenceExamples,
       color: color,
       pinyin: pinyin,
       translation: translation,
@@ -74,6 +75,7 @@ let restoreSettings = () => {
       document.querySelector("#level").value = items.level;
       document.querySelector("#char").value = items.char;
       document.querySelector("#charDay").value = items.charDay;
+      document.querySelector("#sentenceExamples").checked = items.sentenceExamples;
       document.querySelector("#color").checked = items.color;
       document.querySelector("#pinyin").checked = items.pinyin;
       document.querySelector("#translation").checked = items.translation;
@@ -138,6 +140,10 @@ document.querySelector("#charDay").addEventListener("change", () => {
 });
 
 // checkboxes, set "true"
+
+document.querySelector("#sentenceExamples").addEventListener("click", () => {
+  saveSettings("sentenceExamples", true);
+});
 
 document.querySelector("#color").addEventListener("click", () => {
   saveSettings("color", true);

@@ -1,4 +1,4 @@
-const luck = 1;
+const luck = 888;
 
 document.body.classList.add(localStorage.getItem('darkMode'));
 
@@ -19,14 +19,14 @@ chrome.storage.sync.get(null, async (items) => {
   // draw(hsk, items);
   draw(items, hsk);
 
-  // display first launch greeting or easter panda
+  // display first launch greeting or seen words message
   if (items.firstLaunch) {
     const { ifFirstLaunch } = await import("./firstLaunch.js");
     ifFirstLaunch();
   } else if (Math.floor(Math.random() * luck) % luck == 0) {
     const { confetti } = await import("./npm/confetti.browser.js");
-    const { easter } = await import("./easter.js");
-    easter(items.game.wordsSeen, items.color);
+    const { showSeenWords } = await import("./showSeenWords.js");
+    showSeenWords(items.game.wordsSeen, items.color);
   }
 });
 
