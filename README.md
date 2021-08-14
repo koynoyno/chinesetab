@@ -4,11 +4,11 @@
 
 [![Chrome](images/web_store.png)](https://chrome.google.com/extensions/detail/kpalceplnmfdppclclfnljimdjdbhcid/)
 
-Memorize Chinese words ****every time you open a new tab****.
+Memorize Chinese words ****every time you open a new tab****
 
-## Highlights
+## What are the features?
 
-📚 HSK 2.0 / HSK 3.0 dictionaries
+📚 Old and New HSK (2021) dictionaries
 
 🀄 Simplified and traditional characters
 
@@ -20,11 +20,11 @@ Memorize Chinese words ****every time you open a new tab****.
 
 🤓 Pinyin and translation can be turned off (hardcore mode)
 
-## Moar highlights
+## Sounds nice. Anything else?
 
-🔥 Faster than default Chrome new tab
+🔥 Opens in a split of a second (faster than default new tab)
 
-💻 Easy on CPU and memory
+💻 Easy on CPU, memory, and battery
 
 🌙 Dark mode support
 
@@ -34,20 +34,16 @@ Memorize Chinese words ****every time you open a new tab****.
 
 📛 No ads
 
-💖 Free and open source
+💖 Open source
 
-🐼 Panda (**[what](https://docs.google.com/forms/d/e/1FAIpQLSeEHeXCMW9OXlkBk0tG7lxZgNbXqe2xharlv0STSH94DuM6FA/viewform)** should we call it?)
+## OMG! Is it free?
 
-## OMG!
+✨ **Yes!** I will be happy if you find this extension useful and tell about it your friends.
 
-✨ **[Share](https://docs.google.com/forms/d/e/1FAIpQLSeEHeXCMW9OXlkBk0tG7lxZgNbXqe2xharlv0STSH94DuM6FA/viewform)** with me how I can improve this extension. What do you like? What would you like to see?
+✨ **Star** this repository to help to list it on OpenCollective (100 stars requires)
 
-✨ **Star** this extension to help to list it on OpenCollective.com (100 stars requires)
+✨ **[Share](https://docs.google.com/forms/d/e/1FAIpQLSeEHeXCMW9OXlkBk0tG7lxZgNbXqe2xharlv0STSH94DuM6FA/viewform)** with me what you like about the extension, I'm happy to hear from you
 
-✨ **[Become a patron](https://www.patreon.com/koyno)** to sponsor the development
+✨ **[Sponsor](https://www.patreon.com/koyno)** the development if you love Chinese Tab. I have plans to develop another awesome Chinese extension, so 
 
-<!-- ### **Your support matters** -->
-
-<!-- ![Panda](images/panda_easter.png) -->
-
-<img align="left" src=images/panda_easter.png><h1>Your support matters ~</h2>
+<img align="left" src=images/panda_easter.png><h1>your support matters ~</h2>

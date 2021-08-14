@@ -3,8 +3,8 @@ const luck = 888;
 document.body.classList.add(localStorage.getItem('darkMode'));
 
 chrome.storage.sync.get(null, async (items) => {
-  // import vocabulary ASAP to avoid idle
-  // can I import it from background.js?
+  // TODO: fetch cached character (update on settings changes)
+  // then you import JSON _after_ the draw, on DOMContentLoaded
   const { default: hsk } = await import(`../${items.hsk}/${items.level}.json`, {
     assert: { type: "json" },
   });
