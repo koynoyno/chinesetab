@@ -42,8 +42,6 @@ Memorize Chinese words ****every time you open a new tab****
 
 ✨ **Star** this repository to help to list it on OpenCollective (100 stars requires)
 
-✨ **[Share](https://docs.google.com/forms/d/e/1FAIpQLSeEHeXCMW9OXlkBk0tG7lxZgNbXqe2xharlv0STSH94DuM6FA/viewform)** with me what you like about the extension, I'm happy to hear from you
-
-✨ **[Sponsor](https://www.patreon.com/koyno)** the development if you love Chinese Tab. I have plans to develop another awesome Chinese extension, so 
+✨ **[Sponsor](https://ko-fi.com/chinesetab)** the development if you love Chinese Tab. I have plans to develop another awesome Chinese extension, that's why
 
 <img align="left" src=images/panda_easter.png><h1>your support matters ~</h2>
