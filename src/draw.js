@@ -12,11 +12,9 @@ export let draw = (items) => {
   let classChar = items.sentenceExamples ? "char charClickable" : "char";
 
   // draw colors
-  // TODO: fix for hsk 3.0
-  if (items.color && items.hsk == "hsk2") {
+  if (items.color) {
     // TODO: move to color.js, remove splitAndKeep import
-    let pinyinNumbered = data["pinyin-numbered"];
-    let result = pinyinNumbered.splitAndKeep(["1", "2", "3", "4", "5"]);
+    let result = data.pinyinNumbered.splitAndKeep(["1", "2", "3", "4", "5"]);
     let length = result.length / 2 - 1;
     let coloredChar = "";
 

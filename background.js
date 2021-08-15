@@ -19,7 +19,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
       },
       cache: {
         english: "Hello!",
-        "pinyin-numbered": "ni3hao3",
+        pinyinNumbered: "ni3hao3",
         pinyin: "nǐhǎo",
         simplified: "你好",
         traditional: "你好",
