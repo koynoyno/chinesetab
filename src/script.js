@@ -22,6 +22,7 @@ chrome.storage.sync.get(null, async (items) => {
   draw(items);
 
   // display first launch greeting or seen words message
+  // items.firstLaunch = true;
   if (items.firstLaunch) {
     const { ifFirstLaunch } = await import("./firstLaunch.js");
     await ifFirstLaunch();
@@ -41,4 +42,22 @@ chrome.storage.sync.get(null, async (items) => {
 
   const { consoleGreeting } = await import("./consoleGreeting.js"); // async
   await consoleGreeting();
+
+  // DEV reload tabs with space
+  window.addEventListener("keydown", (e) => {
+    if (e.code === "Space") {
+      chrome.tabs.reload();
+    }
+  });
 });
+
+window.onerror = function (errorMsg, url, lineNumber, column, errorObj) {
+  console.log('Caught content script error');
+  console.log('errorMsg: ' + errorMsg);
+  console.log('url: ' + url);
+  console.log('lineNumber: ' + column);
+  console.log('column: ' + column);
+  console.log('errorObj follows:');
+  console.log(errorObj);
+  return true;
+};

@@ -45,7 +45,7 @@
       "traditional": "白",
       "simplified": "白",
       "pinyin": "bái",
-      "english": "white, clear, pure, plain, wrongly written/mispronounced,",
+      "english": "white, clear, pure, plain, wrongly written/mispronounced",
       "pinyinNumbered": "bai2"
     },
     {
@@ -346,14 +346,14 @@
       "traditional": "出來",
       "simplified": "出来",
       "pinyin": "chūlái",
-      "english": "come forward, issue, come up, step up, step to the fore, out (toward one), come_out, pop out, come out, rise, come to the fore, step forward, emergence, come forth, emerge",
+      "english": "come forward, issue, come up, step up, step to the fore, out (toward one), come out, pop out, come out, rise, come to the fore, step forward, emergence, come forth, emerge",
       "pinyinNumbered": "chu1lai2"
     },
     {
       "traditional": "出去",
       "simplified": "出去",
       "pinyin": "chūqù",
-      "english": "go_out, go/get out, get_out, go out, get out, go, exit",
+      "english": "go out, go/get out, get out, go out, get out, go, exit",
       "pinyinNumbered": "chu1qu4"
     },
     {
@@ -416,7 +416,7 @@
       "traditional": "打開",
       "simplified": "打开",
       "pinyin": "dǎkāi",
-      "english": "unscrew, undo, break_out, open up, unbar, unpack, unwind, shoot, turn, switch_on, open, switch on, unroll, turn/switch on, unclose, straighten, unfold, crack, unwrap, ope, turn_on, turn on, chop",
+      "english": "unscrew, undo, break out, open up, unbar, unpack, unwind, shoot, turn, switch on, open, switch on, unroll, turn/switch on, unclose, straighten, unfold, crack, unwrap, ope, turn on, turn on, chop",
       "pinyinNumbered": "da3kai1"
     },
     {
@@ -444,7 +444,7 @@
       "traditional": "大學生",
       "simplified": "大学生",
       "pinyin": "dàxuéshēng",
-      "english": "man, university/college student, college man, university student, colleger, university, undergrad, undergraduate, college boy, college student, collegian, university_student, undergraduate student, geeks",
+      "english": "man, university/college student, college man, university student, colleger, university, undergrad, undergraduate, college boy, college student, collegian, university student, undergraduate student, geeks",
       "pinyinNumbered": "da4xue2sheng1"
     },
     {
@@ -514,7 +514,7 @@
       "traditional": "弟弟",
       "simplified": "弟弟",
       "pinyin": "dìdì",
-      "english": "brother, little brother, younger brother, cadet, little_brother, viscount",
+      "english": "brother, little brother, younger brother, cadet, little brother, viscount",
       "pinyinNumbered": "di4di4"
     },
     {
@@ -542,7 +542,7 @@
       "traditional": "電話",
       "simplified": "电话",
       "pinyin": "diànhuà",
-      "english": "blower, phone call, headphone, earpiece, telephone, telephone_call, buzz, earphone, horn, telephone set, phone_call, telephony, phone",
+      "english": "blower, phone call, headphone, earpiece, telephone, telephone call, buzz, earphone, horn, telephone set, phone call, telephony, phone",
       "pinyinNumbered": "dian4hua4"
     },
     {
@@ -563,14 +563,14 @@
       "traditional": "電視機",
       "simplified": "电视机",
       "pinyin": "diànshìjī",
-      "english": "set, idiot_box, tv, goggle-box, idiot box, television receiver/set, teleset, television set, television receiver, TV set, goggle_box, tv set, goggle box, boob tube, receiver, telly, television",
+      "english": "set, idiot box, tv, goggle-box, idiot box, television receiver/set, teleset, television set, television receiver, TV set, goggle box, tv set, goggle box, boob tube, receiver, telly, television",
       "pinyinNumbered": "dian4shi4ji1"
     },
     {
       "traditional": "電影",
       "simplified": "电影",
       "pinyin": "diànyǐng",
-      "english": "cinematography, moving_picture, pix, kinema, picture, film, movie, moving picture, flick, cinema, motion_picture, cinematic, celluloid, picture show, motion picture, flicker",
+      "english": "cinematography, moving picture, pix, kinema, picture, film, movie, moving picture, flick, cinema, motion picture, cinematic, celluloid, picture show, motion picture, flicker",
       "pinyinNumbered": "dian4ying3"
     },
     {
@@ -1046,7 +1046,7 @@
       "traditional": "話",
       "simplified": "话",
       "pinyin": "huà",
-      "english": "words, thing, language, tongue, talk, speech, spoken_language, conversation, utterance, expression, story, tale, saying, natural language, sayings, word",
+      "english": "words, thing, language, tongue, talk, speech, spoken language, conversation, utterance, expression, story, tale, saying, natural language, sayings, word",
       "pinyinNumbered": "hua4"
     },
     {
@@ -1074,7 +1074,7 @@
       "traditional": "回到",
       "simplified": "回到",
       "pinyin": "huídào",
-      "english": "remount, retour, recur, turn back, regress, regain, revert, go_back, return to, return, go back to",
+      "english": "remount, retour, recur, turn back, regress, regain, revert, go back, return to, return, go back to",
       "pinyinNumbered": "hui2dao4"
     },
     {
@@ -1088,14 +1088,14 @@
       "traditional": "回來",
       "simplified": "回来",
       "pinyin": "huílái",
-      "english": "come back, get_back, recur, revisit, come, return, be back, come_back",
+      "english": "come back, get back, recur, revisit, come, return, be back, come_back",
       "pinyinNumbered": "hui2lai2"
     },
     {
       "traditional": "回去",
       "simplified": "回去",
       "pinyin": "huíqù",
-      "english": "go_home, go_back, retrocede, go back, be back, go, return",
+      "english": "go home, go back, retrocede, go back, be back, go, return",
       "pinyinNumbered": "hui2qu4"
     },
     {
@@ -1109,7 +1109,7 @@
       "traditional": "火車",
       "simplified": "火车",
       "pinyin": "huǒchē",
-      "english": "choo-choo, railroad train, car train, marshalling_yard, puff-puff, train",
+      "english": "choo-choo, railroad train, car train, marshalling yard, puff-puff, train",
       "pinyinNumbered": "huo3che1"
     },
     {
@@ -1228,7 +1228,7 @@
       "traditional": "姐姐",
       "simplified": "姐姐",
       "pinyin": "jiějiě",
-      "english": "sis, big_sister, elder sister, sister",
+      "english": "sis, big sister, elder sister, sister",
       "pinyinNumbered": "jie3jie3"
     },
     {
@@ -1270,7 +1270,7 @@
       "traditional": "進去",
       "simplified": "进去",
       "pinyin": "jìnqù",
-      "english": "enter, entry, go_in, get in, go in",
+      "english": "enter, entry, go in, get in, go in",
       "pinyinNumbered": "jin4qu4"
     },
     {
@@ -1291,7 +1291,7 @@
       "traditional": "覺得",
       "simplified": "觉得",
       "pinyin": "juéde",
-      "english": "imagine, guess, believe, reckon, suspect, suppose, think, listen, feel, consider, think_of, appear, conceive",
+      "english": "imagine, guess, believe, reckon, suspect, suppose, think, listen, feel, consider, think of, appear, conceive",
       "pinyinNumbered": "jue2de5"
     },
     {
@@ -1319,7 +1319,7 @@
       "traditional": "開玩笑",
       "simplified": "开玩笑",
       "pinyin": "kāiwánxiào",
-      "english": "kid, spoof, jive, gag, make fun of, josh, daff, rot, quip, chaff, rib, banter, jolly, fun, sport, put_on, clown, fool, droll, jape, joke, skylark, jest, jocose, crack a joke",
+      "english": "kid, spoof, jive, gag, make fun of, josh, daff, rot, quip, chaff, rib, banter, jolly, fun, sport, put on, clown, fool, droll, jape, joke, skylark, jest, jocose, crack a joke",
       "pinyinNumbered": "kai1wan2xiao4"
     },
     {
@@ -1340,7 +1340,7 @@
       "traditional": "看到",
       "simplified": "看到",
       "pinyin": "kàndào",
-      "english": "view, receive, ken, observe, lamp, catch, see, take in, watch, chatter away, lay_eyes_on, boast, brag, shoot the breeze, spy, catch sight of, catch sight of",
+      "english": "view, receive, ken, observe, lamp, catch, see, take in, watch, chatter away, lay eyes on, boast, brag, shoot the breeze, spy, catch sight of, catch sight of",
       "pinyinNumbered": "kan4dao4"
     },
     {
@@ -1438,7 +1438,7 @@
       "traditional": "老人",
       "simplified": "老人",
       "pinyin": "lǎorén",
-      "english": "oldster, ancient, old woman, crock, one's aged parents or grandparents, old man/woman, one's aged parents/grandparents, Sir, old person, gaffer, pop, one's aged parents, the aged/old, old_man, senior_citizen, oldie, greybeard, old man, graybeard, old, grandparents, the old, the aged, senior citizen, old_boy, old boy, woman, old-timer, old man or woman, one's aged grandparents",
+      "english": "oldster, ancient, old woman, crock, one's aged parents or grandparents, old man/woman, one's aged parents/grandparents, Sir, old person, gaffer, pop, one's aged parents, the aged/old, old man, senior citizen, oldie, greybeard, old man, graybeard, old, grandparents, the old, the aged, senior citizen, old boy, old boy, woman, old-timer, old man or woman, one's aged grandparents",
       "pinyinNumbered": "lao3ren2"
     },
     {
@@ -1466,7 +1466,7 @@
       "traditional": "冷",
       "simplified": "冷",
       "pinyin": "lěng",
-      "english": "cool, rare, cold, unfrequented, feel cold, chill, frosty(in manner), shot from hiding, strange",
+      "english": "cool, rare, cold, unfrequented, feel cold, chill, frosty (in manner), shot from hiding, strange",
       "pinyinNumbered": "leng3"
     },
     {
@@ -1564,7 +1564,7 @@
       "traditional": "馬上",
       "simplified": "马上",
       "pinyin": "mǎshàng",
-      "english": "in a short time, at_once, instantaneously, promptly, at once, incontinent, in the same breath, directively, instantly, slapbang, pronto, right_away, immediately, shortly, without delay, right away, tout-de-suite, forthwith, presently, in_no_time, at a time, soon, hereupon, in a few seconds, before long, at one time, outright, straightaway, in a minute, directly, momently, in a f",
+      "english": "in a short time, at once, instantaneously, promptly, at once, incontinent, in the same breath, directively, instantly, slapbang, pronto, right away, immediately, shortly, without delay, right away, tout-de-suite, forthwith, presently, in no time, at a time, soon, hereupon, in a few seconds, before long, at one time, outright, straightaway, in a minute, directly, momently, in a f",
       "pinyinNumbered": "ma3shang4"
     },
     {
@@ -1578,7 +1578,7 @@
       "traditional": "買",
       "simplified": "买",
       "pinyin": "mǎi",
-      "english": "pick up, invest, hire, buy, purchase, put_down, trade, get",
+      "english": "pick up, invest, hire, buy, purchase, put down, trade, get",
       "pinyinNumbered": "mai3"
     },
     {
@@ -1641,7 +1641,7 @@
       "traditional": "妹妹",
       "simplified": "妹妹",
       "pinyin": "mèimèi",
-      "english": "little_sister, sis, younger sister, little sister, sister",
+      "english": "little sister, sis, younger sister, little sister, sister",
       "pinyinNumbered": "mei4mei4"
     },
     {
@@ -1662,7 +1662,7 @@
       "traditional": "門票",
       "simplified": "门票",
       "pinyin": "ménpiào",
-      "english": "entrance/admission ticket, admission ticket, admission fee, admission price, entrance ticket, admission charge, cover_charge, admission, entrance fee, entrance money, pasteboard, price of admission, entrance",
+      "english": "entrance/admission ticket, admission ticket, admission fee, admission price, entrance ticket, admission charge, cover charge, admission, entrance fee, entrance money, pasteboard, price of admission, entrance",
       "pinyinNumbered": "men2piao4"
     },
     {
@@ -1697,7 +1697,7 @@
       "traditional": "名字",
       "simplified": "名字",
       "pinyin": "míngzi",
-      "english": "first_name, forename, moniker, monaker, first name, monicker, cognomen, given name, name, patronymic, appellation",
+      "english": "first name, forename, moniker, monaker, first name, monicker, cognomen, given name, name, patronymic, appellation",
       "pinyinNumbered": "ming2zi5"
     },
     {
@@ -1970,7 +1970,7 @@
       "traditional": "朋友",
       "simplified": "朋友",
       "pinyin": "péngyou",
-      "english": "amigo, connections, kith, friend, boy, crony, ami, boy/girl friend, companion, mate, boy friend or girl friend, compadre, boy friend, Mac, paisano, matey, old_boy, sport, folks, pard, hearty, Kamerad, cocker, cobber, girl friend, pardner, company",
+      "english": "amigo, connections, kith, friend, boy, crony, ami, boy/girl friend, companion, mate, boy friend or girl friend, compadre, boy friend, Mac, paisano, matey, old boy, sport, folks, pard, hearty, Kamerad, cocker, cobber, girl friend, pardner, company",
       "pinyinNumbered": "peng2you5"
     },
     {
@@ -1998,7 +1998,7 @@
       "traditional": "起床",
       "simplified": "起床",
       "pinyin": "qǐchuáng",
-      "english": "uprise, get up from bed, arise, get out of bed, turn out, rise, deck, get_up, awake, get up",
+      "english": "uprise, get up from bed, arise, get out of bed, turn out, rise, deck, get up, awake, get up",
       "pinyinNumbered": "qi3chuang2"
     },
     {
@@ -2320,7 +2320,7 @@
       "traditional": "時間",
       "simplified": "时间",
       "pinyin": "shíjiān",
-      "english": "moment, day, clock time, fourth_dimension, relativity, hour, duration, time, when, while, temporal, economy",
+      "english": "moment, day, clock time, fourth dimension, relativity, hour, duration, time, when, while, temporal, economy",
       "pinyinNumbered": "shi2jian1"
     },
     {
@@ -2418,7 +2418,7 @@
       "traditional": "睡覺",
       "simplified": "睡觉",
       "pinyin": "shuìjiào",
-      "english": "turn_in, log Z's, doss, slumber, catch some Z's, go to bed, sleep, doss down, crash, go_to_sleep, hit_the_sack, kip",
+      "english": "turn in, log Z's, doss, slumber, catch some Z's, go to bed, sleep, doss down, crash, go to sleep, hit the sack, kip",
       "pinyinNumbered": "shui4jiao4"
     },
     {
@@ -2628,7 +2628,7 @@
       "traditional": "忘記",
       "simplified": "忘记",
       "pinyin": "wàngjì",
-      "english": "misremember, block, blank out, neglect, overlook, draw a blank, leave_out, disremember, fail, forget",
+      "english": "misremember, block, blank out, neglect, overlook, draw a blank, leave out, disremember, fail, forget",
       "pinyinNumbered": "wang4ji4"
     },
     {
@@ -2803,7 +2803,7 @@
       "traditional": "小姐",
       "simplified": "小姐",
       "pinyin": "xiǎojiě",
-      "english": "Signorina, Senorita, senorita, signorina, young_lady, damosel, Dona, mum, young lady, damoiselle, missy, tootsy, demoiselle, damsel, Miss, Fraulein, miss, sheila, sister, toots, senhorita, damozel, Ladyship, ladyship, Mademoiselle, mademoiselle",
+      "english": "Signorina, Senorita, senorita, signorina, young lady, damosel, Dona, mum, young lady, damoiselle, missy, tootsy, demoiselle, damsel, Miss, Fraulein, miss, sheila, sister, toots, senhorita, damozel, Ladyship, ladyship, Mademoiselle, mademoiselle",
       "pinyinNumbered": "xiao3jie3"
     },
     {
@@ -2845,7 +2845,7 @@
       "traditional": "寫",
       "simplified": "写",
       "pinyin": "xiě",
-      "english": "description, bewrite, direct, describe, pencil, draw, paint, inscribe, write, depiction, write_out, throw_off, depict, address, author, screeve, word, compose",
+      "english": "description, bewrite, direct, describe, pencil, draw, paint, inscribe, write, depiction, write out, throw off, depict, address, author, screeve, word, compose",
       "pinyinNumbered": "xie3"
     },
     {
@@ -2901,7 +2901,7 @@
       "traditional": "休息",
       "simplified": "休息",
       "pinyin": "xiūxí",
-      "english": "repose, have, lie dormant, respire, take time off, have a rest, take a rest, take off, relax, take_time_off, have/take a rest, rest",
+      "english": "repose, have, lie dormant, respire, take time off, have a rest, take a rest, take off, relax, take time off, have/take a rest, rest",
       "pinyinNumbered": "xiu1xi2"
     },
     {
@@ -3048,7 +3048,7 @@
       "traditional": "一起",
       "simplified": "一起",
       "pinyin": "yīqǐ",
-      "english": "in_chorus, together, in all, in the same place, holus-bolus, altogether, in company",
+      "english": "in chorus, together, in all, in the same place, holus-bolus, altogether, in company",
       "pinyinNumbered": "yi1qi3"
     },
     {
@@ -3090,14 +3090,14 @@
       "traditional": "有時候",
       "simplified": "有时候",
       "pinyin": "yǒushíhòu",
-      "english": "from time to time, on_occasion, occasionally, somewhile, otherwhile, now and again, sometimes, now and then, at times, on occasion, whiles, once in a while",
+      "english": "from time to time, on occasion, occasionally, somewhile, otherwhile, now and again, sometimes, now and then, at times, on occasion, whiles, once in a while",
       "pinyinNumbered": "you3shi2hou4"
     },
     {
       "traditional": "有些",
       "simplified": "有些",
       "pinyin": "yǒuxiē",
-      "english": "kind_of, rather, somewhat",
+      "english": "kind of, rather, somewhat",
       "pinyinNumbered": "you3xie1"
     },
     {
@@ -3223,7 +3223,7 @@
       "traditional": "找到",
       "simplified": "找到",
       "pinyin": "zhǎodào",
-      "english": "light upon, find, discover, run_down, founded, regain, strike, come upon, come across, run down, trace, turn_up, happen upon, get, chance on, chance upon",
+      "english": "light upon, find, discover, run down, founded, regain, strike, come upon, come across, run down, trace, turn up, happen upon, get, chance on, chance upon",
       "pinyinNumbered": "zhao3dao4"
     },
     {
@@ -3349,7 +3349,7 @@
       "traditional": "中學",
       "simplified": "中学",
       "pinyin": "zhōngxué",
-      "english": "middle_school, grammar_school, secondary school, Ch. learning, middle school, high_school, grammar school",
+      "english": "middle school, grammar school, secondary school, Ch. learning, middle school, high school, grammar school",
       "pinyinNumbered": "zhong1xue2"
     },
     {
@@ -3412,7 +3412,7 @@
       "traditional": "走",
       "simplified": "走",
       "pinyin": "zǒu",
-      "english": "scram, travel, foot, go away, evaporate, ankle, waltz, step, bugger off, etc., go through, leave, leak, run, buzz off, leg, pad, fork, visit, go, escape, lose flavor, work, call on, strike, sashay, trace, pursue, gang, lose shape/etc., get_along, come_along, walk, hoof it, lose flavor/shape/etc., leg it, let out, shape, drive, cover, take, get, hoof, move",
+      "english": "scram, travel, foot, go away, evaporate, ankle, waltz, step, bugger off, etc., go through, leave, leak, run, buzz off, leg, pad, fork, visit, go, escape, lose flavor, work, call on, strike, sashay, trace, pursue, gang, lose shape/etc., get along, come along, walk, hoof it, lose flavor/shape/etc., leg it, let out, shape, drive, cover, take, get, hoof, move",
       "pinyinNumbered": "zou3"
     },
     {

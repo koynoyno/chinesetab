@@ -11,6 +11,16 @@ export let draw = (items) => {
   // whether the word should be clickable or not
   let classChar = items.sentenceExamples ? "char charClickable" : "char";
 
+  // DEV show pinyin and english on hover
+  let title = ""; // hover suggestion if pinyin or translation are turned off
+  if (!items.pinyin && !items.translation) {
+    title = `title="${data.pinyin}\n\n${data.english}"`;
+  } else if (!items.pinyin) {
+    title = `title="${data.pinyin}"`;
+  } else if (!items.translation) {
+    title = `title="${data.english}"`;
+  }
+
   // draw colors
   if (items.color) {
     // TODO: move to color.js, remove splitAndKeep import
@@ -25,10 +35,13 @@ export let draw = (items) => {
         }</span>`;
       }
     }
-    drawObject += `<p class="${classChar}" align="center">${coloredChar}</p>`;
+
+    // drawObject += `<p class="${classChar}" align="center">${coloredChar}</p>`;
+    drawObject += `<p class="${classChar}" align="center" ${title}>${coloredChar}</p>`;
   } else {
     // just show characters
-    drawObject += `<p class="${classChar}" align="center">${char}</p>`;
+    // drawObject += `<p class="${classChar}" align="center"">${char}</p>`;
+    drawObject += `<p class="${classChar}" align="center" ${title}>${char}</p>`;
   }
 
   // add sentence examples link

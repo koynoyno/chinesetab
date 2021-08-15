@@ -59,7 +59,7 @@
       "traditional": "白",
       "simplified": "白",
       "pinyin": "bái",
-      "english": "white, clear, pure, plain, wrongly written/mispronounced,",
+      "english": "white, clear, pure, plain, wrongly written/mispronounced",
       "pinyinNumbered": "bai2"
     },
     {
@@ -332,7 +332,7 @@
       "traditional": "表明",
       "simplified": "表明",
       "pinyin": "biǎomíng",
-      "english": "argue, utter, disclose, enunciate, indicate, speak_for, make clear, indication, prove, point, express, manifest, tell, state clearly, give, denote, evince, unfold, portend, declare, kithe, make known, signalize",
+      "english": "argue, utter, disclose, enunciate, indicate, speak for, make clear, indication, prove, point, express, manifest, tell, state clearly, give, denote, evince, unfold, portend, declare, kithe, make known, signalize",
       "pinyinNumbered": "biao3ming2"
     },
     {
@@ -493,7 +493,7 @@
       "traditional": "採用",
       "simplified": "采用",
       "pinyin": "cǎiyòng",
-      "english": "invoke, admit, assume, adoptive, use, adopt, select for use, embrace, accept, employment, take, introduce, take up, take_on, take over, take on, borrow, employ, adoption",
+      "english": "invoke, admit, assume, adoptive, use, adopt, select for use, embrace, accept, employment, take, introduce, take up, take on, take over, take on, borrow, employ, adoption",
       "pinyinNumbered": "cai3yong4"
     },
     {
@@ -682,7 +682,7 @@
       "traditional": "持續",
       "simplified": "持续",
       "pinyin": "chíxù",
-      "english": "perennate, hang on, carry_over, persist, steady, keep, carry over, keep on, proceed, stretch, carry_on, retain, sustain, persevere, continuity, endure, stay, continue, hang in, hold, maintain, run, span, go on, run for, last, go along, exist, hold on",
+      "english": "perennate, hang on, carry over, persist, steady, keep, carry over, keep on, proceed, stretch, carry on, retain, sustain, persevere, continuity, endure, stay, continue, hang in, hold, maintain, run, span, go on, run for, last, go along, exist, hold on",
       "pinyinNumbered": "chi2xu4"
     },
     {
@@ -815,7 +815,7 @@
       "traditional": "從事",
       "simplified": "从事",
       "pinyin": "cóngshì",
-      "english": "engross, have, join, treat, plow, handle, follow, embark, undertake, attend_to, attack, occupy, absorb, go_into, work, engage, prosecute, go_about, go in for, pursue, be, meddle, embark_on, perform, enter, cover, deal, address, be engaged in, deal with, place, wage",
+      "english": "engross, have, join, treat, plow, handle, follow, embark, undertake, attend to, attack, occupy, absorb, go into, work, engage, prosecute, go about, go in for, pursue, be, meddle, embark on, perform, enter, cover, deal, address, be engaged in, deal with, place, wage",
       "pinyinNumbered": "cong2shi4"
     },
     {
@@ -850,7 +850,7 @@
       "traditional": "達到",
       "simplified": "达到",
       "pinyin": "dádào",
-      "english": "extend to, find, fulfil, compass, encompass, extend, gain, answer, achievement, succeed, fulfill, live_up_to, attainment, strain, bring_up, achieve, get to, touch, strive, make, accomplish, progress to, come, hit, come_out, obtain, reach, attain, clock_up, suffice, do, get, arrive_at",
+      "english": "extend to, find, fulfil, compass, encompass, extend, gain, answer, achievement, succeed, fulfill, live up to, attainment, strain, bring up, achieve, get to, touch, strive, make, accomplish, progress to, come, hit, come out, obtain, reach, attain, clock up, suffice, do, get, arrive_at",
       "pinyinNumbered": "da2dao4"
     },
     {
@@ -983,7 +983,7 @@
       "traditional": "到達",
       "simplified": "到达",
       "pinyin": "dàodá",
-      "english": "find, arrive at, go_into, get_in, go, come, show, hit, strike, arrive, fetch_up, range, show_up, gain, come_to, win, reach, come to, attain, lead, go_down, come_in, arrival, get_at, get to, get, touch, make, come_through, arrive_at, land",
+      "english": "find, arrive at, go into, get in, go, come, show, hit, strike, arrive, fetch up, range, show up, gain, come to, win, reach, come to, attain, lead, go down, come in, arrival, get at, get to, get, touch, make, come through, arrive at, land",
       "pinyinNumbered": "dao4da2"
     },
     {
@@ -1088,7 +1088,7 @@
       "traditional": "動力",
       "simplified": "动力",
       "pinyin": "dònglì",
-      "english": "driving force, impetus, motivity, (motive) power, wheel, (motive) power/force, agency, vector, dynamics, force, motive_power, momentum, power",
+      "english": "driving force, impetus, motivity, (motive) power, wheel, (motive) power/force, agency, vector, dynamics, force, motive power, momentum, power",
       "pinyinNumbered": "dong4li4"
     },
     {
@@ -1179,14 +1179,14 @@
       "traditional": "發表",
       "simplified": "发表",
       "pinyin": "fābiǎo",
-      "english": "voice, enounce, enunciate, publish, free, sound, announce, pronounce, deliver, circulation, put_out, release, issue, vend, circularize, give, give_out, denote, present, circulate, publicize, blazon, promulgate, mouth",
+      "english": "voice, enounce, enunciate, publish, free, sound, announce, pronounce, deliver, circulation, put out, release, issue, vend, circularize, give, give out, denote, present, circulate, publicize, blazon, promulgate, mouth",
       "pinyinNumbered": "fa1biao3"
     },
     {
       "traditional": "發出",
       "simplified": "发出",
       "pinyin": "fāchū",
-      "english": "voice, send_out, give_forth, send out, exhale, sound, fetch, pass off, shoot, effuse, issue, emanate, raise, give, shed, send/give out, utter, go, escape, proceed, send, give forth, give_off, give off, fall, eradiate, emit, flash, scintillate, issue_forth, give_out, give out, clank, reek, place, breathe",
+      "english": "voice, send out, give forth, send out, exhale, sound, fetch, pass off, shoot, effuse, issue, emanate, raise, give, shed, send/give out, utter, go, escape, proceed, send, give forth, give off, give off, fall, eradiate, emit, flash, scintillate, issue forth, give out, give out, clank, reek, place, breathe",
       "pinyinNumbered": "fa1chu1"
     },
     {
@@ -1291,7 +1291,7 @@
       "traditional": "防止",
       "simplified": "防止",
       "pinyin": "fángzhǐ",
-      "english": "estop, guard against, preclude, prevention, inhibit, avoidance, help, cumber, prevent, forbid, prohibit, obviate, restrain, deter, avoid, head_off, debar, guard, help oneself, ward_off, constrain, ward, encumber, avert, ward off, disenable, forfend, shield, countercheck, forestall, keep_from, foreclose",
+      "english": "estop, guard against, preclude, prevention, inhibit, avoidance, help, cumber, prevent, forbid, prohibit, obviate, restrain, deter, avoid, head off, debar, guard, help oneself, ward off, constrain, ward, encumber, avert, ward off, disenable, forfend, shield, countercheck, forestall, keep from, foreclose",
       "pinyinNumbered": "fang2zhi3"
     },
     {
@@ -1403,7 +1403,7 @@
       "traditional": "服裝",
       "simplified": "服装",
       "pinyin": "fúzhuāng",
-      "english": "turnout, wearing_apparel, clothing, investiture, rigging, costuming, toggery, habilimentation, habiliment, drapery, garb, attire, toilette, frock, costume, dress, investment, garmenture, rig, garment, setout, implement, garniture, getup, outfit",
+      "english": "turnout, wearing apparel, clothing, investiture, rigging, costuming, toggery, habilimentation, habiliment, drapery, garb, attire, toilette, frock, costume, dress, investment, garmenture, rig, garment, setout, implement, garniture, getup, outfit",
       "pinyinNumbered": "fu2zhuang1"
     },
     {
@@ -1564,7 +1564,7 @@
       "traditional": "告別",
       "simplified": "告别",
       "pinyin": "gàobié",
-      "english": "valedictory, take_leave, part from, leave, parting, say good-bye to, bid farewell to",
+      "english": "valedictory, take leave, part from, leave, parting, say good-bye to, bid farewell to",
       "pinyinNumbered": "gao4bie2"
     },
     {
@@ -1592,7 +1592,7 @@
       "traditional": "個人",
       "simplified": "个人",
       "pinyin": "gèrén",
-      "english": "individual person, man_jack, personal, individual (person), man jack, individual, individuality, identity",
+      "english": "individual person, man jack, personal, individual (person), man jack, individual, individuality, identity",
       "pinyinNumbered": "ge4ren2"
     },
     {
@@ -1676,7 +1676,7 @@
       "traditional": "工具",
       "simplified": "工具",
       "pinyin": "gōngjù",
-      "english": "stock-in-trade, instrumentality, instrument, ministry, hand_tool, escalator, creature, utensil, material, gear, pawn, lobster-joint, cat's-paw, kit, apparatus, tool, appurtenances, paraphernalia, means, wood, tackle, implement, medium, lever, outfit",
+      "english": "stock-in-trade, instrumentality, instrument, ministry, hand tool, escalator, creature, utensil, material, gear, pawn, lobster-joint, cat's-paw, kit, apparatus, tool, appurtenances, paraphernalia, means, wood, tackle, implement, medium, lever, outfit",
       "pinyinNumbered": "gong1ju4"
     },
     {
@@ -1690,7 +1690,7 @@
       "traditional": "工資",
       "simplified": "工资",
       "pinyin": "gōngzī",
-      "english": "earning, hire, remuneration, screw, laborage, pay, paycheck, wages, earnings, pay_packet, salary, wage_scale, differential, wage",
+      "english": "earning, hire, remuneration, screw, laborage, pay, paycheck, wages, earnings, pay packet, salary, wage scale, differential, wage",
       "pinyinNumbered": "gong1zi1"
     },
     {
@@ -1711,7 +1711,7 @@
       "traditional": "公開",
       "simplified": "公开",
       "pinyin": "gōngkāi",
-      "english": "bare, air, unclose, publish, come_out, make known to the public, publicize, divulgate, overt, publicise, public, disclosure, make known to public, unfurl, make public",
+      "english": "bare, air, unclose, publish, come out, make known to the public, publicize, divulgate, overt, publicise, public, disclosure, make known to public, unfurl, make public",
       "pinyinNumbered": "gong1kai1"
     },
     {
@@ -1725,7 +1725,7 @@
       "traditional": "公務員",
       "simplified": "公务员",
       "pinyin": "gōngwùyuán",
-      "english": "jobholder, servant, public_servant, official, government official worker, functionary, government employee, public servant, officeholder, officialdom, officer, orderly, civil servant, government officials",
+      "english": "jobholder, servant, public servant, official, government official worker, functionary, government employee, public servant, officeholder, officialdom, officer, orderly, civil servant, government officials",
       "pinyinNumbered": "gong1wu4yuan2"
     },
     {
@@ -1956,7 +1956,7 @@
       "traditional": "害怕",
       "simplified": "害怕",
       "pinyin": "hàipà",
-      "english": "dread, be afraid/scared, fearful, frighten, fear, frightened, shrink_from, be afraid, funk, scared, be scared, tremble",
+      "english": "dread, be afraid/scared, fearful, frighten, fear, frightened, shrink from, be afraid, funk, scared, be scared, tremble",
       "pinyinNumbered": "hai4pa4"
     },
     {
@@ -1998,7 +1998,7 @@
       "traditional": "合格",
       "simplified": "合格",
       "pinyin": "hégé",
-      "english": "measure_up, reach standard, measure up, qualify, nail, make it, pass, qualified",
+      "english": "measure up, reach standard, measure up, qualify, nail, make it, pass, qualified",
       "pinyinNumbered": "he2ge2"
     },
     {
@@ -2026,7 +2026,7 @@
       "traditional": "紅茶",
       "simplified": "红茶",
       "pinyin": "hóngchá",
-      "english": "tea, bohea, black_tea, black tea",
+      "english": "tea, bohea, black tea, black tea",
       "pinyinNumbered": "hong2cha2"
     },
     {
@@ -2103,7 +2103,7 @@
       "traditional": "話題",
       "simplified": "话题",
       "pinyin": "huàtí",
-      "english": "talking_point, theme, gambit, subject of a talk, ground, talk, talking point, topic, chapter, topic of conversation",
+      "english": "talking point, theme, gambit, subject of a talk, ground, talk, talking point, topic, chapter, topic of conversation",
       "pinyinNumbered": "hua4ti2"
     },
     {
@@ -2271,7 +2271,7 @@
       "traditional": "繼續",
       "simplified": "继续",
       "pinyin": "jìxù",
-      "english": "go, resume, keep_on, abide, come on, persist in, extend, run_on, run on, carry_on, stretch, sustain, pursue, keep going, continuance, get_along, get_on, remain, continue, keep_up, go ahead, keep up, come up, continuation, hold, carry, run, go_on, maintain, go on, bide, plow ahead, hold_on, piece, restart",
+      "english": "go, resume, keep on, abide, come on, persist in, extend, run on, run on, carry on, stretch, sustain, pursue, keep going, continuance, get along, get on, remain, continue, keep up, go ahead, keep up, come up, continuation, hold, carry, run, go on, maintain, go on, bide, plow ahead, hold on, piece, restart",
       "pinyinNumbered": "ji4xu4"
     },
     {
@@ -2530,7 +2530,7 @@
       "traditional": "結婚",
       "simplified": "结婚",
       "pinyin": "jiéhūn",
-      "english": "middle-aisle, intermarry, mate, conjoin, get married, couple, married, espouse, pair, marry, unite, get_married, get hitched with, spouse, splice, hook up with, wed",
+      "english": "middle-aisle, intermarry, mate, conjoin, get married, couple, married, espouse, pair, marry, unite, get married, get hitched with, spouse, splice, hook up with, wed",
       "pinyinNumbered": "jie2hun1"
     },
     {
@@ -2551,7 +2551,7 @@
       "traditional": "解開",
       "simplified": "解开",
       "pinyin": "jiěkāi",
-      "english": "unknot, loose, uncouple, unbuckle, unyoke, reel off, disengage, unreel, unloosen, disentwine, detach, untie, unwreathe, unlock, ravel, disentangle, unbraid, unsnarl, unhook, unfasten, unwind, unroll, tease apart, loosen, unhitch, unlace, undone, tease, unwire, uncord, unwrap, unleash, unthread, undo, disassemble, ravel out, disconnect, unlink, sleave, untangle, unpack, puzzle_out, unbend, u",
+      "english": "unknot, loose, uncouple, unbuckle, unyoke, reel off, disengage, unreel, unloosen, disentwine, detach, untie, unwreathe, unlock, ravel, disentangle, unbraid, unsnarl, unhook, unfasten, unwind, unroll, tease apart, loosen, unhitch, unlace, undone, tease, unwire, uncord, unwrap, unleash, unthread, undo, disassemble, ravel out, disconnect, unlink, sleave, untangle, unpack, puzzle out, unbend, u",
       "pinyinNumbered": "jie3kai1"
     },
     {
@@ -2789,7 +2789,7 @@
       "traditional": "決賽",
       "simplified": "决赛",
       "pinyin": "juésài",
-      "english": "runoff, fight-off, cup_final, playoff, cup final, match_game, finals, final, run-off",
+      "english": "runoff, fight-off, cup final, playoff, cup final, match game, finals, final, run-off",
       "pinyinNumbered": "jue2sai4"
     },
     {
@@ -3090,7 +3090,7 @@
       "traditional": "立刻",
       "simplified": "立刻",
       "pinyin": "lìkè",
-      "english": "in a short time, at_once, promptly, offhand, at once, anon, instantly, straightway, now, slapbang, pronto, right_away, immediately, without delay, right away, forthwith, presto, at a time, before long, in a minute, swith, directly, in no time, incontinent, subito, without_delay, in real time, shortly, tout-de-suite, away, soon, presently, in a few seconds, very fast, chop-chop, at o",
+      "english": "in a short time, at once, promptly, offhand, at once, anon, instantly, straightway, now, slapbang, pronto, right away, immediately, without delay, right away, forthwith, presto, at a time, before long, in a minute, swith, directly, in no time, incontinent, subito, without delay, in real time, shortly, tout-de-suite, away, soon, presently, in a few seconds, very fast, chop-chop, at o",
       "pinyinNumbered": "li4ke4"
     },
     {
@@ -3139,7 +3139,7 @@
       "traditional": "聯合國",
       "simplified": "联合国",
       "pinyin": "liánhéguó",
-      "english": "alignment, United Nations, United_Nations, alliance, confederation, coalition, confederate, alinement, UN",
+      "english": "alignment, United Nations, United Nations, alliance, confederation, coalition, confederate, alinement, UN",
       "pinyinNumbered": "lian2he2guo2"
     },
     {
@@ -3181,7 +3181,7 @@
       "traditional": "領先",
       "simplified": "领先",
       "pinyin": "lǐngxiān",
-      "english": "lead, lead (in competition), precede, lead_up, be in lead, show, be in the lead, get the jump",
+      "english": "lead, lead (in competition), precede, lead up, be in lead, show, be in the lead, get the jump",
       "pinyinNumbered": "ling3xian1"
     },
     {
@@ -3244,7 +3244,7 @@
       "traditional": "旅行社",
       "simplified": "旅行社",
       "pinyin": "lǔxíngshè",
-      "english": "a tourist agency, travel_agency, a travel agency, travel service/agent, travel service, travel agent, travel agency",
+      "english": "a tourist agency, travel agency, a travel agency, travel service/agent, travel service, travel agent, travel agency",
       "pinyinNumbered": "lu3xing2she4"
     },
     {
@@ -3363,7 +3363,7 @@
       "traditional": "美術",
       "simplified": "美术",
       "pinyin": "měishù",
-      "english": "constructivism, beaux arts, beaux-arts, artistic production, artistic creation, painting, fineart, fine_art, cubism, art, fine arts",
+      "english": "constructivism, beaux arts, beaux-arts, artistic production, artistic creation, painting, fineart, fine art, cubism, art, fine arts",
       "pinyinNumbered": "mei3shu4"
     },
     {
@@ -3391,14 +3391,14 @@
       "traditional": "面對",
       "simplified": "面对",
       "pinyin": "miànduì",
-      "english": "face up, stand up, face, look_out_on, confront, front, affront, envisage, accost, breast",
+      "english": "face up, stand up, face, look out on, confront, front, affront, envisage, accost, breast",
       "pinyinNumbered": "mian4dui4"
     },
     {
       "traditional": "面積",
       "simplified": "面积",
       "pinyin": "miànjī",
-      "english": "area unit, area, superficies, superficial, acreage, expanse, surface_area, square_measure, surface area, content, space, square measure",
+      "english": "area unit, area, superficies, superficial, acreage, expanse, surface area, square measure, surface area, content, space, square measure",
       "pinyinNumbered": "mian4ji1"
     },
     {
@@ -3517,7 +3517,7 @@
       "traditional": "內容",
       "simplified": "内容",
       "pinyin": "nèiróng",
-      "english": "subject_matter, content, cognitive content, internal, contents, mental object, meat, substance, matter, lining",
+      "english": "subject matter, content, cognitive content, internal, contents, mental object, meat, substance, matter, lining",
       "pinyinNumbered": "nei4rong2"
     },
     {
@@ -3573,7 +3573,7 @@
       "traditional": "念",
       "simplified": "念",
       "pinyin": "niàn",
-      "english": "study, read, attend school, think_of, read aloud, think of, miss",
+      "english": "study, read, attend school, think of, read aloud, think of, miss",
       "pinyinNumbered": "nian4"
     },
     {
@@ -3727,7 +3727,7 @@
       "traditional": "啤酒",
       "simplified": "啤酒",
       "pinyin": "píjiǔ",
-      "english": "malt liquor, malt, suds, nappy, wallop, beery, malt_liquor, stout, barley-bree, brewage, beer",
+      "english": "malt liquor, malt, suds, nappy, wallop, beery, malt liquor, stout, barley-bree, brewage, beer",
       "pinyinNumbered": "pi2jiu3"
     },
     {
@@ -3853,7 +3853,7 @@
       "traditional": "前往",
       "simplified": "前往",
       "pinyin": "qiánwǎng",
-      "english": "depart, cruise, go_to, go, leave, go to, proceed to, pay, seek, leave for",
+      "english": "depart, cruise, go to, go, leave, go to, proceed to, pay, seek, leave for",
       "pinyinNumbered": "qian2wang3"
     },
     {
@@ -3874,7 +3874,7 @@
       "traditional": "強調",
       "simplified": "强调",
       "pinyin": "qiángdiào",
-      "english": "underscore, spotlight, place emphasis on, point_up, highlight, point, point up, enforce, emphasise, urge, underline, overstress, give emphasis to, play up, keynote, insist, punctuate, accent, betone, foreground, emphasize, emphatic, stress, set off, overemphasize, accentuate, bring out",
+      "english": "underscore, spotlight, place emphasis on, point up, highlight, point, point up, enforce, emphasise, urge, underline, overstress, give emphasis to, play up, keynote, insist, punctuate, accent, betone, foreground, emphasize, emphatic, stress, set off, overemphasize, accentuate, bring out",
       "pinyinNumbered": "qiang2diao4"
     },
     {
@@ -4042,7 +4042,7 @@
       "traditional": "確定",
       "simplified": "确定",
       "pinyin": "quèdìng",
-      "english": "find, determination, make a point, pin down, narrow down, corroborate, prove, jell, settle, express, ensure, clench, assure, confirm, decide firmly, see, certain, define, clinch, nail_down, ascertain, determinate, guarantee, nail down, insure, fix, nail, peg, sustain, state, stipulate, secure, make_sure, seal, make sure, verify, find out, affirm, determine",
+      "english": "find, determination, make a point, pin down, narrow down, corroborate, prove, jell, settle, express, ensure, clench, assure, confirm, decide firmly, see, certain, define, clinch, nail down, ascertain, determinate, guarantee, nail down, insure, fix, nail, peg, sustain, state, stipulate, secure, make sure, seal, make sure, verify, find out, affirm, determine",
       "pinyinNumbered": "que4ding4"
     },
     {
@@ -4098,7 +4098,7 @@
       "traditional": "人類",
       "simplified": "人类",
       "pinyin": "rénlèi",
-      "english": "man, wight, human_being, human, human race, mankind, individual, human species, Homo_sapiens, populace, creature, hominid, world, mortality, microcosm, humans, humanitarianism, humanity, humanness, human beings/species, people, species, humankind, human beings, public, mortal",
+      "english": "man, wight, human being, human, human race, mankind, individual, human species, Homo sapiens, populace, creature, hominid, world, mortality, microcosm, humans, humanitarianism, humanity, humanness, human beings/species, people, species, humankind, human beings, public, mortal",
       "pinyinNumbered": "ren2lei4"
     },
     {
@@ -4266,7 +4266,7 @@
       "traditional": "上來",
       "simplified": "上来",
       "pinyin": "shànglái",
-      "english": "come_up, come up",
+      "english": "come up, come up",
       "pinyinNumbered": "shang4lai2"
     },
     {
@@ -4448,7 +4448,7 @@
       "traditional": "石油",
       "simplified": "石油",
       "pinyin": "shíyóu",
-      "english": "crude, rock oil, crude oil, oil, coal oil, fossil_oil, fossil oil, petroleum",
+      "english": "crude, rock oil, crude oil, oil, coal oil, fossil oil, fossil oil, petroleum",
       "pinyinNumbered": "shi2you2"
     },
     {
@@ -4490,7 +4490,7 @@
       "traditional": "實行",
       "simplified": "实行",
       "pinyin": "shíxíng",
-      "english": "put into effect, fulfil, put ... into practice, practise, practice, put into practice/effect, live, pass, obtain, prosecute, cause, phase, meet, carry_out, pull, effect, operate, carry out, actualize, use, effectuate, put ... into effect, perform, apply, put into practice, run, implement, execute, do, make, wage, implementation",
+      "english": "put into effect, fulfil, put ... into practice, practise, practice, put into practice/effect, live, pass, obtain, prosecute, cause, phase, meet, carry out, pull, effect, operate, carry out, actualize, use, effectuate, put ... into effect, perform, apply, put into practice, run, implement, execute, do, make, wage, implementation",
       "pinyinNumbered": "shi2xing2"
     },
     {
@@ -4518,14 +4518,14 @@
       "traditional": "使",
       "simplified": "使",
       "pinyin": "shǐ",
-      "english": "rarefy, piss_off, germinate, drench, blow_out, leave, cut_up, refract, run, dress_up, compose, shed, frizz, put_off, trot, send, strike, send (as envoy), peal, alienate, pull_in, tone_up, bring around, astound, sublease, wither, cripple, bed_down, address, rehearse, usage, warm, smell_out, throw, inflect, get_down, skunk, capsize, congeal, bowl_over, bring_on, unseat, ensure, amalgamate, pro",
+      "english": "rarefy, piss off, germinate, drench, blow out, leave, cut up, refract, run, dress up, compose, shed, frizz, put off, trot, send, strike, send (as envoy), peal, alienate, pull in, tone up, bring around, astound, sublease, wither, cripple, bed down, address, rehearse, usage, warm, smell out, throw, inflect, get down, skunk, capsize, congeal, bowl over, bring on, unseat, ensure, amalgamate, pro",
       "pinyinNumbered": "shi3"
     },
     {
       "traditional": "始終",
       "simplified": "始终",
       "pinyin": "shǐzhōng",
-      "english": "all_the_time, from beginning to end, from start to finish, always, all along, evermore, throughout",
+      "english": "all the time, from beginning to end, from start to finish, always, all along, evermore, throughout",
       "pinyinNumbered": "shi3zhong1"
     },
     {
@@ -4609,7 +4609,7 @@
       "traditional": "適合",
       "simplified": "适合",
       "pinyin": "shìhé",
-      "english": "qualify, conform, fit, go, befit, quadrate, will, accord, tailor, beseem, serve, comport, gee, answer, become, fit_in, service, pertain, like, accommodate, agree, belong, characterize, make, suit, match",
+      "english": "qualify, conform, fit, go, befit, quadrate, will, accord, tailor, beseem, serve, comport, gee, answer, become, fit in, service, pertain, like, accommodate, agree, belong, characterize, make, suit, match",
       "pinyinNumbered": "shi4he2"
     },
     {
@@ -4742,7 +4742,7 @@
       "traditional": "屬於",
       "simplified": "属于",
       "pinyin": "shǔyū",
-      "english": "fall under, be part of, pertain, appertain, belong, relegate, fall into, belong_to, fall_under, reside, belong to, attach",
+      "english": "fall under, be part of, pertain, appertain, belong, relegate, fall into, belong to, fall under, reside, belong to, attach",
       "pinyinNumbered": "shu3yu1"
     },
     {
@@ -4777,7 +4777,7 @@
       "traditional": "思想",
       "simplified": "思想",
       "pinyin": "sīxiǎng",
-      "english": "cogitation, mentation, imagery, imaging, lunatic_fringe, mental imagery, idea, thinking, imagination, ideology, thought, pensee, ideological",
+      "english": "cogitation, mentation, imagery, imaging, lunatic fringe, mental imagery, idea, thinking, imagination, ideology, thought, pensee, ideological",
       "pinyinNumbered": "si1xiang3"
     },
     {
@@ -4987,7 +4987,7 @@
       "traditional": "停止",
       "simplified": "停止",
       "pinyin": "tíngzhǐ",
-      "english": "cease, flunk, desist, pass, suspend, stint, pass_off, break_up, stash, cut, stay, cessation, adjourn, rain_out, give, detain, blow_over, seize, give up, balk, cheese, abstain, refrain, knock_off, rest, abandon, break, knock off, drop, go, tie_up, stop, interdict, strike, lay_off, stow, cut off, discontinue, pause, leave_off, leave off, set aside, give_out, cut_out, give_up, delay, quit, cut out",
+      "english": "cease, flunk, desist, pass, suspend, stint, pass off, break up, stash, cut, stay, cessation, adjourn, rain out, give, detain, blow over, seize, give up, balk, cheese, abstain, refrain, knock off, rest, abandon, break, knock off, drop, go, tie up, stop, interdict, strike, lay off, stow, cut off, discontinue, pause, leave off, leave off, set aside, give out, cut out, give up, delay, quit, cut out",
       "pinyinNumbered": "ting2zhi3"
     },
     {
@@ -5050,7 +5050,7 @@
       "traditional": "突然",
       "simplified": "突然",
       "pinyin": "túrán",
-      "english": "suddenly, presto, unexpectedly, abruptly, at once, all_at_once, all together, all of a sudden, all at once",
+      "english": "suddenly, presto, unexpectedly, abruptly, at once, all at once, all together, all of a sudden, all at once",
       "pinyinNumbered": "tu2ran2"
     },
     {
@@ -5379,7 +5379,7 @@
       "traditional": "下去",
       "simplified": "下去",
       "pinyin": "xiàqù",
-      "english": "go on, continue, go down, descend, take_up, descent",
+      "english": "go on, continue, go down, descend, take up, descent",
       "pinyinNumbered": "xia4qu4"
     },
     {
@@ -5694,7 +5694,7 @@
       "traditional": "學費",
       "simplified": "学费",
       "pinyin": "xuéfèi",
-      "english": "entrance_fee, tuition fee, premium, schooling, tuition",
+      "english": "entrance fee, tuition fee, premium, schooling, tuition",
       "pinyinNumbered": "xue2fei4"
     },
     {
@@ -5708,7 +5708,7 @@
       "traditional": "壓",
       "simplified": "压",
       "pinyin": "yā",
-      "english": "weight_down, hold down, push down, compact, constrict, be getting near, suppress, squeeze, compress, risk money on, quell, bring pressure to, pull, press, keep under control, throttle, push/hold down, intimidate, scrunch, weigh down, scrouge, daunt, shelve, pigeonhole, contract, approach, keep under, push, stake, control",
+      "english": "weight down, hold down, push down, compact, constrict, be getting near, suppress, squeeze, compress, risk money on, quell, bring pressure to, pull, press, keep under control, throttle, push/hold down, intimidate, scrunch, weigh down, scrouge, daunt, shelve, pigeonhole, contract, approach, keep under, push, stake, control",
       "pinyinNumbered": "ya1"
     },
     {
@@ -5918,14 +5918,14 @@
       "traditional": "優點",
       "simplified": "优点",
       "pinyin": "yōudiǎn",
-      "english": "strong, merit, vantage, excellency, perfection, assets, beaut, advantage, excellence, upside, strong_point, good point, virtue, desert, desirability, strong point, long_suit, beauty, strong/good point, desirableness",
+      "english": "strong, merit, vantage, excellency, perfection, assets, beaut, advantage, excellence, upside, strong point, good point, virtue, desert, desirability, strong point, long suit, beauty, strong/good point, desirableness",
       "pinyinNumbered": "you1dian3"
     },
     {
       "traditional": "優勢",
       "simplified": "优势",
       "pinyin": "yōushì",
-      "english": "ascendence, laterality, preponderancy, vantage, ascendancy, ascendent, transcendency, dominance, predominance, draw, gree, upper_hand, prevalence, advantage, mastery, ascendency, supremacy, advantageousness, control, preeminence, dominion, jump, edge, better, deadwood, overweight, superiority, domination, sovereignty, preponderance, ascendance, transcendence, prepotency, hank, asce",
+      "english": "ascendence, laterality, preponderancy, vantage, ascendancy, ascendent, transcendency, dominance, predominance, draw, gree, upper hand, prevalence, advantage, mastery, ascendency, supremacy, advantageousness, control, preeminence, dominion, jump, edge, better, deadwood, overweight, superiority, domination, sovereignty, preponderance, ascendance, transcendence, prepotency, hank, asce",
       "pinyinNumbered": "you1shi4"
     },
     {
@@ -5953,7 +5953,7 @@
       "traditional": "郵票",
       "simplified": "邮票",
       "pinyin": "yóupiào",
-      "english": "postage_stamp, album, label, stamp, postage, postage stamp, stickies",
+      "english": "postage stamp, album, label, stamp, postage, postage stamp, stickies",
       "pinyinNumbered": "you2piao4"
     },
     {
@@ -6100,7 +6100,7 @@
       "traditional": "造成",
       "simplified": "造成",
       "pinyin": "zàochéng",
-      "english": "make_for, give rise to, create, set_up, strike, creation, cause, contribute, bring_about, procure, give, bring about, cut_out, necessitate, shape, present, bring_forth, generate, yield, make, breed",
+      "english": "make for, give rise to, create, set up, strike, creation, cause, contribute, bring about, procure, give, bring about, cut out, necessitate, shape, present, bring forth, generate, yield, make, breed",
       "pinyinNumbered": "zao4cheng2"
     },
     {
@@ -6170,7 +6170,7 @@
       "traditional": "爭取",
       "simplified": "争取",
       "pinyin": "zhēngqǔ",
-      "english": "strive for, fight for, wrangle, work hard for, contest, go for, strive/fight for, contend, try_for, woo, try for, strive, win over, scramble, do all one can to",
+      "english": "strive for, fight for, wrangle, work hard for, contest, go for, strive/fight for, contend, try for, woo, try for, strive, win over, scramble, do all one can to",
       "pinyinNumbered": "zheng1qu3"
     },
     {
@@ -6324,7 +6324,7 @@
       "traditional": "值得",
       "simplified": "值得",
       "pinyin": "zhíde",
-      "english": "be worth, merit, pay, rate, behove, worthwhile, worth, worthy, deserve, call_for, command",
+      "english": "be worth, merit, pay, rate, behove, worthwhile, worth, worthy, deserve, call for, command",
       "pinyinNumbered": "zhi2de5"
     },
     {
@@ -6338,7 +6338,7 @@
       "traditional": "職業",
       "simplified": "职业",
       "pinyin": "zhíyè",
-      "english": "metier, vocation, iceman, mystery, engagement, work, walk of life, employment, job, occupational group, ploy, craft, trade, avocation, employ, racket, pursuit, profession, situation, line, occupation, position, calling, walk_of_life, career, billet, duty, living, shop",
+      "english": "metier, vocation, iceman, mystery, engagement, work, walk of life, employment, job, occupational group, ploy, craft, trade, avocation, employ, racket, pursuit, profession, situation, line, occupation, position, calling, walk of life, career, billet, duty, living, shop",
       "pinyinNumbered": "zhi2ye4"
     },
     {
@@ -6373,7 +6373,7 @@
       "traditional": "指出",
       "simplified": "指出",
       "pinyin": "zhǐchū",
-      "english": "point, point_out, catch_out, bespeak, indicate, denote, point out (that), note, show, designate, point out",
+      "english": "point, point out, catch out, bespeak, indicate, denote, point out (that), note, show, designate, point out",
       "pinyinNumbered": "zhi3chu1"
     },
     {
@@ -6387,14 +6387,14 @@
       "traditional": "至今",
       "simplified": "至今",
       "pinyin": "zhìjīn",
-      "english": "thus_far, up_to_now, until_now, so far, to this day, up to now, to date, hitherto, erenow",
+      "english": "thus far, up to now, until now, so far, to this day, up to now, to date, hitherto, erenow",
       "pinyinNumbered": "zhi4jin1"
     },
     {
       "traditional": "至少",
       "simplified": "至少",
       "pinyin": "zhìshǎo",
-      "english": "leastwise, leastways, at (the) least, at_least, only, fully, even a little, at least, at any rate, in the least, at least, at the least",
+      "english": "leastwise, leastways, at (the) least, at least, only, fully, even a little, at least, at any rate, in the least, at least, at the least",
       "pinyinNumbered": "zhi4shao3"
     },
     {
@@ -6457,7 +6457,7 @@
       "traditional": "終於",
       "simplified": "终于",
       "pinyin": "zhōngyū",
-      "english": "in the last analysis, at long last, at last, lastly, ultimately, all things considered, out, on the whole, at_last, eventually, in the final analysis, finally",
+      "english": "in the last analysis, at long last, at last, lastly, ultimately, all things considered, out, on the whole, at last, eventually, in the final analysis, finally",
       "pinyinNumbered": "zhong1yu1"
     },
     {
@@ -6562,7 +6562,7 @@
       "traditional": "抓住",
       "simplified": "抓住",
       "pinyin": "zhuāzhù",
-      "english": "clutch, grip, grab, kep, nail, grapple, get_hold_of, catch, seize hold of, take_hold_of, grip sb.'s attention, cleek, grasp, hold, nab, seize, tackle, capture, snatch, take, take hold of, prehend, catch hold of, glaum, hold on",
+      "english": "clutch, grip, grab, kep, nail, grapple, get hold of, catch, seize hold of, take hold of, grip sb.'s attention, cleek, grasp, hold, nab, seize, tackle, capture, snatch, take, take hold of, prehend, catch hold of, glaum, hold on",
       "pinyinNumbered": "zhua1zhu4"
     },
     {
@@ -6646,7 +6646,7 @@
       "traditional": "資金",
       "simplified": "资金",
       "pinyin": "zījīn",
-      "english": "principal_sum, fund, bankroll, finance, coffer, ante, grubstake, munition, wherewithal, capital, working capital",
+      "english": "principal sum, fund, bankroll, finance, coffer, ante, grubstake, munition, wherewithal, capital, working capital",
       "pinyinNumbered": "zi1jin1"
     },
     {

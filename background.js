@@ -1,5 +1,6 @@
 chrome.runtime.onInstalled.addListener(function (details) {
   if (details.reason === "install") {
+    // TODO sync after install, leave only cache
     chrome.storage.sync.set({
       hsk: "hsk2",
       level: "hsk1",
@@ -41,6 +42,16 @@ chrome.runtime.onInstalled.addListener(function (details) {
   // localStorage is the synchronous, this way white flash can be avoided
   // TODO: implement messaging to localStorage approach
 });
+
+// DEV logger to monitor storage changes
+// chrome.storage.onChanged.addListener(function (changes, namespace) {
+//   for (let [key, { oldValue, newValue }] of Object.entries(changes)) {
+//     console.log(
+//       `Storage key "${key}" in namespace "${namespace}" changed.`,
+//       `Old value was "${oldValue}", new value is "${newValue}".`
+//     );
+//   }
+// });
 
 // DISABLED: uninstall survey
 // TODO: typeform

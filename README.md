@@ -22,7 +22,7 @@ Memorize Chinese words ****every time you open a new tab****
 
 ## Sounds nice. Anything else?
 
-🔥 Opens instantly (faster than default new tab)
+💨 Opens instantly (faster than default new tab)
 
 💻 Easy on CPU, memory, and battery
 
@@ -36,12 +36,14 @@ Memorize Chinese words ****every time you open a new tab****
 
 💖 Open source
 
-## OMG! How much does it cost?
+## OMG!
 
-✨ **It's free!** I will be happy if you find this extension useful and tell your friends about it.
+## How much does it cost?
 
-✨ **Star** this repository to help to list it on OpenCollective, they require 100 stars
+✨ **It's totally free!** I will be happy if you find this extension useful!
 
-✨ **[Sponsor](https://ko-fi.com/chinesetab)** the development if you love Chinese Tab. I have plans to develop another awesome Chinese extension, that's why
+## I love Chinese Tab! How can I help?
 
-<img align="left" src=images/panda_easter.png><h1>your support matters ~</h2>
+✨ **Check out** Ko-fi page. Your tip will be used to develop [another awesome Chinese extension](https://ko-fi.com/chinesetab)
+
+<img align="left" src=images/panda_easter.png><h1>谢谢~~</h2>
