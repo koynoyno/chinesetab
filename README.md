@@ -1,4 +1,4 @@
-<img align="right" src=images/panda.png>
+<img align="right" src=images/panda.png title="酷酷酷！">
 
 # Chinese Tab | 中文标签页
 
@@ -20,6 +20,7 @@ Memorize Chinese words ****every time you open a new tab****
 
 🤓 Pinyin and translation can be turned off (hardcore mode)
 
+🐼 Mandarin speaking panda Mao Xi
 ## Sounds nice. Anything else?
 
 💨 Opens instantly (much faster than default new tab)
@@ -36,6 +37,7 @@ Memorize Chinese words ****every time you open a new tab****
 
 💖 Open source
 
+
 ## OMG, how much does it cost?
 
 ✨ It's free!
@@ -48,6 +50,4 @@ No ads, no tracking, and free for everyone.
 
 Watch me building in public, vote for features, and support building the greatest extension for fun Chinese microlearning.
 
-## [**I'm in!**](https://ko-fi.com/chinesetab)
-
-<a href="https://ko-fi.com/chinesetab" title="酷酷酷！"><img align="left" src=images/panda_easter.png></a><h1>谢谢你~</h2>
+<a href="https://ko-fi.com/chinesetab" title="谢谢你~"><img align="left" src=images/panda_easter.png><h1><strong>I'm in!</strong></h1></a>
