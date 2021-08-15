@@ -1,39 +1,44 @@
-document.body.classList.add(localStorage.getItem("darkMode"));
-
-const luck = 88;
+import { draw } from "./draw.js";
+import { cacheUpdate } from "./cacheUpdate.js";
 
 chrome.storage.sync.get(null, async (items) => {
-  // TODO: fetch cached character (update on settings changes)
-  const { default: hsk } = await import(`../${items.hsk}/${items.level}.json`, {
-    assert: { type: "json" },
-  });
+  const luck = 88;
+  let cacheUpdated = false;
+  let newCache;
 
   // if extension is updated
-  // TODO: fix, rn it's being called all the time
-  // const { postUpdate } = await import("./postUpdate.js")
-  // postUpdate(items);
+  if (items.updated) {
+    const { postUpdate } = await import("./postUpdate.js");
+    await postUpdate(items);
+  }
+
+  // update empty cache
+  if (Object.keys(items.cache).length === 0) {
+    // const { cacheUpdate } = await import("./cacheUpdate.js");
+    items.cache = await cacheUpdate(items);
+  }
 
   // draw characters, pinyin, tones, translation
-  const { draw } = await import("./draw.js");
-  draw(items, hsk);
+  draw(items);
 
   // display first launch greeting or seen words message
   if (items.firstLaunch) {
     const { ifFirstLaunch } = await import("./firstLaunch.js");
-    ifFirstLaunch();
+    await ifFirstLaunch();
   } else if (Math.floor(Math.random() * luck) % luck == 0) {
     const { confetti } = await import("./npm/confetti.browser.js");
     const { showSeenWords } = await import("./showSeenWords.js");
-    showSeenWords(items.game.wordsSeen, items.color);
+    await showSeenWords(items.game.wordsSeen, items.color);
   }
 
+  // counter is updated on every tab
   items.game.wordsSeen++;
-  chrome.storage.sync.set({ game: { wordsSeen: items.game.wordsSeen } });
-});
+  // repopulate cache and update counter
+  chrome.storage.sync.set({
+    cache: await cacheUpdate(items),
+    game: { wordsSeen: items.game.wordsSeen },
+  });
 
-window.addEventListener("load", async () => {
-  const { consoleGreeting } = await import("./consoleGreeting.js");
-  consoleGreeting();
-
-  // TODO: load JSON .225s after to not to interrupt animation
+  const { consoleGreeting } = await import("./consoleGreeting.js"); // async
+  await consoleGreeting();
 });

@@ -2,9 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <style>
+      .dark-mode {
+        background-color: #121212 !important;
+        color: #fff !important;
+      }
+    </style>
+    <link rel="preload" as="script" href="src/darkMode.js" crossorigin />
+    <script type="module" src="src/darkMode.js"></script>
+    <link rel="preload" as="script" href="src/script.js" crossorigin />
     <script type="module" src="src/script.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="preload" href="fonts/noto-sans.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" as="script" href="src/draw.js" crossorigin />
+    <link rel="preload" as="script" href="src/color.js" crossorigin />
+    <link rel="preload" as="style" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+    rel="preload"
+    href="fonts/noto-sans.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+    />
+    <link rel="preload" as="script" href="src/cacheUpdate.js" crossorigin />
+    <link rel="preload" as="script" href="src/getRandomWord.js" crossorigin />
+    <link rel="preload" as="script" href="src/getRandomNumber.js" crossorigin />
     <title>New Tab</title>
   </head>
   <body>

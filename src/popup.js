@@ -1,5 +1,5 @@
 // darkMode
-// document.body.classList.add(localStorage.getItem("darkMode"));
+document.body.classList.add(localStorage.getItem("darkMode"));
 
 // ==========================================
 // apply settings
@@ -10,33 +10,32 @@ let saveSettings = (id, checkbox = false) => {
   } else {
     value = document.querySelector(`#${id}`).value;
   }
-  // console.log(`${checkbox}`);
 
   chrome.storage.sync.set({ [id]: value });
 
-  // console.log(`Set ${id}: ${value}`);
-
+  // remove cache if level is changed
   if (id == "level") {
-    chrome.storage.sync.set({ randomWords: [] });
+    chrome.storage.sync.set({ randomWords: [], cache: {} });
   }
 
   // redraw index.html after storage.sync.set
   // TODO: add dynamic style changing for pinyin/translation/darkMode + animation
   // See: https://stackoverflow.com/questions/38561136/chrome-extension-to-change-dom-with-a-button-in-extension-popup
-  chrome.tabs.reload();
 
   // redraw popup if darkMode is toggled
   if (id == "darkMode") {
     if (value) {
       document.body.classList.add("dark-mode");
+      localStorage.setItem("darkMode", "dark-mode");
     } else {
       document.body.classList.remove("dark-mode");
+      localStorage.removeItem("darkMode");
     }
   }
 
-  // redraw #level options if HSK version is toggled
+  // remove cache and redraw #level options if HSK version is toggled
   if (id == "hsk") {
-    chrome.storage.sync.set({ randomWords: [] }); // bug fix
+    chrome.storage.sync.set({ randomWords: [], cache: {} }); // bug fix
     level = document.querySelector("#level");
     levelValue = level.value;
     while (level.lastElementChild) {
@@ -52,6 +51,8 @@ let saveSettings = (id, checkbox = false) => {
       level.value = levelValue;
     }
   }
+  chrome.tabs.reload();
+
 };
 
 // =============================================
@@ -116,9 +117,11 @@ let redrawHSKLevels = (hsk) => {
 // -------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", async () => {
-  document.body.classList.add(localStorage.getItem("darkMode"));
+  // document.body.classList.add(localStorage.getItem("darkMode"));
   restoreSettings();
+});
 
+window.addEventListener("load", async () => {
   // TODO: optimize with event delegation
   // https://davidwalsh.name/event-delegate
 
@@ -163,6 +166,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   // button event listeners
   feedback.addEventListener("click", () => {
     chrome.tabs.update({
+      // TODO: replace, google forms sucks with popups and stuff
       url: "https://forms.gle/A2j7TKjXwUfuALqz7",
     });
     window.close();

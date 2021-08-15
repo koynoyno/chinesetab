@@ -22,7 +22,7 @@ Memorize Chinese words ****every time you open a new tab****
 
 ## Sounds nice. Anything else?
 
-🔥 Opens in a split of a second (faster than default new tab)
+🔥 Opens instantly (faster than default new tab)
 
 💻 Easy on CPU, memory, and battery
 

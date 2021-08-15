@@ -1,26 +1,25 @@
-import { getRandomFrom } from "./getRandomFrom.js";
+import { getRandomNumber } from "./getRandomNumber.js";
 
-export let selectFromRandomWords = (hskLength, items) => {
+export let getRandomWord = (hskLength, items) => {
   let randomWords = [];
   const newDate = new Date().getDate();
   // const newDate = new Date().getMinutes(); // debug
 
   if (items.randomWords.length !== parseInt(items.charDay)) {
     for (let i = 0; i < parseInt(items.charDay); i++) {
-      randomWords[i] = getRandomFrom(hskLength);
+      randomWords[i] = getRandomNumber(hskLength);
     }
     chrome.storage.sync.set({ randomWords: randomWords });
   } else if (items.date !== newDate) {
     for (let i = 0; i < parseInt(items.charDay); i++) {
-      randomWords[i] = getRandomFrom(hskLength);
+      randomWords[i] = getRandomNumber(hskLength);
     }
-    chrome.storage.sync.set({ randomWords: randomWords });
-    chrome.storage.sync.set({ date: newDate });
+    chrome.storage.sync.set({ randomWords: randomWords, date: newDate });
   } else {
     randomWords = items.randomWords;
   }
 
-  return randomWords[getRandomFrom(randomWords.length)];
+  return randomWords[getRandomNumber(randomWords.length)];
 };
 
 // TODO: omg please optimize this

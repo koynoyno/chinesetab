@@ -1,21 +1,10 @@
 import splitAndKeep from "./color.js";
-import { selectFromRandomWords } from "./randomWords.js";
-import { getRandomFrom } from "./getRandomFrom.js";
 
-export let draw = async (items, hsk) => {
-  let drawObject = ""; // used to call insertAdjacentHTML only once
-  let rand;
-  let hskLength = hsk.words.length;
+export let draw = (items) => {
+  let drawObject = ""; // to call insertAdjacentHTML only once
 
-  // select a random word if charDay is set
-  if (parseInt(items.charDay) !== 0) {
-    rand = selectFromRandomWords(hskLength, items);
-  } else {
-    chrome.storage.sync.set({ randomWords: [] });
-    rand = getRandomFrom(hskLength);
-  }
-
-  let data = hsk.words[rand];
+  //  let data = hsk.words[rand];
+  let data = items.cache;
 
   // get word
   let char = data[items.char];
@@ -61,6 +50,5 @@ export let draw = async (items, hsk) => {
   }
 
   // draw everything
-  // TODO: it takes 450-500ms, can I optimize it?
   app.insertAdjacentHTML("beforeend", drawObject);
 };

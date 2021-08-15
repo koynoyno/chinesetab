@@ -28,3 +28,5 @@ export default String.prototype.splitAndKeep = function (separator, method) {
     return splitAndKeep(str, separator, method);
   }
 };
+
+// TODO: can it work asynchronously?
