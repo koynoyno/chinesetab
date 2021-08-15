@@ -1,6 +1,6 @@
 import splitAndKeep from "./color.js";
 
-export let draw = async (items) => {
+export let draw = (items) => {
   let drawObject = ""; // to call insertAdjacentHTML only once
 
   //  let data = hsk.words[rand];

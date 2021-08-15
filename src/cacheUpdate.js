@@ -5,6 +5,7 @@ export let cacheUpdate = async (items) => {
   const { default: hsk } = await import(`../${items.hsk}/${items.level}.json`, {
     assert: { type: "json" },
   });
+
   let rand;
   let hskLength = hsk.words.length;
 
@@ -12,11 +13,9 @@ export let cacheUpdate = async (items) => {
   if (parseInt(items.charDay) !== 0) {
     rand = getRandomWord(hskLength, items);
   } else {
-    chrome.storage.sync.set({ randomWords: [] });
     rand = getRandomNumber(hskLength);
   }
 
   // update and return items
-  items.cache = hsk.words[rand]
-  return items
+  return hsk.words[rand];
 };
