@@ -50,4 +50,4 @@ Watch me building in public, vote for features, and support building the greates
 
 ## [**I'm in!**](https://ko-fi.com/chinesetab)
 
-<img align="left" src=images/panda_easter.png><h1>谢谢你~</h2>
+<a href="https://ko-fi.com/chinesetab" title="酷酷酷！"><img align="left" src=images/panda_easter.png></a><h1>谢谢你~</h2>
