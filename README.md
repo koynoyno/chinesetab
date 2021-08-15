@@ -22,13 +22,13 @@ Memorize Chinese words ****every time you open a new tab****
 
 ## Sounds nice. Anything else?
 
-💨 Opens instantly (faster than default new tab)
+💨 Opens instantly (much faster than default new tab)
 
 💻 Easy on CPU, memory, and battery
 
-🌙 Dark mode support
+📴 Works offline (except for sentence examples)
 
-📴 Works offline
+🌙 Dark mode support
 
 🔒 No tracking
 
@@ -36,14 +36,18 @@ Memorize Chinese words ****every time you open a new tab****
 
 💖 Open source
 
-## OMG!
+## OMG, how much does it cost?
 
-## How much does it cost?
+✨ It's free!
 
-✨ **It's totally free!** I will be happy if you find this extension useful!
+## I love this extension! Any way I can help?
 
-## I love Chinese Tab! How can I help?
+I'm developing another browser extension that helps you to learn Chinese without an effort while browsing the Internet. Connect it to Chinese Tab and add words and sentences from the things you read.
 
-✨ **Check out** Ko-fi page. Your tip will be used to develop [another awesome Chinese extension](https://ko-fi.com/chinesetab)
+No ads, no tracking, and free for everyone.
 
-<img align="left" src=images/panda_easter.png><h1>谢谢~~</h2>
+Watch me building in public, vote for features, and support building the greatest extension for fun Chinese microlearning.
+
+## [**I'm in!**](https://ko-fi.com/chinesetab)
+
+<img align="left" src=images/panda_easter.png><h1>谢谢你~</h2>
