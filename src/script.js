@@ -3,8 +3,6 @@ import { cacheUpdate } from "./cacheUpdate.js";
 
 chrome.storage.sync.get(null, async (items) => {
   const luck = 88;
-  let cacheUpdated = false;
-  let newCache;
 
   // if extension is updated
   if (items.updated) {
@@ -54,13 +52,14 @@ chrome.storage.sync.get(null, async (items) => {
 // // apply dark mode beautiful way
 chrome.storage.onChanged.addListener(function (changes, namespace) {
   for (let [key, { oldValue, newValue }] of Object.entries(changes)) {
-    console.log(
-      `Storage key "${key}" in namespace "${namespace}" changed.`,
-      `Old value was "${oldValue}", new value is "${newValue}".`
-    );
-
-    if (key == "darkMode") {
-      document.body.classList.toggle('dark-mode')
+    switch (key) {
+      case "darkMode":
+        document.body.classList.toggle("darkMode");
+      default:
+        console.log(
+          `Storage key "${key}" in namespace "${namespace}" changed.`,
+          `Old value was "${oldValue}", new value is "${newValue}".`
+        );
     }
   }
 });

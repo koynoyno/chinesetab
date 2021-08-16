@@ -14,24 +14,14 @@ let saveSettings = (id, checkbox = false) => {
   // remove cache if level or day limit is changed
   if (id == "level" || id == "dayLimit") {
     chrome.storage.sync.set({ [id]: value, randomWords: [], cache: {} });
-  } else { // otherwise just apply id (minimize sync.set calls)
+  } else {
+    // otherwise just apply id (minimize sync.set calls)
     chrome.storage.sync.set({ [id]: value });
   }
 
   // redraw index.html after storage.sync.set
   // TODO: add dynamic style changing for pinyin/translation/darkMode + animation
   // See: https://stackoverflow.com/questions/38561136/chrome-extension-to-change-dom-with-a-button-in-extension-popup
-
-  // redraw popup if darkMode is toggled
-  if (id == "darkMode") {
-    if (value) {
-      document.body.classList.add("dark-mode");
-      localStorage.setItem("darkMode", "dark-mode");
-    } else {
-      document.body.classList.remove("dark-mode");
-      localStorage.removeItem("darkMode");
-    }
-  }
 
   // remove cache and redraw #level options if HSK version is toggled
   if (id == "hsk") {
@@ -51,8 +41,20 @@ let saveSettings = (id, checkbox = false) => {
       level.value = levelValue;
     }
   }
-  chrome.tabs.reload();
 
+  // redraw popup if darkMode is toggled
+  if (id == "darkMode") {
+    document.body.classList.toggle("darkMode");
+    if (value) {
+      // document.body.classList.add("darkMode");
+      localStorage.setItem("darkMode", "darkMode");
+    } else {
+      // document.body.classList.remove("darkMode");
+      localStorage.removeItem("darkMode");
+    }
+  } else {
+    chrome.tabs.reload();
+  }
 };
 
 // =============================================

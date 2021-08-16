@@ -16,31 +16,31 @@ body {
 
 /* DARK MODE */
 
-.dark-mode {
+.darkMode {
   background: linear-gradient(180deg, #202124 0%, #353535 100%) !important;
   color: #fff !important;
 }
 
-.dark-mode #support {
+.darkMode #support {
   color: white;
 }
 
-.dark-mode select {
+.darkMode select {
   background: rgba(0, 0, 0, 0.3);
   color: #fff;
 }
 
-.dark-mode select:hover {
+.darkMode select:hover {
   background-color: #111;
 }
 
-.dark-mode select option {
+.darkMode select option {
   background: rgba(0, 0, 0, 0.3);
   color: #fff;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
 
-.dark-mode input[type="button"] {
+.darkMode input[type="button"] {
   font-family: "Noto Sans", Fallback, sans-serif;
   padding: 2px 0;
   background: rgba(0, 0, 0, 0.3);
@@ -49,7 +49,7 @@ body {
   border-radius: 1px;
 }
 
-.dark-mode input[type="button"]:hover {
+.darkMode input[type="button"]:hover {
   background-color: #111;
   border: 1px solid #aaa;
 }
@@ -107,7 +107,7 @@ select,
   color: #ef5592;
   text-decoration: underline;
   opacity: 0.87;
-  /* transition: opacity 0.195s ease-in-out; */
+  /* transition: opacity .2 ease-in-out; */
 }
 
 #supportLink:hover {
@@ -126,7 +126,7 @@ select,
   right: 0px !important;
   width: 75px;
   opacity: 0.87;
-  transition: opacity 0.195s ease-in-out;
+  transition: opacity .2 ease-in-out;
 
 }
 
@@ -149,14 +149,14 @@ select,
 
 #info {
   opacity: 0.3;
-  transition: opacity 0.195s ease-in-out;
+  transition: opacity .2 ease-in-out;
 }
 
 #info:hover {
   opacity: 1;
 }
 
-.dark-mode #info:hover {
+.darkMode #info:hover {
   color: #fff;
   opacity: 1;
 }
