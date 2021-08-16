@@ -23,7 +23,7 @@ Memorize Chinese words ****every time you open a new tab****
 🐼 Mandarin speaking panda Ou
 ## Sounds nice. Anything else?
 
-💨 Opens instantly (much faster than the default new tab)
+⚡ Opens instantly (much faster than the default new tab)
 
 💻 Easy on CPU, memory, and battery
 
@@ -48,6 +48,6 @@ I'm developing another browser extension that helps you to learn Chinese without
 
 No ads, no tracking, and free for everyone.
 
-Watch me building in public, vote for features, and support building the greatest extension for fun Chinese microlearning.
+Watch me building in public, vote for features, and contribute to building the greatest extension for fun Chinese microlearning.
 
 <a href="https://ko-fi.com/chinesetab" title="谢谢你~"><img align="left" src=images/panda_easter.png><h1><strong>I'm in!</strong></h1></a>

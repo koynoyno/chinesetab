@@ -1,6 +1,5 @@
 import { draw } from "./draw.js";
-// import { cacheUpdate } from "./cacheUpdate.js";
-import { getRandomNumber } from "./getRandomNumber.js";
+// import { getRandomNumber } from "./getRandomNumber.js";
 
 chrome.storage.sync.get(null, async (items) => {
   const luck = 88;
@@ -12,7 +11,11 @@ chrome.storage.sync.get(null, async (items) => {
   }
 
   // update empty cache
-  if (items.dayLimit == "0" || Object.keys(items.cache).length === 0 || items.updated) {
+  if (
+    items.dayLimit == "0" ||
+    Object.keys(items.cache).length === 0 ||
+    items.updated
+  ) {
     const { cacheUpdate } = await import("./cacheUpdate.js");
     items.cache = await cacheUpdate(items);
     chrome.storage.sync.set({ cache: items.cache }); // repopulate cache on reload
@@ -20,9 +23,18 @@ chrome.storage.sync.get(null, async (items) => {
 
   // draw characters, pinyin, tones, translation
   // if dayLimit == 0, then items.cache[0] will be used
-  // let data = items.cache[getRandomNumber(items.dayLimit)]
-  // draw(data, items);
-  draw(items.cache[items.randomNumber], items.char, items.pinyin, items.translation, items.sentenceExamples, items.color);
+  draw(
+    items.cache[items.randomNumber],
+    items.char,
+    items.pinyin,
+    items.translation,
+    items.sentenceExamples,
+    items.color
+  );
+
+  // everything above is important for performance
+  // =============================================
+  const { getRandomNumber } = await import("./getRandomNumber.js");
 
   // display first launch greeting or seen words message
   // items.firstLaunch = true; // DEV
@@ -30,7 +42,7 @@ chrome.storage.sync.get(null, async (items) => {
     const { ifFirstLaunch } = await import("./firstLaunch.js");
     await ifFirstLaunch();
     chrome.storage.sync.set({ cache: [] }); // repopulate cache on reload
-  } else if (Math.floor(Math.random() * luck) % luck == 0) {
+  } else if (getRandomNumber(luck) % luck == 0) {
     const { confetti } = await import("./npm/confetti.browser.js");
     const { showSeenWords } = await import("./showSeenWords.js");
     await showSeenWords(items.game.wordsSeen, items.color);
@@ -44,11 +56,11 @@ chrome.storage.sync.get(null, async (items) => {
   });
 
   // DEV reload tabs with space
-  window.addEventListener("keydown", (e) => {
-    if (e.code === "Space") {
-      chrome.tabs.reload();
-    }
-  });
+  // window.addEventListener("keydown", (e) => {
+  //   if (e.code === "Space") {
+  //     chrome.tabs.reload();
+  //   }
+  // });
 });
 
 // apply dark mode beautiful way
