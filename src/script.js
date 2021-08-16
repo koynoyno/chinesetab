@@ -38,9 +38,6 @@ chrome.storage.sync.get(null, async (items) => {
     game: { wordsSeen: items.game.wordsSeen },
   });
 
-  const { consoleGreeting } = await import("./consoleGreeting.js"); // async
-  await consoleGreeting();
-
   // DEV reload tabs with space
   window.addEventListener("keydown", (e) => {
     if (e.code === "Space") {

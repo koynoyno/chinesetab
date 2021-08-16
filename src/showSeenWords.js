@@ -32,6 +32,6 @@ export let showSeenWords = async (wordsSeen, color) => {
     setTimeout(function () {
       panda.remove();
       document.querySelector("#wordsSeen").classList.remove("invisible");
-    }, 195); // hide panda after 195ms (see css/style.css:#panda)
+    }, 200); // hide panda after 195ms (see css/style.css:#panda)
   });
 };

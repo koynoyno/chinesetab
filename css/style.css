@@ -7,6 +7,7 @@ body {
   opacity: 0.87;
   cursor: default;
   transition: background-color .2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  overflow: hidden;
 }
 
 p {
@@ -37,17 +38,17 @@ p {
 }
 
 #welcome {
-  animation: fadeInPanda .2;
+  animation: fadeInPanda .2s;
 }
 
 #panda {
   position: absolute;
-  bottom: 0px;
+  bottom: -1px;
   opacity: 0.87;
-  transition: opacity .2 ease-in-out;
+  transition: opacity .2s ease-in-out;
   cursor: pointer;
   width: 200px;
-  animation: fadeInPanda .2;
+  animation: fadeInPanda .2s;
 }
 
 @keyframes fadeInPanda {
@@ -72,7 +73,7 @@ p {
   z-index: -100;
   opacity: 1;
   padding-bottom: 1em;
-  transition: opacity .2 ease-in-out;
+  transition: opacity .2s ease-in-out;
 }
 
 #wordsSeen.invisible {
@@ -96,7 +97,7 @@ a {
 
 .charClickable {
   cursor: pointer;
-  transition: transform .2 ease-in-out;
+  transition: transform .2s ease-in-out;
 }
 
 .charClickable:hover {

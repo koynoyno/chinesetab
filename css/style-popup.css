@@ -6,7 +6,6 @@
 body {
   user-select: none;
   font-family: "Noto Sans", Fallback, sans-serif;
-  zoom: 1.5;
   width: 155px;
   display: flex;
   flex-direction: column;
@@ -107,7 +106,7 @@ select,
   color: #ef5592;
   text-decoration: underline;
   opacity: 0.87;
-  /* transition: opacity .2 ease-in-out; */
+  /* transition: opacity .2s ease-in-out; */
 }
 
 #supportLink:hover {
@@ -126,7 +125,7 @@ select,
   right: 0px !important;
   width: 75px;
   opacity: 0.87;
-  transition: opacity .2 ease-in-out;
+  transition: opacity .2s ease-in-out;
 
 }
 
@@ -149,7 +148,7 @@ select,
 
 #info {
   opacity: 0.3;
-  transition: opacity .2 ease-in-out;
+  transition: opacity .2s ease-in-out;
 }
 
 #info:hover {
