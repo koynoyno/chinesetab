@@ -5,13 +5,13 @@ export let getRandomWord = (hskLength, items) => {
   const newDate = new Date().getDate();
   // const newDate = new Date().getMinutes(); // debug
 
-  if (items.randomWords.length !== parseInt(items.charDay)) {
-    for (let i = 0; i < parseInt(items.charDay); i++) {
+  if (items.randomWords.length !== parseInt(items.dayLimit)) {
+    for (let i = 0; i < parseInt(items.dayLimit); i++) {
       randomWords[i] = getRandomNumber(hskLength);
     }
     chrome.storage.sync.set({ randomWords: randomWords });
   } else if (items.date !== newDate) {
-    for (let i = 0; i < parseInt(items.charDay); i++) {
+    for (let i = 0; i < parseInt(items.dayLimit); i++) {
       randomWords[i] = getRandomNumber(hskLength);
     }
     chrome.storage.sync.set({ randomWords: randomWords, date: newDate });

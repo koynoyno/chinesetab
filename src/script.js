@@ -51,13 +51,16 @@ chrome.storage.sync.get(null, async (items) => {
   });
 });
 
-window.onerror = function (errorMsg, url, lineNumber, column, errorObj) {
-  console.log('Caught content script error');
-  console.log('errorMsg: ' + errorMsg);
-  console.log('url: ' + url);
-  console.log('lineNumber: ' + column);
-  console.log('column: ' + column);
-  console.log('errorObj follows:');
-  console.log(errorObj);
-  return true;
-};
+// // apply dark mode beautiful way
+chrome.storage.onChanged.addListener(function (changes, namespace) {
+  for (let [key, { oldValue, newValue }] of Object.entries(changes)) {
+    console.log(
+      `Storage key "${key}" in namespace "${namespace}" changed.`,
+      `Old value was "${oldValue}", new value is "${newValue}".`
+    );
+
+    if (key == "darkMode") {
+      document.body.classList.toggle('dark-mode')
+    }
+  }
+});

@@ -9,8 +9,8 @@ export let cacheUpdate = async (items) => {
   let rand;
   let hskLength = hsk.words.length;
 
-  // select a random word if charDay is set
-  if (parseInt(items.charDay) !== 0) {
+  // select a random word if dayLimit is set
+  if (parseInt(items.dayLimit) !== 0) {
     rand = getRandomWord(hskLength, items);
   } else {
     rand = getRandomNumber(hskLength);

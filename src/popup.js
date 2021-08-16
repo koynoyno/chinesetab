@@ -11,11 +11,11 @@ let saveSettings = (id, checkbox = false) => {
     value = document.querySelector(`#${id}`).value;
   }
 
-  chrome.storage.sync.set({ [id]: value });
-
   // remove cache if level or day limit is changed
-  if (id == "level" || id == "charDay") {
-    chrome.storage.sync.set({ randomWords: [], cache: {} });
+  if (id == "level" || id == "dayLimit") {
+    chrome.storage.sync.set({ [id]: value, randomWords: [], cache: {} });
+  } else { // otherwise just apply id (minimize sync.set calls)
+    chrome.storage.sync.set({ [id]: value });
   }
 
   // redraw index.html after storage.sync.set
@@ -63,7 +63,7 @@ let restoreSettings = () => {
       hsk: hsk,
       level: level,
       char: char,
-      charDay: charDay,
+      dayLimit: dayLimit,
       sentenceExamples: sentenceExamples,
       color: color,
       pinyin: pinyin,
@@ -75,7 +75,7 @@ let restoreSettings = () => {
       hsk.value = items.hsk;
       level.value = items.level;
       char.value = items.char;
-      charDay.value = items.charDay;
+      dayLimit.value = items.dayLimit;
       sentenceExamples.checked = items.sentenceExamples;
       color.checked = items.color;
       pinyin.checked = items.pinyin;
@@ -138,8 +138,8 @@ window.addEventListener("load", async () => {
     saveSettings("char");
   });
 
-  charDay.addEventListener("change", () => {
-    saveSettings("charDay");
+  dayLimit.addEventListener("change", () => {
+    saveSettings("dayLimit");
   });
 
   // checkboxes

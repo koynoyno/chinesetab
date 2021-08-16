@@ -5,7 +5,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
       hsk: "hsk2",
       level: "hsk1",
       char: "simplified",
-      charDay: "5",
+      dayLimit: "5",
       date: new Date().getDate(),
       // date: new Date().getMinutes() }); // debug
       randomWords: [],
@@ -44,14 +44,14 @@ chrome.runtime.onInstalled.addListener(function (details) {
 });
 
 // DEV logger to monitor storage changes
-chrome.storage.onChanged.addListener(function (changes, namespace) {
-  for (let [key, { oldValue, newValue }] of Object.entries(changes)) {
-    console.log(
-      `Storage key "${key}" in namespace "${namespace}" changed.`,
-      `Old value was "${oldValue}", new value is "${newValue}".`
-    );
-  }
-});
+// chrome.storage.onChanged.addListener(function (changes, namespace) {
+//   for (let [key, { oldValue, newValue }] of Object.entries(changes)) {
+//     console.log(
+//       `Storage key "${key}" in namespace "${namespace}" changed.`,
+//       `Old value was "${oldValue}", new value is "${newValue}".`
+//     );
+//   }
+// });
 
 // DISABLED: uninstall survey
 // TODO: typeform
