@@ -1,27 +1,25 @@
 import splitAndKeep from "./color.js";
 
-export let draw = (data, items) => {
+export let draw = (data, word, pinyin, translation, sentenceExamples, color) => {
   let drawObject = ""; // to call insertAdjacentHTML only once
 
-  // let data = items.cache[getRandomNumber(items.dayLimit)]
-
   // get word
-  let char = data[items.char];
+  let char = data[word];
   // whether the word should be clickable or not
-  let classChar = items.sentenceExamples ? "char charClickable" : "char";
+  let classChar = sentenceExamples ? "char charClickable" : "char";
 
   // DEV show pinyin and english on hover
   let title = ""; // hover suggestion if pinyin or translation are turned off
-  if (!items.pinyin && !items.translation) {
+  if (!pinyin && !translation) {
     title = `title="${data.pinyin}\n\n${data.english}"`;
-  } else if (!items.pinyin) {
+  } else if (!pinyin) {
     title = `title="${data.pinyin}"`;
-  } else if (!items.translation) {
+  } else if (!translation) {
     title = `title="${data.english}"`;
   }
 
   // draw colors
-  if (items.color) {
+  if (color) {
     // TODO: move to color.js, remove splitAndKeep import
     let result = data.pinyinNumbered.splitAndKeep(["1", "2", "3", "4", "5"]);
     let length = result.length / 2 - 1;
@@ -44,18 +42,25 @@ export let draw = (data, items) => {
   }
 
   // add sentence examples link
-  if (items.sentenceExamples) {
+  if (sentenceExamples) {
     let url = "https://context.reverso.net/translation/chinese-english/";
     drawObject = `<a href="${url}${char}">${drawObject}</a>`;
+
+    // DEV link dns-prefetch optimization
+    // potentially it's a DDOS
+    // let reverso = document.createElement("link");
+    // reverso.rel = "dns-prefetch";
+    // reverso.href = "https://context.reverso.net/";
+    // document.head.appendChild(reverso);
   }
 
   // show pinyin
-  if (items.pinyin) {
+  if (pinyin) {
     drawObject += `<p class="pinyin" align="center">${data.pinyin}</p>`;
   }
 
   // show translation
-  if (items.translation) {
+  if (translation) {
     drawObject += `<p class="english" align="center">${data.english}</p>`;
   }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <style>
@@ -10,12 +10,15 @@
     </style>
     <link rel="preload" as="script" href="src/darkMode.js" crossorigin />
     <script type="module" src="src/darkMode.js"></script>
-    <link rel="preload" as="script" href="src/script.js" crossorigin />
-    <script type="module" src="src/script.js"></script>
-    <link rel="preload" as="script" href="src/draw.js" crossorigin />
-    <link rel="preload" as="script" href="src/color.js" crossorigin />
     <link rel="preload" as="style" href="css/style.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preload" as="script" href="src/script.js" crossorigin />
+    <script type="module" src="src/script.js"></script>
+    <link rel="preload" as="script" href="src/getRandomNumber.js" crossorigin />
+    <link rel="preload" as="script" href="src/draw.js" crossorigin />
+    <link rel="preload" as="script" href="src/color.js" crossorigin />
+    <!-- <link rel="preload" as="script" href="src/cacheUpdate.js" crossorigin />
+    <link rel="preload" as="script" href="src/getRandomWord.js" crossorigin /> -->
     <link
     rel="preload"
     href="fonts/noto-sans.woff2"
@@ -23,12 +26,9 @@
     type="font/woff2"
     crossorigin
     />
-    <link rel="preload" as="script" href="src/cacheUpdate.js" crossorigin />
-    <link rel="preload" as="script" href="src/getRandomWord.js" crossorigin />
-    <link rel="preload" as="script" href="src/getRandomNumber.js" crossorigin />
     <title>Chinese Tab</title>
   </head>
   <body>
-    <div id="app"></div>
+    <main id="app"></main>
   </body>
 </html>

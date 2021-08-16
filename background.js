@@ -9,6 +9,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
       date: new Date().getDate(),
       // date: new Date().getMinutes() }); // DEV
       randomWords: [],
+      randomNumber: 0,
       sentenceExamples: false,
       color: true,
       pinyin: true,

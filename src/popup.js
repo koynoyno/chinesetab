@@ -11,59 +11,17 @@ let saveSettings = (id, checkbox = false) => {
     value = document.querySelector(`#${id}`).value;
   }
 
-  // DELETE if settings are stable
-  // remove cache if level or day limit is changed
-  // if (id == "level" || id == "dayLimit") {
-  //   chrome.storage.sync.set({ [id]: value, randomWords: [], cache: {} });
-  // } else {
-  //   // otherwise just apply id (minimize sync.set calls)
-  //   chrome.storage.sync.set({ [id]: value });
-  // }
-
-  // // remove cache and redraw #level options if HSK version is toggled
-  // if (id == "hsk") {
-  //   chrome.storage.sync.set({ randomWords: [], cache: {} }); // bug fix
-  //   level = document.querySelector("#level");
-  //   levelValue = level.value;
-  //   while (level.lastElementChild) {
-  //     level.removeChild(level.lastElementChild);
-  //   }
-  //   redrawHSKLevels(value);
-
-  //   // fallback to HSK6 from HSK7-9 when switching to HSK 2.0
-  //   if (value == "hsk2" && levelValue == "hsk7-9") {
-  //     chrome.storage.sync.set({ level: "hsk6" });
-  //     level.value = "hsk6";
-  //   } else {
-  //     level.value = levelValue;
-  //   }
-  // }
-
-  // // redraw popup if darkMode is toggled
-  // if (id == "darkMode") {
-  //   document.body.classList.toggle("darkMode");
-  //   if (value) {
-  //     // document.body.classList.add("darkMode");
-  //     localStorage.setItem("darkMode", "darkMode");
-  //   } else {
-  //     // document.body.classList.remove("darkMode");
-  //     localStorage.removeItem("darkMode");
-  //   }
-  // } else {
-  //   chrome.tabs.reload();
-  // }
-
   switch (id) {
     // remove cache if level or day limit is changed
     case "level":
     case "dayLimit":
-      chrome.storage.sync.set({ [id]: value, randomWords: [], cache: {} });
+      chrome.storage.sync.set({ [id]: value, randomWords: [], randomNumber: 0, cache: {} });
       chrome.tabs.reload();
       break;
 
     // remove cache and redraw #level options if HSK version is toggled
     case "hsk":
-      chrome.storage.sync.set({ [id]: value, randomWords: [], cache: {} });
+      chrome.storage.sync.set({ [id]: value, randomWords: [], randomNumber: 0, cache: {} });
       level = document.querySelector("#level");
       levelValue = level.value;
       while (level.lastElementChild) {

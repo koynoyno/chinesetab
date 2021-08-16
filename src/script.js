@@ -1,5 +1,5 @@
 import { draw } from "./draw.js";
-import { cacheUpdate } from "./cacheUpdate.js";
+// import { cacheUpdate } from "./cacheUpdate.js";
 import { getRandomNumber } from "./getRandomNumber.js";
 
 chrome.storage.sync.get(null, async (items) => {
@@ -9,19 +9,20 @@ chrome.storage.sync.get(null, async (items) => {
   if (items.updated) {
     const { postUpdate } = await import("./postUpdate.js");
     await postUpdate(items);
-    items.cache = await cacheUpdate(items); // recover
   }
 
   // update empty cache
-  if (Object.keys(items.cache).length === 0) {
+  if (items.dayLimit == "0" || Object.keys(items.cache).length === 0 || items.updated) {
+    const { cacheUpdate } = await import("./cacheUpdate.js");
     items.cache = await cacheUpdate(items);
     chrome.storage.sync.set({ cache: items.cache }); // repopulate cache on reload
   }
 
   // draw characters, pinyin, tones, translation
   // if dayLimit == 0, then items.cache[0] will be used
-  let data = items.cache[getRandomNumber(items.dayLimit)]
-  draw(data, items);
+  // let data = items.cache[getRandomNumber(items.dayLimit)]
+  // draw(data, items);
+  draw(items.cache[items.randomNumber], items.char, items.pinyin, items.translation, items.sentenceExamples, items.color);
 
   // display first launch greeting or seen words message
   // items.firstLaunch = true; // DEV
@@ -39,6 +40,7 @@ chrome.storage.sync.get(null, async (items) => {
   items.game.wordsSeen++;
   chrome.storage.sync.set({
     game: { wordsSeen: items.game.wordsSeen },
+    randomNumber: getRandomNumber(items.dayLimit),
   });
 
   // DEV reload tabs with space
