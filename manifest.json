@@ -8,7 +8,7 @@
     "newtab": "index.html"
   },
   "offline_enabled": true,
-  "minimum_chrome_version": "91",
+  "minimum_chrome_version": "92",
   "permissions": ["storage"],
   "background": {
     "service_worker": "background.js"

@@ -20,10 +20,10 @@ Memorize Chinese words ****every time you open a new tab****
 
 🤓 Pinyin and translation can be turned off (hardcore mode)
 
-🐼 Mandarin speaking panda Mao Xi
+🐼 Mandarin speaking panda Ou
 ## Sounds nice. Anything else?
 
-💨 Opens instantly (much faster than default new tab)
+💨 Opens instantly (much faster than the default new tab)
 
 💻 Easy on CPU, memory, and battery
 

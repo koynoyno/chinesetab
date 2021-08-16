@@ -13,8 +13,8 @@ let saveSettings = (id, checkbox = false) => {
 
   chrome.storage.sync.set({ [id]: value });
 
-  // remove cache if level is changed
-  if (id == "level") {
+  // remove cache if level or day limit is changed
+  if (id == "level" || id == "charDay") {
     chrome.storage.sync.set({ randomWords: [], cache: {} });
   }
 
