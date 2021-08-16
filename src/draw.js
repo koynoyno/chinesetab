@@ -1,10 +1,9 @@
 import splitAndKeep from "./color.js";
 
-export let draw = (items) => {
+export let draw = (data, items) => {
   let drawObject = ""; // to call insertAdjacentHTML only once
 
-  //  let data = hsk.words[rand];
-  let data = items.cache;
+  // let data = items.cache[getRandomNumber(items.dayLimit)]
 
   // get word
   let char = data[items.char];

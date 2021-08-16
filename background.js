@@ -5,9 +5,9 @@ chrome.runtime.onInstalled.addListener(function (details) {
       hsk: "hsk2",
       level: "hsk1",
       char: "simplified",
-      dayLimit: "5",
+      dayLimit: "0",
       date: new Date().getDate(),
-      // date: new Date().getMinutes() }); // debug
+      // date: new Date().getMinutes() }); // DEV
       randomWords: [],
       sentenceExamples: false,
       color: true,
@@ -18,13 +18,13 @@ chrome.runtime.onInstalled.addListener(function (details) {
       game: {
         wordsSeen: 0,
       },
-      cache: {
+      cache: [{
         english: "Hello!",
         pinyinNumbered: "ni3hao3",
         pinyin: "nǐhǎo",
         simplified: "你好",
         traditional: "你好",
-      },
+      }],
     });
     chrome.tabs.create({
       url: "chrome://newtab",

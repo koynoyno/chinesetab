@@ -1,18 +1,18 @@
 import { getRandomNumber } from "./getRandomNumber.js";
 
-export let getRandomWord = (hskLength, items) => {
+export let getRandomWord = (dataLength, items) => {
   let randomWords = [];
   const newDate = new Date().getDate();
-  // const newDate = new Date().getMinutes(); // debug
+  // const newDate = new Date().getMinutes(); // DEV
 
   if (items.randomWords.length !== parseInt(items.dayLimit)) {
     for (let i = 0; i < parseInt(items.dayLimit); i++) {
-      randomWords[i] = getRandomNumber(hskLength);
+      randomWords[i] = getRandomNumber(dataLength);
     }
     chrome.storage.sync.set({ randomWords: randomWords });
   } else if (items.date !== newDate) {
     for (let i = 0; i < parseInt(items.dayLimit); i++) {
-      randomWords[i] = getRandomNumber(hskLength);
+      randomWords[i] = getRandomNumber(dataLength);
     }
     chrome.storage.sync.set({ randomWords: randomWords, date: newDate });
   } else {
