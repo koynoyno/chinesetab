@@ -25,7 +25,6 @@ p {
     rgba(255, 255, 255, 0.67) 0%,
     rgb(255, 255, 255, 0.87) 100%
   );
-  padding-top: 1em;
   background-clip: text;
   background-size: 100%;
   -webkit-background-clip: text;
@@ -119,6 +118,8 @@ a {
 
 .english {
   font-weight: bold;
+  height: 100%;
+  box-sizing: border-box;
   margin: 0.5em 2em 4em !important;
 }
 
@@ -169,7 +170,7 @@ a {
 .tone3,
 .tone4,
 .tone5 {
-  padding-top: 0.3em;
+  padding-top: 0.2em;
   background-clip: text;
   background-size: 100%;
   -webkit-background-clip: text;
