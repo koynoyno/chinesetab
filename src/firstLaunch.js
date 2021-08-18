@@ -1,4 +1,4 @@
-export let ifFirstLaunch = () => {
+export const ifFirstLaunch = () => {
   // document
   //   .querySelector(".app")
     app.insertAdjacentHTML(
@@ -6,5 +6,5 @@ export let ifFirstLaunch = () => {
       '<p id="welcome" align="center">Press <strong><span style="text-decoration: underline;">Alt + S</span></strong> to open <strong><span style="text-decoration: underline;">S</span>ettings</strong>  🐼</p>'
     );
   // hide forever
-  chrome.storage.sync.set({ firstLaunch: false });
+  chrome.storage.local.set({ firstLaunch: false });
 };

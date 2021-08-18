@@ -1,6 +1,6 @@
 // oh no, you're spoiling the fun!
 
-export let showSeenWords = async (wordsSeen, color) => {
+export const showSeenWords = async (wordsSeen, color) => {
   // check whether tone colors are turned on
   let jiayou = color
     ? '<span class="tone1">加</span><span class="tone2">油</span>！</strong>'

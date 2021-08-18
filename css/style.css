@@ -3,22 +3,27 @@
   src: url("../fonts/noto-sans.woff2") format("woff2");
 }
 
+html, body { height: 100%; }
+
 body {
-  opacity: 0.87;
+  opacity: 0.9;
   cursor: default;
+  /* TODO fix white flash */
   transition: background-color .2s cubic-bezier(0.22, 0.61, 0.36, 1);
   overflow: hidden;
+  /* color: rgba(0, 0, 0, 0.8); */
 }
 
 p {
   transition: color .2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  margin: 0.1em 0;
 }
 
 .darkMode .tone5 {
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgb(255, 255, 255) 100%
+    rgba(255, 255, 255, 0.67) 0%,
+    rgb(255, 255, 255, 0.87) 100%
   );
   padding-top: 1em;
   background-clip: text;
@@ -87,7 +92,7 @@ p {
 
 .char {
   margin: 0 0.1em;
-  font-size: 20rem;
+  font-size: 30em;
 }
 
 a {
@@ -109,11 +114,12 @@ a {
 .english {
   font-family: "Noto Sans", Fallback, sans-serif;
   font-size: 2.5rem;
-  margin: 0.1em;
+  margin: -1.5em 1em 0;
 }
+
 .english {
   font-weight: bold;
-  margin: 0.1em 3em !important;
+  margin: 0.5em 2em 4em !important;
 }
 
 .hide {
@@ -125,35 +131,35 @@ a {
   /* background-image: rgb(227,0,0); */
   background: linear-gradient(
     180deg,
-    rgba(227, 0, 0, 0.67) 0%,
+    rgba(227, 0, 0, 0.7) 0%,
     rgba(227, 0, 0, 1) 100%
   );
 }
 .tone2 {
   background: linear-gradient(
     180deg,
-    rgba(2, 179, 28, 0.67) 0%,
+    rgba(2, 179, 28, 0.7) 0%,
     rgba(2, 179, 28, 1) 100%
   );
 }
 .tone3 {
   background: linear-gradient(
     180deg,
-    rgba(36, 32, 255, 0.67) 0%,
-    rgb(36, 32, 255) 100%
+    rgba(50, 50, 252, 0.7) 0%,
+    rgb(50, 50, 252) 100%
   );
 }
 .tone4 {
   background: linear-gradient(
     180deg,
-    rgba(160, 16, 218, 0.67) 0%,
-    rgb(160, 16, 218) 100%
+    rgba(160, 16, 218, 0.7) 0%,
+    rgb(160, 16, 218, 1) 100%
   );
 }
 .tone5 {
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.67) 0%,
+    rgba(0, 0, 0, 0.7) 0%,
     rgba(0, 0, 0, 1) 100%
   );
 }

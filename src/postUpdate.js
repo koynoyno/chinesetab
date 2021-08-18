@@ -1,4 +1,4 @@
-export let postUpdate = (items) => {
+export const postUpdate = (items) => {
   console.log('updated LOL')
-  chrome.storage.sync.set({ updated: false });
+  chrome.storage.local.set({ updated: false });
 }

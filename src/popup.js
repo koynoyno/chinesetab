@@ -15,13 +15,13 @@ let saveSettings = (id, checkbox = false) => {
     // remove cache if level or day limit is changed
     case "level":
     case "dayLimit":
-      chrome.storage.sync.set({ [id]: value, randomWords: [], randomNumber: 0, cache: {} });
+      chrome.storage.local.set({ [id]: value, randomWords: [], randomNumber: 0, cache: {} });
       chrome.tabs.reload();
       break;
 
     // remove cache and redraw #level options if HSK version is toggled
     case "hsk":
-      chrome.storage.sync.set({ [id]: value, randomWords: [], randomNumber: 0, cache: {} });
+      chrome.storage.local.set({ [id]: value, randomWords: [], randomNumber: 0, cache: {} });
       level = document.querySelector("#level");
       levelValue = level.value;
       while (level.lastElementChild) {
@@ -30,7 +30,7 @@ let saveSettings = (id, checkbox = false) => {
       redrawHSKLevels(value);
       // fallback to HSK6 from HSK7-9 when switching to HSK 2.0
       if (value == "hsk2" && levelValue == "hsk7-9") {
-        chrome.storage.sync.set({ level: "hsk6" });
+        chrome.storage.local.set({ level: "hsk6" });
         level.value = "hsk6";
       } else {
         level.value = levelValue;
@@ -40,7 +40,7 @@ let saveSettings = (id, checkbox = false) => {
 
     // redraw popup if darkMode is toggled
     case "darkMode":
-      chrome.storage.sync.set({ [id]: value });
+      chrome.storage.local.set({ [id]: value });
       document.body.classList.toggle("darkMode");
       if (value) {
         // document.body.classList.add("darkMode");
@@ -51,7 +51,7 @@ let saveSettings = (id, checkbox = false) => {
       }
       break;
     default:
-      chrome.storage.sync.set({ [id]: value });
+      chrome.storage.local.set({ [id]: value });
       chrome.tabs.reload();
   }
 };
@@ -59,7 +59,7 @@ let saveSettings = (id, checkbox = false) => {
 // =============================================
 // get settings on window load
 let restoreSettings = () => {
-  chrome.storage.sync.get(
+  chrome.storage.local.get(
     {
       hsk: hsk,
       level: level,
@@ -175,7 +175,7 @@ window.addEventListener("load", async () => {
 
   support.addEventListener("click", () => {
     chrome.tabs.update({
-      url: "https://ko-fi.com/chinesetab",
+      url: "https://ko-fi.com/tab",
     });
     window.close();
   });

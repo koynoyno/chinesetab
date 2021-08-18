@@ -1,7 +1,7 @@
 import { getRandomWord } from "./getRandomWord.js";
 import { getRandomNumber } from "./getRandomNumber.js";
 
-export let cacheUpdate = async (items) => {
+export const cacheUpdate = async (items) => {
   const { default: data } = await import(
     `../${items.hsk}/${items.level}.json`,
     {

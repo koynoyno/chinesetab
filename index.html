@@ -1,22 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
     <style>
       .darkMode {
-        background-color: #121212;
-        color: #fff;
+        background-color: #181a1b;
+        color: rgba(232, 230, 227);
       }
     </style>
-    <link rel="preload" as="script" href="src/darkMode.js" crossorigin />
-    <script type="module" src="src/darkMode.js"></script>
+    <link rel="preload" as="script" href="src/critical.js" crossorigin />
     <link rel="preload" as="style" href="css/style.css" />
+    <script type="module" src="src/critical.js"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="preload" as="script" href="src/script.js" crossorigin />
-    <script type="module" src="src/script.js"></script>
-    <link rel="preload" as="script" href="src/draw.js" crossorigin />
-    <link rel="preload" as="script" href="src/color.js" crossorigin />
-    <!-- <link rel="preload" as="script" href="src/getRandomNumber.js" crossorigin /> -->
     <link
     rel="preload"
     href="fonts/noto-sans.woff2"
@@ -25,8 +17,6 @@
     crossorigin
     />
     <title>Chinese Tab</title>
-  </head>
-  <body>
-    <main id="app"></main>
-  </body>
-</html>
+    <body id="app">
+      <script type="module" src="src/script.js" defer></script>
+    </body>

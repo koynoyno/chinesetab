@@ -1,9 +1,10 @@
 import { draw } from "./draw.js";
-// import { getRandomNumber } from "./getRandomNumber.js";
+import { getRandomNumber } from "./getRandomNumber.js";
 
-chrome.storage.sync.get(null, async (items) => {
-  const luck = 88;
+// Chrome 95
+// chrome.storage.session.set({test: "test" });
 
+chrome.storage.local.get(null, async (items) => {
   // if extension is updated
   if (items.updated) {
     const { postUpdate } = await import("./postUpdate.js");
@@ -18,7 +19,7 @@ chrome.storage.sync.get(null, async (items) => {
   ) {
     const { cacheUpdate } = await import("./cacheUpdate.js");
     items.cache = await cacheUpdate(items);
-    chrome.storage.sync.set({ cache: items.cache }); // repopulate cache on reload
+    chrome.storage.local.set({ cache: items.cache }); // repopulate cache on reload
   }
 
   // draw characters, pinyin, tones, translation
@@ -34,15 +35,14 @@ chrome.storage.sync.get(null, async (items) => {
 
   // everything above is important for performance
   // =============================================
-  const { getRandomNumber } = await import("./getRandomNumber.js");
-
+  const _ = 888;
   // display first launch greeting or seen words message
   // items.firstLaunch = true; // DEV
   if (items.firstLaunch) {
     const { ifFirstLaunch } = await import("./firstLaunch.js");
     await ifFirstLaunch();
-    chrome.storage.sync.set({ cache: [] }); // repopulate cache on reload
-  } else if (getRandomNumber(luck) % luck == 0) {
+    chrome.storage.local.set({ cache: [] }); // repopulate cache on reload
+  } else if (getRandomNumber(_) % _ == 0) {
     const { confetti } = await import("./npm/confetti.browser.js");
     const { showSeenWords } = await import("./showSeenWords.js");
     await showSeenWords(items.game.wordsSeen, items.color);
@@ -50,17 +50,24 @@ chrome.storage.sync.get(null, async (items) => {
 
   // update counter
   items.game.wordsSeen++;
-  chrome.storage.sync.set({
+  chrome.storage.local.set({
     game: { wordsSeen: items.game.wordsSeen },
     randomNumber: getRandomNumber(items.dayLimit),
   });
 
   // DEV reload tabs with space
-  // window.addEventListener("keydown", (e) => {
-  //   if (e.code === "Space") {
-  //     chrome.tabs.reload();
-  //   }
-  // });
+  window.addEventListener("keydown", (e) => {
+    if (e.code === "Space") {
+      chrome.tabs.reload();
+    }
+  });
+
+  // DEV link dns-prefetch optimization
+  // potentially it's a DDOS
+  let reverso = document.createElement("link");
+  reverso.rel = "dns-prefetch";
+  reverso.href = "https://context.reverso.net/";
+  document.head.appendChild(reverso);
 });
 
 // apply dark mode beautiful way

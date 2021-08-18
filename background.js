@@ -1,7 +1,7 @@
 chrome.runtime.onInstalled.addListener(function (details) {
   if (details.reason === "install") {
     // TODO sync after install, leave only cache
-    chrome.storage.sync.set({
+    chrome.storage.local.set({
       hsk: "hsk2",
       level: "hsk1",
       char: "simplified",
@@ -31,7 +31,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
       url: "chrome://newtab",
     });
   } else if (details.reason === "update") {
-    chrome.storage.sync.set({ updated: true });
+    chrome.storage.local.set({ updated: true });
     // TODO: messaging instead of storage?
   }
   // } else if (details.reason === "chrome_update") {

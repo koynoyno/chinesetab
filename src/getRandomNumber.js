@@ -1,3 +1,3 @@
-export let getRandomNumber = (data) => {
+export const getRandomNumber = (data) => {
   return Math.floor(Math.random() * data);
 };

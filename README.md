@@ -20,7 +20,6 @@ Memorize Chinese words ****every time you open a new tab****
 
 🤓 Pinyin and translation can be turned off (hardcore mode)
 
-🐼 Mandarin speaking panda Ou
 ## Sounds nice. Anything else?
 
 ⚡ Opens instantly (much faster than the default new tab)
@@ -37,6 +36,7 @@ Memorize Chinese words ****every time you open a new tab****
 
 💖 Open source
 
+🐼 Owo
 
 ## OMG, how much does it cost?
 

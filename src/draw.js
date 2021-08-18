@@ -1,7 +1,18 @@
 import splitAndKeep from "./color.js";
 
-export let draw = (data, word, pinyin, translation, sentenceExamples, color) => {
+export const draw = (data, word, pinyin, translation, sentenceExamples, color) => {
   let drawObject = ""; // to call insertAdjacentHTML only once
+
+  // drawBottom option?
+  // // show pinyin
+  // if (pinyin) {
+  //   drawObject += `<p class="pinyin" align="center">${data.pinyin}</p>`;
+  // }
+
+  // // show translation
+  // if (translation) {
+  //   drawObject += `<p class="english" align="center">${data.english}</p>`;
+  // }
 
   // get word
   let char = data[word];
@@ -34,29 +45,22 @@ export let draw = (data, word, pinyin, translation, sentenceExamples, color) => 
     }
 
     // drawObject += `<p class="${classChar}" align="center">${coloredChar}</p>`;
-    drawObject += `<p class="${classChar}" align="center" ${title}>${coloredChar}</p>`;
+    drawObject += `<p class="${classChar}" ${title}>${coloredChar}</p>`;
   } else {
     // just show characters
     // drawObject += `<p class="${classChar}" align="center"">${char}</p>`;
-    drawObject += `<p class="${classChar}" align="center" ${title}>${char}</p>`;
+    drawObject += `<p class="${classChar}" ${title}>${char}</p>`;
   }
 
   // add sentence examples link
   if (sentenceExamples) {
     let url = "https://context.reverso.net/translation/chinese-english/";
     drawObject = `<a href="${url}${char}">${drawObject}</a>`;
-
-    // DEV link dns-prefetch optimization
-    // potentially it's a DDOS
-    // let reverso = document.createElement("link");
-    // reverso.rel = "dns-prefetch";
-    // reverso.href = "https://context.reverso.net/";
-    // document.head.appendChild(reverso);
   }
 
   // show pinyin
   if (pinyin) {
-    drawObject += `<p class="pinyin" align="center">${data.pinyin}</p>`;
+    drawObject += `<p class="pinyin">${data.pinyin}</p>`;
   }
 
   // show translation
@@ -64,6 +68,10 @@ export let draw = (data, word, pinyin, translation, sentenceExamples, color) => 
     drawObject += `<p class="english" align="center">${data.english}</p>`;
   }
 
-  // draw everything
-  app.insertAdjacentHTML("beforeend", drawObject);
+  // draw everything. afterbegin or beforeend?
+  // document.body.insertAdjacentHTML("afterbegin", `<main>${drawObject}</main>`);
+  // return drawObject;
+  chrome.storage.local.set({drawObject: drawObject},() => {
+    // console.log('Value is set to ' + value);
+  });
 };
