@@ -118,8 +118,8 @@ a {
 
 .english {
   font-weight: bold;
-  height: 100%;
-  box-sizing: border-box;
+  /* height: 100%;
+  box-sizing: border-box; */
   margin: 0.5em 2em 4em !important;
 }
 

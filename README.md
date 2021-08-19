@@ -22,7 +22,7 @@ Memorize Chinese words ****every time you open a new tab****
 
 ## Sounds nice. Anything else?
 
-⚡ Opens instantly (much faster than the default new tab)
+⚡ Opens faster than the default new tab
 
 💻 Easy on CPU, memory, and battery
 
@@ -50,4 +50,4 @@ No ads, no tracking, and free for everyone.
 
 Watch me building in public, vote for features, and contribute to building the greatest extension for fun Chinese microlearning.
 
-<a href="https://ko-fi.com/chinesetab" title="谢谢你~"><img align="left" src=images/panda_easter.png><h1><strong>I'm in!</strong></h1></a>
+<a href="https://ko-fi.com/tab" title="谢谢你~"><img align="left" src=images/panda_easter.png><h1><strong>I'm in!</strong></h1></a>
