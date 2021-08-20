@@ -2,7 +2,7 @@
 
 # Chinese Tab | 中文标签页
 
-[![Chrome](images/web_store.png)](https://chrome.google.com/extensions/detail/kpalceplnmfdppclclfnljimdjdbhcid/)
+![Chrome](images/web_store.png)
 
 Memorize Chinese words ****every time you open a new tab****
 
@@ -12,13 +12,15 @@ Memorize Chinese words ****every time you open a new tab****
 
 🀄 Simplified and traditional characters
 
-🌈 Tone colors
+🌈 Tone coloring
 
 📖 Sentence examples on word click
 
 🎯 Limit of words per day to learn
 
 🤓 Pinyin and translation can be turned off (hardcore mode)
+
+🌙 Dark mode support
 
 ## Sounds nice. Anything else?
 
@@ -27,8 +29,6 @@ Memorize Chinese words ****every time you open a new tab****
 💻 Easy on CPU, memory, and battery
 
 📴 Works offline (except for sentence examples)
-
-🌙 Dark mode support
 
 🔒 No tracking
 

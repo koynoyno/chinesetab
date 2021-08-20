@@ -1,31 +1,41 @@
 import { draw } from "./draw.js";
 import { getRandomNumber } from "./getRandomNumber.js";
+const _ = 888;
 
 // Chrome 95
 // chrome.storage.session.set({test: "test" });
 
 chrome.storage.local.get(null, async (items) => {
-  // if extension is updated
+  // if extension is updated, wipe cache, just in case
   if (items.updated) {
     const { postUpdate } = await import("./postUpdate.js");
     await postUpdate(items);
+    items.cache = {};
+  }
+
+  // new day, new cache
+  // let currentDate = new Date().getMinutes(); // DEV
+  let currentDate = new Date().getDate();
+  if (items.date !== currentDate) {
+    items.cache = {};
+    chrome.storage.local.set({ date: currentDate });
   }
 
   // update empty cache
   if (
     items.dayLimit == "0" ||
-    Object.keys(items.cache).length === 0 ||
-    items.updated
+    Object.keys(items.cache).length === 0
   ) {
     const { cacheUpdate } = await import("./cacheUpdate.js");
     items.cache = await cacheUpdate(items);
+    console.log(JSON.stringify(items.cache))
     chrome.storage.local.set({ cache: items.cache }); // repopulate cache on reload
   }
 
-  // draw characters, pinyin, tones, translation
-  // if dayLimit == 0, then items.cache[0] will be used
+  // compose drawObject: characters, pinyin, tones, translation
+  // TODO rename draw to makeDrawObject or smth
   draw(
-    items.cache[items.randomNumber],
+    items.cache[items.randomNumber], // if dayLimit == 0, then items.cache[0] is used
     items.char,
     items.pinyin,
     items.translation,
@@ -33,9 +43,6 @@ chrome.storage.local.get(null, async (items) => {
     items.color
   );
 
-  // everything above is important for performance
-  // =============================================
-  const _ = 888;
   // display first launch greeting or seen words message
   // items.firstLaunch = true; // DEV
   if (items.firstLaunch) {
@@ -48,12 +55,15 @@ chrome.storage.local.get(null, async (items) => {
     await showSeenWords(items.game.wordsSeen, items.color);
   }
 
-  // update counter
+  // update counter and randomNumber
   items.game.wordsSeen++;
   chrome.storage.local.set({
     game: { wordsSeen: items.game.wordsSeen },
     randomNumber: getRandomNumber(items.dayLimit),
   });
+  chrome.storage.sync.set({
+    game: { wordsSeen: items.game.wordsSeen },
+  })
 
   // DEV reload tabs with space
   window.addEventListener("keydown", (e) => {
@@ -64,10 +74,12 @@ chrome.storage.local.get(null, async (items) => {
 
   // DEV link dns-prefetch optimization
   // potentially it's a DDOS
-  let reverso = document.createElement("link");
-  reverso.rel = "dns-prefetch";
-  reverso.href = "https://context.reverso.net/";
-  document.head.appendChild(reverso);
+  if (items.sentenceExamples) {
+    let reverso = document.createElement("link");
+    reverso.rel = "dns-prefetch";
+    reverso.href = "https://context.reverso.net/";
+    document.head.appendChild(reverso);
+  }
 });
 
 // apply dark mode beautiful way

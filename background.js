@@ -1,14 +1,13 @@
 chrome.runtime.onInstalled.addListener(function (details) {
   if (details.reason === "install") {
-    // TODO sync after install, leave only cache
+    // TODO sync settings after install
     chrome.storage.local.set({
       hsk: "hsk2",
       level: "hsk1",
       char: "simplified",
       dayLimit: "0",
       date: new Date().getDate(),
-      // date: new Date().getMinutes() }); // DEV
-      randomWords: [],
+      // date: new Date().getMinutes(), // DEV
       randomNumber: 0,
       sentenceExamples: false,
       color: true,
@@ -19,17 +18,14 @@ chrome.runtime.onInstalled.addListener(function (details) {
       game: {
         wordsSeen: 0,
       },
-      cache: [{
-        english: "Hello!",
-        pinyinNumbered: "ni3hao3",
-        pinyin: "nǐhǎo",
-        simplified: "你好",
-        traditional: "你好",
-      }],
+      drawObject:
+        '<p class="char" ><span class="tone3">你</span><span class="tone3">好</span></p></a><p class="pinyin">nǐhǎo</p><p class="english" align="center">Hello!</p>',
     });
+
     chrome.tabs.create({
       url: "chrome://newtab",
     });
+
   } else if (details.reason === "update") {
     chrome.storage.local.set({ updated: true });
     // TODO: messaging instead of storage?
@@ -39,9 +35,6 @@ chrome.runtime.onInstalled.addListener(function (details) {
   // } else if (details.reason === "shared_module_update") {
   //   // When a shared module is updated
   // }
-
-  // localStorage is the synchronous, this way white flash can be avoided
-  // TODO: implement messaging to localStorage approach
 });
 
 // DEV logger to monitor storage changes

@@ -1,4 +1,3 @@
-import { getRandomWord } from "./getRandomWord.js";
 import { getRandomNumber } from "./getRandomNumber.js";
 
 export const cacheUpdate = async (items) => {
@@ -9,18 +8,16 @@ export const cacheUpdate = async (items) => {
     }
   );
 
-  let rand;
   let dataLength = data.words.length;
 
-  // select a random word if dayLimit is set
-  if (parseInt(items.dayLimit) !== 0) {
+  // return 1 char if no dayLimit
+  if (parseInt(items.dayLimit) == 0) {
+    return [data.words[getRandomNumber(dataLength)]];
+  } else {
+    // if dayLimit !== 0, cache [dayLimit] chars
     for (let i = 0; i < items.dayLimit; i++) {
-      rand = getRandomWord(dataLength, items);
-      items.cache[i] = data.words[rand];
+      items.cache[i] = data.words[getRandomNumber(dataLength)];
     }
     return items.cache;
-  } else {
-    rand = getRandomNumber(dataLength);
-    return [data.words[rand]]; // [0]
   }
 };

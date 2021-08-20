@@ -19,15 +19,25 @@ export const showSeenWords = async (wordsSeen, color) => {
     let colors = ["#cb0074", "#feb1dd", "#e9ffbf", "#9fee00", "#7f4c6a", "#35001e", "#8a9e61", "#2a4000"];
     confetti({
       // left
-      angle: 60,
-      origin: { x: 0 },
+      particleCount: 80,
+      decay: 0.95,
+      angle: 70,
+      origin: { x: 0, y: 0.6 },
       colors: colors,
+      gravity: 0.65,
+      ticks: 490,
+      spread: 70,
     });
     confetti({
       // right
-      angle: 120,
-      origin: { x: 1 },
+      particleCount: 70,
+      decay: 0.95,
+      angle: 115,
+      origin: { x: 1, y: 0.55 },
       colors: colors,
+      gravity: 0.6,
+      ticks: 460,
+      spread: 60,
     });
     setTimeout(function () {
       panda.remove();

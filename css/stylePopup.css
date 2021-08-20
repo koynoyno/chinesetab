@@ -15,10 +15,10 @@ body {
 
 /* DARK MODE */
 
-.darkMode {
+/* .darkMode {
   background: linear-gradient(180deg, #202124 0%, #353535 100%) !important;
   color: #fff !important;
-}
+} */
 
 .darkMode #support {
   color: white;

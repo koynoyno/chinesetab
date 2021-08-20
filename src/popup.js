@@ -15,13 +15,13 @@ let saveSettings = (id, checkbox = false) => {
     // remove cache if level or day limit is changed
     case "level":
     case "dayLimit":
-      chrome.storage.local.set({ [id]: value, randomWords: [], randomNumber: 0, cache: {} });
+      chrome.storage.local.set({ [id]: value, randomNumber: 0, cache: {} });
       chrome.tabs.reload();
       break;
 
     // remove cache and redraw #level options if HSK version is toggled
     case "hsk":
-      chrome.storage.local.set({ [id]: value, randomWords: [], randomNumber: 0, cache: {} });
+      chrome.storage.local.set({ [id]: value, randomNumber: 0, cache: {} });
       level = document.querySelector("#level");
       levelValue = level.value;
       while (level.lastElementChild) {
