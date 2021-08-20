@@ -11,13 +11,21 @@ export const cacheUpdate = async (items) => {
   let dataLength = data.words.length;
 
   // return 1 char if no dayLimit
-  if (parseInt(items.dayLimit) == 0) {
+  if (items.dayLimit == 0) {
     return [data.words[getRandomNumber(dataLength)]];
   } else {
     // if dayLimit !== 0, cache [dayLimit] chars
     for (let i = 0; i < items.dayLimit; i++) {
       items.cache[i] = data.words[getRandomNumber(dataLength)];
     }
+    // TODO fix non-unique numbers
+    // const randomNumbers = new Set();
+    // while (randomNumbers.size !== (items.dayLimit)) {
+    //   randomNumbers.add(getRandomNumber(items.dayLimit));
+    // }
+    // for (let i = 0; i < items.dayLimit; i++) {
+    //   items.cache[i] = data.words[randomNumbers[i]];
+    // }
     return items.cache;
   }
 };

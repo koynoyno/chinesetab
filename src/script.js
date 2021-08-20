@@ -24,7 +24,7 @@ export async function script() {
     }
 
     // update empty cache
-    if (items.dayLimit == "0" || Object.keys(items.cache).length === 0) {
+    if (!items.dayLimit || Object.keys(items.cache).length === 0) {
       const { cacheUpdate } = await import("./cacheUpdate.js");
       items.cache = await cacheUpdate(items);
       chrome.storage.local.set({ cache: items.cache }); // repopulate cache on reload
@@ -51,7 +51,7 @@ export async function script() {
 
       // update counter
       items.game.wordsSeen++;
-      console.log(items.game.wordsSeen + '\n');
+      // console.log(items.game.wordsSeen + '\n');
       chrome.storage.local.set({
         game: { wordsSeen: items.game.wordsSeen },
         randomNumber: getRandomNumber(items.dayLimit),

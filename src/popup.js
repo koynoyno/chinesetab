@@ -8,13 +8,15 @@ let saveSettings = (id, checkbox = false) => {
   if (checkbox) {
     value = document.querySelector(`#${id}`).checked;
   } else {
-    value = document.querySelector(`#${id}`).value;
+    // submit string or number to avoid parseInt in the code
+    let tempValue = document.querySelector(`#${id}`).value
+    value = isNaN(tempValue) ? tempValue : parseInt(tempValue);
   }
 
   switch (id) {
     // remove cache if level or day limit is changed
-    case "level":
     case "dayLimit":
+    case "level":
       chrome.storage.local.set({ settingsUpdated: true, [id]: value, randomNumber: 0, cache: {} });
       break;
 

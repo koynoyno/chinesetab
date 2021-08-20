@@ -8,7 +8,7 @@ export const showSeenWords = async (wordsSeen, color) => {
     document.body.insertAdjacentHTML(
     "beforeend",
     '<img src="images/panda_easter.png" id="panda" draggable="false" title="酷酷酷！"/>' +
-      `<p id="wordsSeen" class="invisibleDEV" align="center">You opened <strong>${wordsSeen}</strong> Chinese tabs<br/>` +
+      `<p id="wordsSeen" class="invisible" align="center">You opened <strong>${wordsSeen}</strong> Chinese tabs<br/>` +
       `<strong>${jiayou}</p>`
   );
 

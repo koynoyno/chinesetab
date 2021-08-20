@@ -5,7 +5,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
       hsk: "hsk2",
       level: "hsk1",
       char: "simplified",
-      dayLimit: "0",
+      dayLimit: 0,
       date: new Date().getDate(),
       // date: new Date().getMinutes(), // DEV
       randomNumber: 0,
