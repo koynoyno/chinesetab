@@ -1,8 +1,8 @@
-<img align="right" src=images/panda.png title="酷酷酷！">
+<img align="right" src="images/panda.png" title="酷酷酷！">
 
 # Chinese Tab | 中文标签页
 
-![Chrome](images/web_store.png)
+<img src="images/web_store.png" title="Soon...">
 
 Memorize Chinese words ****every time you open a new tab****
 
@@ -50,4 +50,4 @@ No ads, no tracking, and free for everyone.
 
 Watch me building in public, vote for features, and contribute to building the greatest extension for fun Chinese microlearning.
 
-<a href="https://ko-fi.com/tab" title="谢谢你~"><img align="left" src=images/panda_easter.png><h1><strong>I'm in!</strong></h1></a>
+<a href="https://ko-fi.com/tab" title="谢谢你~"><img align="left" src="images/panda_easter.png"><h1><strong>I'm in!</strong></h1></a>
