@@ -56,9 +56,6 @@ export async function script() {
         game: { wordsSeen: items.game.wordsSeen },
         randomNumber: getRandomNumber(items.dayLimit),
       });
-      chrome.storage.sync.set({
-        game: { wordsSeen: items.game.wordsSeen },
-      });
 
       // display first launch greeting or seen words message
       // items.firstLaunch = true; // DEV

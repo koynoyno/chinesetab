@@ -7,19 +7,5 @@ export const ifFirstLaunch = () => {
   );
   // hide forever
   chrome.storage.local.set({ firstLaunch: false });
-  // sync wordsSeen
-  let wordsSeenSynced;
-  chrome.storage.sync.get(
-    {
-      game: { wordsSeen: wordsSeen },
-    },
-    () => {
-      console.log(item.wordsSeen);
-      wordsSeenSynced = item.wordsSeen;
-
-      chrome.storage.local.set({
-        game: { wordsSeen: wordsSeenSynced },
-      });
-    }
-  );
+  // TODO sync wordsSeen
 };
