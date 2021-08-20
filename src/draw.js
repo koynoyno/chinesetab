@@ -71,7 +71,8 @@ export const draw = (data, word, pinyin, translation, sentenceExamples, color) =
   // draw everything. afterbegin or beforeend?
   // document.body.insertAdjacentHTML("afterbegin", `<main>${drawObject}</main>`);
   // return drawObject;
-  chrome.storage.local.set({drawObject: drawObject},() => {
+  chrome.storage.local.set({drawObject: drawObject}, () => {
     // console.log('Value is set to ' + value);
   });
+  // return drawObject;
 };

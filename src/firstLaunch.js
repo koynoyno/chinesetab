@@ -11,11 +11,9 @@ export const ifFirstLaunch = () => {
   let wordsSeenSynced;
   chrome.storage.sync.get(
     {
-      game: {
-        wordsSeen: wordsSeen,
-      },
+      game: { wordsSeen: wordsSeen },
     },
-    (item) => {
+    () => {
       console.log(item.wordsSeen);
       wordsSeenSynced = item.wordsSeen;
 

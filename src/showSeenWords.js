@@ -5,7 +5,7 @@ export const showSeenWords = async (wordsSeen, color) => {
   let jiayou = color
     ? '<span class="tone1">加</span><span class="tone2">油</span>！</strong>'
     : "<span>加油</span>！</strong>";
-  app.insertAdjacentHTML(
+    document.body.insertAdjacentHTML(
     "beforeend",
     '<img src="images/panda_easter.png" id="panda" draggable="false" title="酷酷酷！"/>' +
       `<p id="wordsSeen" class="invisible" align="center">You opened <strong>${wordsSeen}</strong> Chinese tabs<br/>` +
@@ -24,7 +24,7 @@ export const showSeenWords = async (wordsSeen, color) => {
       angle: 70,
       origin: { x: 0, y: 0.6 },
       colors: colors,
-      gravity: 0.65,
+      gravity: 0.9,
       ticks: 490,
       spread: 70,
     });
@@ -35,7 +35,7 @@ export const showSeenWords = async (wordsSeen, color) => {
       angle: 115,
       origin: { x: 1, y: 0.55 },
       colors: colors,
-      gravity: 0.6,
+      gravity: 1,
       ticks: 460,
       spread: 60,
     });

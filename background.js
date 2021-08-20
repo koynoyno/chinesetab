@@ -16,7 +16,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
       darkMode: false, // TODO: detect darkMode on install
       firstLaunch: true,
       game: {
-        wordsSeen: 0,
+        wordsSeen: 1,
       },
       drawObject:
         '<p class="char" ><span class="tone3">你</span><span class="tone3">好</span></p></a><p class="pinyin">nǐhǎo</p><p class="english" align="center">Hello!</p>',

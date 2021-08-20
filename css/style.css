@@ -3,9 +3,8 @@
   src: url("../fonts/noto-sans.woff2") format("woff2");
 }
 
-html, body { height: 100%; }
-
 body {
+  height: 100%;
   opacity: 0.9;
   cursor: default;
   /* TODO fix white flash */

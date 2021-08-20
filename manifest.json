@@ -9,7 +9,7 @@
   },
   "offline_enabled": true,
   "minimum_chrome_version": "92",
-  "permissions": ["storage"],
+  "permissions": ["storage", "tabs"],
   "background": {
     "service_worker": "background.js"
   },

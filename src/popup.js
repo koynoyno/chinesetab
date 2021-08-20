@@ -15,13 +15,11 @@ let saveSettings = (id, checkbox = false) => {
     // remove cache if level or day limit is changed
     case "level":
     case "dayLimit":
-      chrome.storage.local.set({ [id]: value, randomNumber: 0, cache: {} });
-      chrome.tabs.reload();
+      chrome.storage.local.set({ settingsUpdated: true, [id]: value, randomNumber: 0, cache: {} });
       break;
 
     // remove cache and redraw #level options if HSK version is toggled
     case "hsk":
-      chrome.storage.local.set({ [id]: value, randomNumber: 0, cache: {} });
       level = document.querySelector("#level");
       levelValue = level.value;
       while (level.lastElementChild) {
@@ -30,12 +28,12 @@ let saveSettings = (id, checkbox = false) => {
       redrawHSKLevels(value);
       // fallback to HSK6 from HSK7-9 when switching to HSK 2.0
       if (value == "hsk2" && levelValue == "hsk7-9") {
-        chrome.storage.local.set({ level: "hsk6" });
         level.value = "hsk6";
+        chrome.storage.local.set({ settingsUpdated: true, [id]: value, randomNumber: 0, cache: {}, level: "hsk6" });
       } else {
         level.value = levelValue;
+        chrome.storage.local.set({ settingsUpdated: true, [id]: value, randomNumber: 0, cache: {} });
       }
-      chrome.tabs.reload();
       break;
 
     // redraw popup if darkMode is toggled
@@ -51,8 +49,7 @@ let saveSettings = (id, checkbox = false) => {
       }
       break;
     default:
-      chrome.storage.local.set({ [id]: value });
-      chrome.tabs.reload();
+      chrome.storage.local.set({ settingsUpdated: true, [id]: value });
   }
 };
 
