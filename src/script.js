@@ -1,6 +1,7 @@
 import { draw } from "./draw.js";
 import { getRandomNumber } from "./getRandomNumber.js";
 const _ = 1;
+let hackFlag;
 
 // Chrome 95
 // chrome.storage.session.set({test: "test" });
@@ -40,44 +41,51 @@ export async function script() {
       items.color
     );
 
-    // display first launch greeting or seen words message
-    // items.firstLaunch = true; // DEV
-    if (items.firstLaunch) {
-      const { ifFirstLaunch } = await import("./firstLaunch.js");
-      await ifFirstLaunch();
-    } else if (!items.settingsUpdated && getRandomNumber(_) % _ == 0) {
-      const { confetti } = await import("./npm/confetti.browser.js");
-      const { showSeenWords } = await import("./showSeenWords.js");
-      await showSeenWords(items.game.wordsSeen, items.color);
-    }
+    if (items.settingsUpdated) {
+      // skip everything if settings were changed
+      chrome.storage.local.set({ settingsUpdated: false });
+    } else if (hackFlag) {
+      // hackFlag doesn't trigger listener and skips the 2nd iteration
+      hackFlag = false;
+    } else {
 
-    chrome.storage.local.set({
-      // don't update counter if it's redraw
-      game: {
-        wordsSeen: items.settingsUpdated
-          ? items.game.wordsSeen
-          : ++items.game.wordsSeen,
-      },
-      randomNumber: getRandomNumber(items.dayLimit),
-    });
-    chrome.storage.sync.set({
-      game: { wordsSeen: items.game.wordsSeen },
-    });
+      // update counter
+      items.game.wordsSeen++;
+      console.log(items.game.wordsSeen + '\n');
+      chrome.storage.local.set({
+        game: { wordsSeen: items.game.wordsSeen },
+        randomNumber: getRandomNumber(items.dayLimit),
+      });
+      chrome.storage.sync.set({
+        game: { wordsSeen: items.game.wordsSeen },
+      });
 
-    // DEV reload tabs with space
-    window.addEventListener("keydown", (e) => {
-      if (e.code === "Space") {
-        chrome.tabs.reload();
+      // display first launch greeting or seen words message
+      // items.firstLaunch = true; // DEV
+      if (items.firstLaunch) {
+        const { ifFirstLaunch } = await import("./firstLaunch.js");
+        await ifFirstLaunch();
+      } else if (getRandomNumber(_) % _ == 0) {
+        const { confetti } = await import("./npm/confetti.browser.js");
+        const { showSeenWords } = await import("./showSeenWords.js");
+        await showSeenWords(items.game.wordsSeen, items.color);
       }
-    });
 
-    // DEV link dns-prefetch optimization
-    // potentially it's a DDOS
-    if (items.sentenceExamples) {
-      let reverso = document.createElement("link");
-      reverso.rel = "dns-prefetch";
-      reverso.href = "https://context.reverso.net/";
-      document.head.appendChild(reverso);
+      // DEV reload tabs with space
+      window.addEventListener("keydown", (e) => {
+        if (e.code === "Space") {
+          chrome.tabs.reload();
+        }
+      });
+
+      // DEV link dns-prefetch optimization
+      // potentially it's a DDOS
+      if (items.sentenceExamples) {
+        let reverso = document.createElement("link");
+        reverso.rel = "dns-prefetch";
+        reverso.href = "https://context.reverso.net/";
+        document.head.appendChild(reverso);
+      }
     }
   });
 }
@@ -89,10 +97,10 @@ chrome.storage.onChanged.addListener(function (changes, namespace) {
       case "darkMode":
         document.body.classList.toggle("darkMode");
         break;
-      case "settingsUpdated": // really dirty hack to redraw without reload
-        script();
-        chrome.storage.local.set({ settingsUpdated: false });
-        break;
+      case "settingsUpdated": // really
+        hackFlag = true; // dirty
+        script(); // hack
+        break; // to updateCache without reloading the page
       case "hsk":
       case "level":
       case "char":
