@@ -1,6 +1,6 @@
 import { draw } from "./draw.js";
 import { getRandomNumber } from "./getRandomNumber.js";
-const _ = 1;
+const _ = 888;
 let hackFlag;
 
 // Chrome 95

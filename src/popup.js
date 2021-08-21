@@ -9,7 +9,7 @@ let saveSettings = (id, checkbox = false) => {
     value = document.querySelector(`#${id}`).checked;
   } else {
     // submit string or number to avoid parseInt in the code
-    let tempValue = document.querySelector(`#${id}`).value
+    let tempValue = document.querySelector(`#${id}`).value;
     value = isNaN(tempValue) ? tempValue : parseInt(tempValue);
   }
 
@@ -17,7 +17,12 @@ let saveSettings = (id, checkbox = false) => {
     // remove cache if level or day limit is changed
     case "dayLimit":
     case "level":
-      chrome.storage.local.set({ settingsUpdated: true, [id]: value, randomNumber: 0, cache: {} });
+      chrome.storage.local.set({
+        settingsUpdated: true,
+        [id]: value,
+        randomNumber: 0,
+        cache: {},
+      });
       break;
 
     // remove cache and redraw #level options if HSK version is toggled
@@ -31,10 +36,21 @@ let saveSettings = (id, checkbox = false) => {
       // fallback to HSK6 from HSK7-9 when switching to HSK 2.0
       if (value == "hsk2" && levelValue == "hsk7-9") {
         level.value = "hsk6";
-        chrome.storage.local.set({ settingsUpdated: true, [id]: value, randomNumber: 0, cache: {}, level: "hsk6" });
+        chrome.storage.local.set({
+          settingsUpdated: true,
+          [id]: value,
+          randomNumber: 0,
+          cache: {},
+          level: "hsk6",
+        });
       } else {
         level.value = levelValue;
-        chrome.storage.local.set({ settingsUpdated: true, [id]: value, randomNumber: 0, cache: {} });
+        chrome.storage.local.set({
+          settingsUpdated: true,
+          [id]: value,
+          randomNumber: 0,
+          cache: {},
+        });
       }
       break;
 
@@ -117,8 +133,16 @@ let redrawHSKLevels = (hsk) => {
 // -------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", async () => {
-  // document.body.classList.add(localStorage.getItem("darkMode"));
   restoreSettings();
+
+  chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
+    // let url = tabs[0].url;
+    if (url !== "chrome://newtab/") {
+      chrome.tabs.create({
+        url: "chrome://newtab",
+      });
+    }
+  });
 });
 
 window.addEventListener("load", async () => {
@@ -166,13 +190,16 @@ window.addEventListener("load", async () => {
   // button event listeners
   feedback.addEventListener("click", () => {
     chrome.tabs.update({
-      // TODO: replace, google forms sucks with popups and stuff
-      url: "https://forms.gle/A2j7TKjXwUfuALqz7",
+      url: "https://qsf080rh5gz.typeform.com/to/dk6HTqEY",
+      // dark
+      // https://qsf080rh5gz.typeform.com/to/Ni5ZcTIO
+      // tripetto
+      // https://tripetto.app/run/VFD67TKAF8
     });
     window.close();
   });
 
-  support.addEventListener("click", () => {
+  supportLink.addEventListener("click", () => {
     chrome.tabs.update({
       url: "https://ko-fi.com/tab",
     });

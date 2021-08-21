@@ -8,7 +8,7 @@ export const showSeenWords = async (wordsSeen, color) => {
     document.body.insertAdjacentHTML(
     "beforeend",
     '<img src="images/panda_easter.png" id="panda" draggable="false" title="酷酷酷！"/>' +
-      `<p id="wordsSeen" class="invisible" align="center">You opened <strong>${wordsSeen}</strong> Chinese tabs<br/>` +
+      `<p id="wordsSeen" class="invisible" align="center" title='Keep going!'>You opened <strong>${wordsSeen}</strong> Chinese Tabs<br/>` +
       `<strong>${jiayou}</p>`
   );
 
@@ -17,8 +17,7 @@ export const showSeenWords = async (wordsSeen, color) => {
     panda.classList.add("fade");
     // yellow-green and red-violet
     let colors = ["#cb0074", "#feb1dd", "#e9ffbf", "#9fee00", "#7f4c6a", "#35001e", "#8a9e61", "#2a4000"];
-    confetti({
-      // left
+    confetti({ // left
       particleCount: 80,
       decay: 0.95,
       angle: 70,
@@ -28,8 +27,7 @@ export const showSeenWords = async (wordsSeen, color) => {
       ticks: 490,
       spread: 70,
     });
-    confetti({
-      // right
+    confetti({ // right
       particleCount: 70,
       decay: 0.95,
       angle: 115,
@@ -42,6 +40,6 @@ export const showSeenWords = async (wordsSeen, color) => {
     setTimeout(function () {
       panda.remove();
       document.querySelector("#wordsSeen").classList.remove("invisible");
-    }, 200); // hide panda after 195ms (see css/style.css:#panda)
+    }, 3000); // 3s pause before showing wordsSeen
   });
 };

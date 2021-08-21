@@ -25,7 +25,6 @@ chrome.runtime.onInstalled.addListener(function (details) {
     chrome.tabs.create({
       url: "chrome://newtab",
     });
-
   } else if (details.reason === "update") {
     chrome.storage.local.set({ updated: true });
     // TODO: messaging instead of storage?
@@ -35,6 +34,12 @@ chrome.runtime.onInstalled.addListener(function (details) {
   // } else if (details.reason === "shared_module_update") {
   //   // When a shared module is updated
   // }
+});
+
+chrome.action.onClicked.addListener(function (tab) {
+  chrome.tabs.create({
+    url: "chrome://newtab",
+  });
 });
 
 // DEV logger to monitor storage changes

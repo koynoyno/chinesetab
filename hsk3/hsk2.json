@@ -3,7 +3,7 @@
     "identifier": "HSK2",
     "learned-percentage": 0,
     "count": 764,
-    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com 2021"
+    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, converted to JSON by Vlad Volkov https://ko-fi.com/tab, 2021"
   },
   "words": [
     {
@@ -1290,7 +1290,7 @@
     {
       "traditional": "個子",
       "simplified": "个子",
-      "pinyin": "gèzi5",
+      "pinyin": "gèzi",
       "english": "height, stature, build",
       "pinyinNumbered": "ge4zi5"
     },
@@ -4566,7 +4566,7 @@
     {
       "traditional": "椅子",
       "simplified": "椅子",
-      "pinyin": "yǐzi5",
+      "pinyin": "yǐzi",
       "english": "chair",
       "pinyinNumbered": "yi3zi5"
     },
@@ -4818,7 +4818,7 @@
     {
       "traditional": "院子",
       "simplified": "院子",
-      "pinyin": "yuànzi5",
+      "pinyin": "yuànzi",
       "english": "patio, court, courtyard, yard, compound",
       "pinyinNumbered": "yuan4zi5"
     },

@@ -4,43 +4,35 @@
 
 <img src="images/web_store.png" title="Soon...">
 
-Memorize Chinese words ****every time you open a new tab****
+Make learning Chinese easy — **learn words every time you open a new tab**.
 
-## What are the features?
+Chinese Tab is a free browser extension for practicing Chinese. It doesn't track you, doesn't show ads and it works fast on any device.
 
-📚 Standard and New HSK (2021) dictionaries
+In fact, **it works faster than the default Chrome new tab**.
 
-🀄 Simplified and traditional characters
+## What can I do with Chinese Tab?
 
-🌈 Tone coloring
+📚 Prepare for the New HSK 3.0 exam (Standard HSK exam available as well)
 
-📖 Sentence examples on word click
+🀄 Choose between simplified and traditional characters
 
-🎯 Limit of words per day to learn
+🌈 Memorizing tones can be tough — turn on tone coloring
 
-🤓 Pinyin and translation can be turned off (hardcore mode)
+📖 Learn how to use the word with sentence examples
 
-🌙 Dark mode support
+🎯 Set the limit of words per day to learn the new level more efficiently...
 
-## Sounds nice. Anything else?
+♾️ ...Or practice the level you know with no limit at all
 
-⚡ Opens faster than the default new tab
+🤓 Turn off pinyin and translation for hardcore mode. Don't worry, you can always peek the meaning by hovering over the word
 
-💻 Easy on CPU, memory, and battery
+🌙 Turn on dark mode to learn in the evening without straining your eyes
 
-📴 Works offline (except for sentence examples)
+📴 There's no Wi-Fi around? Chinese Tab works offline
 
-🔒 No tracking
+⚡ No charger? Chinese Tab increases laptop battery life by consuming less power than the default new tab
 
-📛 No ads
-
-💖 Open source
-
-🐼 Owo
-
-## OMG, how much does it cost?
-
-✨ It's free!
+🐼 Catch the panda and see how many words you have already practiced!
 
 ## I love this extension! Any way I can help?
 

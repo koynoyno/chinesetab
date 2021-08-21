@@ -3,7 +3,7 @@
     "identifier": "HSK4",
     "learned-percentage": 0,
     "count": 995,
-    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com 2021"
+    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, converted to JSON by Vlad Volkov https://ko-fi.com/tab, 2021"
   },
   "words": [
     {
@@ -2907,7 +2907,7 @@
     {
       "traditional": "鏡子",
       "simplified": "镜子",
-      "pinyin": "jìngzi5",
+      "pinyin": "jìngzi",
       "english": "looking glass, gaper, looking glass, mirror, spectacles, glass, glasses",
       "pinyinNumbered": "jing4zi5"
     },
@@ -3502,7 +3502,7 @@
     {
       "traditional": "帽子",
       "simplified": "帽子",
-      "pinyin": "màozi5",
+      "pinyin": "màozi",
       "english": "castor, lid, cap, brand, headgear, chapeau, titfer, hat, headpiece, label, amice, tag",
       "pinyinNumbered": "mao4zi5"
     },
@@ -3824,7 +3824,7 @@
     {
       "traditional": "盤子",
       "simplified": "盘子",
-      "pinyin": "pánzi5",
+      "pinyin": "pánzi",
       "english": "plate, pan, salver, bowl, dish, tray",
       "pinyinNumbered": "pan2zi5"
     },
@@ -4811,7 +4811,7 @@
     {
       "traditional": "孫子",
       "simplified": "孙子",
-      "pinyin": "sūnzi5",
+      "pinyin": "sūnzi",
       "english": "son's son, grandson",
       "pinyinNumbered": "sun1zi5"
     },
@@ -5245,7 +5245,7 @@
     {
       "traditional": "尾巴",
       "simplified": "尾巴",
-      "pinyin": "yǐba5",
+      "pinyin": "yǐba",
       "english": "appendage, a person shadowing sb., stern, tail-like part, servile adherent, tail",
       "pinyinNumbered": "yi3ba5"
     },
@@ -6001,7 +6001,7 @@
     {
       "traditional": "葉子",
       "simplified": "叶子",
-      "pinyin": "yèzi5",
+      "pinyin": "yèzi",
       "english": "foliage, frond, leafage, leaf, leave",
       "pinyinNumbered": "ye4zi5"
     },
@@ -6190,7 +6190,7 @@
     {
       "traditional": "影子",
       "simplified": "影子",
-      "pinyin": "yǐngzi5",
+      "pinyin": "yǐngzi",
       "english": "umbra, sign, silhouette, reflection, trace, shadow, vague impression",
       "pinyinNumbered": "ying3zi5"
     },

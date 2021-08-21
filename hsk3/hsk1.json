@@ -3,7 +3,7 @@
     "identifier": "HSK1",
     "learned-percentage": 0,
     "count": 497,
-    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com 2021"
+    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, converted to JSON by Vlad Volkov https://ko-fi.com/tab, 2021"
   },
   "words": [
     {
@@ -128,7 +128,7 @@
     {
       "traditional": "杯子",
       "simplified": "杯子",
-      "pinyin": "bēizi5",
+      "pinyin": "bēizi",
       "english": "tumbler, drinking glass, cup, glass",
       "pinyinNumbered": "bei1zi5"
     },
@@ -2222,7 +2222,7 @@
       "traditional": "上課",
       "simplified": "上课",
       "pinyin": "shàngkè",
-      "english": "attend class, go to class;give lesson/lecture",
+      "english": "attend class, go to class; give lesson/lecture",
       "pinyinNumbered": "shang4ke4"
     },
     {
@@ -3390,7 +3390,7 @@
     {
       "traditional": "桌子",
       "simplified": "桌子",
-      "pinyin": "zhuōzi5",
+      "pinyin": "zhuōzi",
       "english": "mahogany, table, desk",
       "pinyinNumbered": "zhuo1zi5"
     },

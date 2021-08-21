@@ -3,7 +3,7 @@
     "identifier": "HSK3",
     "learned-percentage": 0,
     "count": 966,
-    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com 2021"
+    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, converted to JSON by Vlad Volkov https://ko-fi.com/tab, 2021"
   },
   "words": [
     {
@@ -2942,7 +2942,7 @@
     {
       "traditional": "褲子",
       "simplified": "裤子",
-      "pinyin": "kùzi5",
+      "pinyin": "kùzi",
       "english": "breeches, pant, unmentionables, britches, trouser, continuation, breeks, bags, unmentionable, inexpressible, pants, pantaloon, trousers",
       "pinyinNumbered": "ku4zi5"
     },
@@ -5315,7 +5315,7 @@
     {
       "traditional": "屋子",
       "simplified": "屋子",
-      "pinyin": "wūzi5",
+      "pinyin": "wūzi",
       "english": "room, house",
       "pinyinNumbered": "wu1zi5"
     },

@@ -3,7 +3,7 @@
     "identifier": "HSK7-9",
     "learned-percentage": 0,
     "count": 5619,
-    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com 2021"
+    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, converted to JSON by Vlad Volkov https://ko-fi.com/tab, 2021"
   },
   "words": [
     {
@@ -1745,7 +1745,7 @@
     {
       "traditional": "脖子",
       "simplified": "脖子",
-      "pinyin": "bózi5",
+      "pinyin": "bózi",
       "english": "cervix, neck",
       "pinyinNumbered": "bo2zi5"
     },
@@ -3103,7 +3103,7 @@
     {
       "traditional": "趁著",
       "simplified": "趁着",
-      "pinyin": "chènzhe5",
+      "pinyin": "chènzhe",
       "english": "while",
       "pinyinNumbered": "chen4zhe5"
     },
@@ -5952,7 +5952,7 @@
     {
       "traditional": "點子",
       "simplified": "点子",
-      "pinyin": "diǎnzi5",
+      "pinyin": "diǎnzi",
       "english": "drop (of liquid), drop, idea, hint, dot, beat (of percussion instruments), beat, spot, key point, speck, pointer",
       "pinyinNumbered": "dian3zi5"
     },
@@ -10712,7 +10712,7 @@
     {
       "traditional": "過日子",
       "simplified": "过日子",
-      "pinyin": "guòrìzi5",
+      "pinyin": "guòrìzi",
       "english": "live, get along, practice economy",
       "pinyinNumbered": "guo4ri4zi5"
     },
@@ -21681,7 +21681,7 @@
     {
       "traditional": "片子",
       "simplified": "片子",
-      "pinyin": "piànzi5",
+      "pinyin": "piànzi",
       "english": "a roll of film, film, movie, record, album",
       "pinyinNumbered": "pian4zi5"
     },
@@ -25237,7 +25237,7 @@
     {
       "traditional": "身子",
       "simplified": "身子",
-      "pinyin": "shēnzi5",
+      "pinyin": "shēnzi",
       "english": "body",
       "pinyinNumbered": "shen1zi5"
     },
@@ -25734,7 +25734,7 @@
     {
       "traditional": "獅子",
       "simplified": "狮子",
-      "pinyin": "shīzi5",
+      "pinyin": "shīzi",
       "english": "leonine, Panthera leo, king of beasts, lion",
       "pinyinNumbered": "shi1zi5"
     },
@@ -30095,7 +30095,7 @@
     {
       "traditional": "位子",
       "simplified": "位子",
-      "pinyin": "wèizi5",
+      "pinyin": "wèizi",
       "english": "seat, place",
       "pinyinNumbered": "wei4zi5"
     },
@@ -30270,7 +30270,7 @@
     {
       "traditional": "蚊子",
       "simplified": "蚊子",
-      "pinyin": "wénzi5",
+      "pinyin": "wénzi",
       "english": "culex, mosquito, punkie",
       "pinyinNumbered": "wen2zi5"
     },
@@ -33826,7 +33826,7 @@
     {
       "traditional": "鑰匙",
       "simplified": "钥匙",
-      "pinyin": "yàoshi5",
+      "pinyin": "yàoshi",
       "english": "key",
       "pinyinNumbered": "yao4shi5"
     },

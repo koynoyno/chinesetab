@@ -3,7 +3,7 @@
     "identifier": "HSK5",
     "learned-percentage": 0,
     "count": 1067,
-    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com 2021"
+    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, converted to JSON by Vlad Volkov https://ko-fi.com/tab, 2021"
   },
   "words": [
     {
@@ -177,7 +177,7 @@
     {
       "traditional": "鼻子",
       "simplified": "鼻子",
-      "pinyin": "bízi5",
+      "pinyin": "bízi",
       "english": "nasal, hooter, nozzle, snoot, sneezer, boko, schnozzle, conk, smeller, snout, beezer, proboscis, olfactory organ, snitch, nose, olfactory",
       "pinyinNumbered": "bi2zi5"
     },
@@ -2242,7 +2242,7 @@
     {
       "traditional": "盒子",
       "simplified": "盒子",
-      "pinyin": "hézi5",
+      "pinyin": "hézi",
       "english": "box, case, casket",
       "pinyinNumbered": "he2zi5"
     },
@@ -3523,7 +3523,7 @@
     {
       "traditional": "面子",
       "simplified": "面子",
-      "pinyin": "miànzi5",
+      "pinyin": "miànzi",
       "english": "reputation, face, prestige",
       "pinyinNumbered": "mian4zi5"
     },
@@ -3663,7 +3663,7 @@
     {
       "traditional": "腦子",
       "simplified": "脑子",
-      "pinyin": "nǎozi5",
+      "pinyin": "nǎozi",
       "english": "brain, mind, head",
       "pinyinNumbered": "nao3zi5"
     },
@@ -7198,7 +7198,7 @@
     {
       "traditional": "竹子",
       "simplified": "竹子",
-      "pinyin": "zhúzi5",
+      "pinyin": "zhúzi",
       "english": "bamboo",
       "pinyinNumbered": "zhu2zi5"
     },
