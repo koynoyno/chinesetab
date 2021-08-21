@@ -188,20 +188,31 @@ window.addEventListener("load", async () => {
   });
 
   // button event listeners
+  twitterSave.addEventListener("click", () => {
+    chrome.tabs.update({
+      url: "https://ko-fi.com/tab/tiers",
+    });
+    window.close();
+  });
+
+  facebookSave.addEventListener("click", () => {
+    chrome.tabs.update({
+      url: "https://ko-fi.com/tab/tiers",
+    });
+    window.close();
+  });
+
   feedback.addEventListener("click", () => {
     chrome.tabs.update({
-      url: "https://qsf080rh5gz.typeform.com/to/dk6HTqEY",
-      // dark
-      // https://qsf080rh5gz.typeform.com/to/Ni5ZcTIO
-      // tripetto
-      // https://tripetto.app/run/VFD67TKAF8
+      // TODO: update the link
+      url: "https://chrome.google.com/webstore/detail/kpalceplnmfdppclclfnljimdjdbhcid/",
     });
     window.close();
   });
 
   supportLink.addEventListener("click", () => {
     chrome.tabs.update({
-      url: "https://ko-fi.com/tab",
+      url: "https://ko-fi.com/tab/tiers",
     });
     window.close();
   });
