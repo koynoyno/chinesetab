@@ -3,7 +3,7 @@
     "identifier": "HSK3",
     "learned-percentage": 0,
     "count": 966,
-    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, converted to JSON by Vlad Volkov https://ko-fi.com/tab, 2021"
+    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, cleaned and converted to JSON by Vlad Volkov https://ko-fi.com/vlad, 2021"
   },
   "words": [
     {
@@ -171,7 +171,7 @@
       "traditional": "報到",
       "simplified": "报到",
       "pinyin": "bàodào",
-      "english": "check in, register, registration, report for duty, appear, report, check_in",
+      "english": "check in, register, registration, report for duty, appear, report",
       "pinyinNumbered": "bao4dao4"
     },
     {
@@ -507,7 +507,7 @@
       "traditional": "曾經",
       "simplified": "曾经",
       "pinyin": "céngjīng",
-      "english": "in one case, , one time, formerly, syne, at one time, of all time, once, ever",
+      "english": "in one case, one time, formerly, syne, at one time, of all time, once, ever",
       "pinyinNumbered": "ceng2jing1"
     },
     {
@@ -850,7 +850,7 @@
       "traditional": "達到",
       "simplified": "达到",
       "pinyin": "dádào",
-      "english": "extend to, find, fulfil, compass, encompass, extend, gain, answer, achievement, succeed, fulfill, live up to, attainment, strain, bring up, achieve, get to, touch, strive, make, accomplish, progress to, come, hit, come out, obtain, reach, attain, clock up, suffice, do, get, arrive_at",
+      "english": "extend to, find, fulfil, compass, encompass, extend, gain, answer, achievement, succeed, fulfill, live up to, attainment, strain, bring up, achieve, get to, touch, strive, make, accomplish, progress to, come, hit, come out, obtain, reach, attain, clock up, suffice, do, get, arrive at",
       "pinyinNumbered": "da2dao4"
     },
     {
@@ -1249,7 +1249,7 @@
       "traditional": "反覆",
       "simplified": "反复",
       "pinyin": "fǎnfù",
-      "english": "repeatedly, backward_and_forward",
+      "english": "repeatedly, backward and forward",
       "pinyinNumbered": "fan3fu4"
     },
     {
@@ -1774,7 +1774,7 @@
       "traditional": "古",
       "simplified": "古",
       "pinyin": "gǔ",
-      "english": "ancient, age-old;not following current customs/practice",
+      "english": "ancient, age-old, not following current customs/practice",
       "pinyinNumbered": "gu3"
     },
     {
@@ -2159,7 +2159,7 @@
       "traditional": "火",
       "simplified": "火",
       "pinyin": "huǒ",
-      "english": "fire;internal heat, anger, temper;firearms, ammunition",
+      "english": "fire, internal heat, anger, temper, firearms, ammunition",
       "pinyinNumbered": "huo3"
     },
     {
@@ -6275,7 +6275,7 @@
       "traditional": "支持",
       "simplified": "支持",
       "pinyin": "zhīchí",
-      "english": "sustain, hold out, bear;support, back, stand by",
+      "english": "sustain, hold out, bear, support, back, stand by",
       "pinyinNumbered": "zhi1chi2"
     },
     {

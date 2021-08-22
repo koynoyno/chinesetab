@@ -15,6 +15,11 @@ export async function script() {
     //   items.cache = {};
     // }
 
+    // save prevCache for Twitter/Facebook sharing features
+    if (!items.firstLaunch) {
+      chrome.storage.local.set({ shareCache: items.cache[0] });
+    }
+
     // new day, new cache
     // let currentDate = new Date().getMinutes(); // DEV
     let currentDate = new Date().getDate();
@@ -31,7 +36,8 @@ export async function script() {
     }
 
     // compose drawObject: characters, pinyin, tones, translation
-    // TODO rename draw to makeDrawObject or smth
+    // TODO rename draw to composeObject or smth
+    // TODO move settings to items.settings
     draw(
       items.cache[items.randomNumber], // if dayLimit == 0, then items.cache[0] is used
       items.char,
@@ -48,7 +54,6 @@ export async function script() {
       // hackFlag doesn't trigger listener and skips the 2nd iteration
       hackFlag = false;
     } else {
-
       // update counter
       items.game.wordsSeen++;
       // console.log(items.game.wordsSeen + '\n');
@@ -83,6 +88,11 @@ export async function script() {
         reverso.href = "https://context.reverso.net/";
         document.head.appendChild(reverso);
       }
+
+      // DEV forbid right-click
+      window.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
     }
   });
 }

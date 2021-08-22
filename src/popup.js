@@ -13,6 +13,17 @@ let saveSettings = (id, checkbox = false) => {
     value = isNaN(tempValue) ? tempValue : parseInt(tempValue);
   }
 
+  // https://stackoverflow.com/questions/45179138/sending-message-from-popup-to-content-script-chrome-extension/45186218
+  // chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+  //   chrome.tabs.sendMessage(
+  //     tabs[0].id,
+  //     { type: "getText" },
+  //     function (response) {
+  //       alert(response);
+  //     }
+  //   );
+  // });
+
   switch (id) {
     // remove cache if level or day limit is changed
     case "dayLimit":
@@ -59,10 +70,8 @@ let saveSettings = (id, checkbox = false) => {
       chrome.storage.local.set({ [id]: value });
       document.body.classList.toggle("darkMode");
       if (value) {
-        // document.body.classList.add("darkMode");
         localStorage.setItem("darkMode", "darkMode");
       } else {
-        // document.body.classList.remove("darkMode");
         localStorage.removeItem("darkMode");
       }
       break;
@@ -85,6 +94,7 @@ let restoreSettings = () => {
       pinyin: pinyin,
       translation: translation,
       darkMode: darkMode,
+      shareCache: "shareCache",
     },
     (items) => {
       redrawHSKLevels(items.hsk);
@@ -97,6 +107,32 @@ let restoreSettings = () => {
       pinyin.checked = items.pinyin;
       translation.checked = items.translation;
       darkMode.checked = items.darkMode;
+
+      twitterSave.addEventListener("click", () => {
+        let twitterUrl = `https://twitter.com/intent/tweet?text=${
+          items.shareCache[items.char]
+        } 「 ${items.shareCache.pinyin} 」 ${
+          items.shareCache.english
+        } @ChineseTab`;
+        console.log(twitterUrl);
+        chrome.tabs.update({
+          url: twitterUrl,
+        });
+        window.close();
+      });
+
+      facebookSave.addEventListener("click", () => {
+        let facebookUrl = `https://facebook.com/sharer.php?u=chinesetab.com&quote=${
+          items.shareCache[items.char]
+        } 「 ${items.shareCache.pinyin} 」 ${
+          items.shareCache.english
+        }`;
+        console.log(facebookUrl);
+        chrome.tabs.update({
+          url: facebookUrl,
+        });
+        window.close();
+      });
     }
   );
 };
@@ -136,7 +172,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   restoreSettings();
 
   chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
-    // let url = tabs[0].url;
+    let url = tabs[0].url;
     if (url !== "chrome://newtab/") {
       chrome.tabs.create({
         url: "chrome://newtab",
@@ -144,6 +180,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   });
 });
+
+// DEV
+window.addEventListener("contextmenu", function(e) { e.preventDefault(); })
 
 window.addEventListener("load", async () => {
   // TODO: optimize with event delegation
@@ -188,19 +227,24 @@ window.addEventListener("load", async () => {
   });
 
   // button event listeners
-  twitterSave.addEventListener("click", () => {
-    chrome.tabs.update({
-      url: "https://ko-fi.com/tab/tiers",
-    });
-    window.close();
-  });
+  // twitterSave.addEventListener("click", () => {
+  //   chrome.storage.local.get(["shareCache", "char"], (e) => {
+  //     console.log(char)
+  //     let composeUrl = `https://twitter.com/intent/tweet?text=${e.shareCache.char} 「${e.shareCache.pinyin}」 ${e.shareCache.english} @ChineseTab`
+  //     console.log(composeUrl)
+  //     // chrome.tabs.update({
+  //     //   url: composeUrl,
+  //     // });
+  //   });
+  //   // window.close();
+  // });
 
-  facebookSave.addEventListener("click", () => {
-    chrome.tabs.update({
-      url: "https://ko-fi.com/tab/tiers",
-    });
-    window.close();
-  });
+  // facebookSave.addEventListener("click", () => {
+  //   chrome.tabs.update({
+  //     url: "https://ko-fi.com/vlad/tiers",
+  //   });
+  //   window.close();
+  // });
 
   feedback.addEventListener("click", () => {
     chrome.tabs.update({
@@ -212,7 +256,7 @@ window.addEventListener("load", async () => {
 
   supportLink.addEventListener("click", () => {
     chrome.tabs.update({
-      url: "https://ko-fi.com/tab/tiers",
+      url: "https://ko-fi.com/vlad/",
     });
     window.close();
   });

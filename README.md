@@ -22,18 +22,17 @@ In fact, **it works faster than the default Chrome new tab**.
 
 🎯 Set the limit of words per day to learn the new level more efficiently...
 
-♾️ ...Or practice the level you know with no limit at all
+♾️ ...Or practice with no limit at all
 
-🤓 Turn off pinyin and translation for hardcore mode. Don't worry, you can always peek the meaning by hovering over the word
+🤓 Turn off pinyin and translation for hardcore mode. You can always peek the meaning by hovering over the word
+
+📣 Show off your Chinese skills by sharing words you learned on your Twitter or Facebook page
 
 🌙 Turn on dark mode to learn in the evening without straining your eyes
 
 📴 There's no Wi-Fi around? Chinese Tab works offline
 
-⚡ No charger? Chinese Tab increases laptop battery life by consuming less power than the default new tab
-
-🐼 Catch the panda and see how many words you have already practiced!
-
+⚡ No charger either? Chinese Tab increases laptop battery life by consuming less power than the default new tab
 ## I love this extension! Any way I can help?
 
 I'm developing another browser extension that helps you to learn Chinese without an effort while browsing the Internet. Connect it to Chinese Tab and add words and sentences from the things you read.
@@ -42,4 +41,6 @@ No ads, no tracking, and free for everyone.
 
 Watch me building in public, vote for features, and contribute to building the greatest extension for fun Chinese microlearning.
 
-<a href="https://ko-fi.com/tab" title="谢谢你~"><img align="left" src="images/panda_easter.png"><h1><strong>I'm in!</strong></h1></a>
+Also, you can support me with ETH: 0x1dC331cc9e636CA6534B77c0ABAc189DeccA5E71
+
+<a href="https://ko-fi.com/vlad" title="谢谢你~"><img align="left" src="images/panda_easter.png"><h1><strong>I'm in!</strong></h1></a>

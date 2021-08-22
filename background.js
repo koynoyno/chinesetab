@@ -1,6 +1,7 @@
 chrome.runtime.onInstalled.addListener(function (details) {
   if (details.reason === "install") {
     // TODO sync settings after install
+    // TODO move settings to settings object
     chrome.storage.local.set({
       hsk: "hsk2",
       level: "hsk1",
@@ -20,6 +21,11 @@ chrome.runtime.onInstalled.addListener(function (details) {
       },
       drawObject:
         '<p class="char" ><span class="tone3">你</span><span class="tone3">好</span></p></a><p class="pinyin">nǐhǎo</p><p class="english" align="center">Hello!</p>',
+      shareCache: {
+        simplified: "你好",
+        pinyin: "nǐhǎo",
+        english: "Hello!"
+      }
     });
 
     chrome.tabs.create({

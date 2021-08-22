@@ -3,7 +3,7 @@
     "identifier": "HSK7-9",
     "learned-percentage": 0,
     "count": 5619,
-    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, converted to JSON by Vlad Volkov https://ko-fi.com/tab, 2021"
+    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, cleaned and converted to JSON by Vlad Volkov https://ko-fi.com/vlad, 2021"
   },
   "words": [
     {
@@ -3671,7 +3671,7 @@
       "traditional": "籌碼",
       "simplified": "筹码",
       "pinyin": "chóumǎ",
-      "english": "counter, jetton, dib, poker chip, chip, bargaining chip, medium_of_exchange",
+      "english": "counter, jetton, dib, poker chip, chip, bargaining chip, medium of exchange",
       "pinyinNumbered": "chou2ma3"
     },
     {
@@ -3818,7 +3818,7 @@
       "traditional": "出身",
       "simplified": "出身",
       "pinyin": "chūshēn",
-      "english": "class origin, family background;one's previous experience/occupation",
+      "english": "class origin, family background, one's previous experience/occupation",
       "pinyinNumbered": "chu1shen1"
     },
     {
@@ -4714,7 +4714,7 @@
       "traditional": "搭乘",
       "simplified": "搭乘",
       "pinyin": "dāchéng",
-      "english": "travel by, travel, travel (by a conveyance), jet, take, fly, hitching, get_on",
+      "english": "travel by, travel, travel (by a conveyance), jet, take, fly, hitching, get on",
       "pinyinNumbered": "da1cheng2"
     },
     {
@@ -9880,7 +9880,7 @@
       "traditional": "股市",
       "simplified": "股市",
       "pinyin": "gǔshì",
-      "english": "stock exchange, securities market, stock market, stock_market",
+      "english": "stock exchange, securities market, stock market",
       "pinyinNumbered": "gu3shi4"
     },
     {
@@ -9957,7 +9957,7 @@
       "traditional": "顧及",
       "simplified": "顾及",
       "pinyin": "gùjí",
-      "english": "study, give consideration to, consider, take into account, consult, attend to, allow_for",
+      "english": "study, give consideration to, consider, take into account, consult, attend to, allow for",
       "pinyinNumbered": "gu4ji2"
     },
     {
@@ -21101,7 +21101,7 @@
       "traditional": "農曆",
       "simplified": "农历",
       "pinyin": "nónglì",
-      "english": "farmer's calendar, lunar calendar, lunar_calendar",
+      "english": "farmer's calendar, lunar calendar",
       "pinyinNumbered": "nong2li4"
     },
     {
@@ -24181,7 +24181,7 @@
       "traditional": "日趨",
       "simplified": "日趋",
       "pinyin": "rìqū",
-      "english": "gradually, day_by_day",
+      "english": "gradually, day by day",
       "pinyinNumbered": "ri4qu1"
     },
     {
@@ -24440,7 +24440,7 @@
       "traditional": "弱點",
       "simplified": "弱点",
       "pinyin": "ruòdiǎn",
-      "english": "Achilles' heel, soft spot, failing, weakness, underbelly, defect, foible, infirmity, weak point, blot, frailty, drawback, Achilles'_heel, soft spot, weak point, vulnerability",
+      "english": "Achilles' heel, soft spot, failing, weakness, underbelly, defect, foible, infirmity, weak point, blot, frailty, drawback, soft spot, weak point, vulnerability",
       "pinyinNumbered": "ruo4dian3"
     },
     {
@@ -30509,7 +30509,7 @@
       "traditional": "無論如何",
       "simplified": "无论如何",
       "pinyin": "wúlùnrúhé",
-      "english": "disregarding, aught, in any event, anyway, in any case, ought, at any rate, no matter what happens, irrespective, no matter, however, leastwise, anyhow, anywise, irregardless, leastways, whatever may come, disregardless, no matter what, regardless, come hell or high water, in_any_case",
+      "english": "disregarding, aught, in any event, anyway, in any case, ought, at any rate, no matter what happens, irrespective, no matter, however, leastwise, anyhow, anywise, irregardless, leastways, whatever may come, disregardless, no matter what, regardless, come hell or high water",
       "pinyinNumbered": "wu2lun4ru2he2"
     },
     {
@@ -31475,7 +31475,7 @@
       "traditional": "鄉下",
       "simplified": "乡下",
       "pinyin": "xiāngxià",
-      "english": "country, countryside, rural, village, province, country(side), mofussil, back_country",
+      "english": "country, countryside, rural, village, province, country(side), mofussil, back country",
       "pinyinNumbered": "xiang1xia4"
     },
     {

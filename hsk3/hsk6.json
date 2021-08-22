@@ -3,7 +3,7 @@
     "identifier": "HSK6",
     "learned-percentage": 0,
     "count": 1134,
-    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, converted to JSON by Vlad Volkov https://ko-fi.com/tab, 2021"
+    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, cleaned and converted to JSON by Vlad Volkov https://ko-fi.com/vlad, 2021"
   },
   "words": [
     {
@@ -3125,7 +3125,7 @@
       "traditional": "傑出",
       "simplified": "杰出",
       "pinyin": "jiéchū",
-      "english": "excel at, exceed, shine at, outstanding, stand_out",
+      "english": "excel at, exceed, shine at, outstanding, stand out",
       "pinyinNumbered": "jie2chu1"
     },
     {
@@ -7136,7 +7136,7 @@
       "traditional": "遭到",
       "simplified": "遭到",
       "pinyin": "zāodào",
-      "english": "endure, encounter, meet with, run into, suffer, soak_up",
+      "english": "endure, encounter, meet with, run into, suffer, soak up",
       "pinyinNumbered": "zao1dao4"
     },
     {

@@ -3,7 +3,7 @@
     "identifier": "HSK5",
     "learned-percentage": 0,
     "count": 1067,
-    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, converted to JSON by Vlad Volkov https://ko-fi.com/tab, 2021"
+    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, cleaned and converted to JSON by Vlad Volkov https://ko-fi.com/vlad, 2021"
   },
   "words": [
     {
@@ -360,7 +360,7 @@
       "traditional": "不利",
       "simplified": "不利",
       "pinyin": "búlì",
-      "english": "unfavorable, detrimental;unsuccessful",
+      "english": "unfavorable, detrimental, unsuccessful",
       "pinyinNumbered": "bu2li4"
     },
     {
@@ -1340,7 +1340,7 @@
       "traditional": "等候",
       "simplified": "等候",
       "pinyin": "děnghòu",
-      "english": "hold back, wait, look, expect, abide, await, hold off, tarry, expectation, hang_on",
+      "english": "hold back, wait, look, expect, abide, await, hold off, tarry, expectation, hang on",
       "pinyinNumbered": "deng3hou4"
     },
     {
@@ -1522,7 +1522,7 @@
       "traditional": "噸",
       "simplified": "吨",
       "pinyin": "dùn",
-      "english": "metric ton, acre, ton, m.[standard], ,A, MT, tonne, t",
+      "english": "metric ton, acre, ton, m.[standard], tonne",
       "pinyinNumbered": "dun4"
     },
     {
@@ -2019,7 +2019,7 @@
       "traditional": "估計",
       "simplified": "估计",
       "pinyin": "gūjì",
-      "english": "forecast, set, evaluate, rate, gauge, measure, count, assess, calculate, estimate, reckon, appraisal, compute, estimated, value, appraise, put, overrate, make, place, size_up",
+      "english": "forecast, set, evaluate, rate, gauge, measure, count, assess, calculate, estimate, reckon, appraisal, compute, estimated, value, appraise, put, overrate, make, place, size up",
       "pinyinNumbered": "gu1ji4"
     },
     {
@@ -3531,7 +3531,7 @@
       "traditional": "秒",
       "simplified": "秒",
       "pinyin": "miǎo",
-      "english": "chronograph, m.[standard], ,s, sec, second",
+      "english": "chronograph, m.[standard], sec, second",
       "pinyinNumbered": "miao3"
     },
     {
@@ -4742,14 +4742,14 @@
       "traditional": "詩歌",
       "simplified": "诗歌",
       "pinyin": "shī gē",
-      "english": "poem, CL:本[ben3],首[shou3],段[duan4]",
+      "english": "poem, CL:本[ben3], 首[shou3], 段[duan4]",
       "pinyinNumbered": "shi1 ge1"
     },
     {
       "traditional": "十足",
       "simplified": "十足",
       "pinyin": "shízú",
-      "english": "1 0 0 percent;out-and-out;downright",
+      "english": "100 percent, out-and-out, downright",
       "pinyinNumbered": "shi2zu2"
     },
     {

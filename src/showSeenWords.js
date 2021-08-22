@@ -40,6 +40,6 @@ export const showSeenWords = async (wordsSeen, color) => {
     setTimeout(function () {
       panda.remove();
       document.querySelector("#wordsSeen").classList.remove("invisible");
-    }, 3000); // 3s pause before showing wordsSeen
+    }, 1200); // pause before showing wordsSeen
   });
 };

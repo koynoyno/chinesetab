@@ -6,7 +6,7 @@
   }
 </style>
 <link rel="preload" as="script" href="src/_.js" crossorigin />
-<link rel="preload" as="style" href="css/style.css" />
+<!-- <link rel="preload" as="style" href="css/style.css" /> -->
 <link
   rel="preload"
   href="fonts/noto-sans.woff2"
@@ -15,7 +15,188 @@
   crossorigin
 />
 <script type="module" src="src/_.js"></script>
-<link rel="stylesheet" href="css/style.css" />
-<title>Chinese Tab</title>
+<!-- <link rel="stylesheet" href="css/style.css" /> -->
+<style>
+  @font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/noto-sans.woff2") format("woff2");
+}
+
+body {
+  height: 100%;
+  opacity: 0.9;
+  cursor: default;
+  /* TODO fix white flash */
+  transition: background-color .2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  overflow: hidden;
+  /* color: rgba(0, 0, 0, 0.8); */
+}
+
+p {
+  transition: color .2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  margin: 0.1em 0;
+}
+
+.darkMode .tone5 {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.67) 0%,
+    rgb(255, 255, 255, 0.87) 100%
+  );
+  background-clip: text;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#welcome {
+  animation: fadeInPanda .2s;
+}
+
+#panda {
+  position: absolute;
+  bottom: -1px;
+  opacity: 0.87;
+  transition: opacity .2s ease-in-out;
+  cursor: pointer;
+  width: 200px;
+  animation: fadeInPanda .2s;
+}
+
+@keyframes fadeInPanda {
+  from { opacity: 0; }
+  to   { opacity: 0.87; }
+}
+
+#panda:hover {
+  opacity: 1;
+}
+
+#panda.fade {
+  opacity: 0;
+  cursor: default !important;
+}
+
+#wordsSeen, #welcome {
+  font-family: "Noto Sans", Fallback, sans-serif;
+  font-size: 2em;
+  position: absolute;
+  bottom: 0px;
+  z-index: -100;
+  opacity: 1;
+  padding-bottom: 1em;
+  transition: opacity .2s ease-in-out;
+}
+
+#wordsSeen.invisible {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.char {
+  margin: 0 0.1em;
+  font-size: 30em;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.charClickable {
+  cursor: pointer;
+  transition: transform .2s ease-in-out;
+}
+
+.charClickable:hover {
+  transition: transform 0.225s ease-in;
+  transform: scale(1.01);
+}
+
+.pinyin,
+.english {
+  font-family: "Noto Sans", Fallback, sans-serif;
+  font-size: 2.5rem;
+  margin: -1.5em 1em 0;
+}
+
+.english {
+  font-weight: bold;
+  /* height: 100%;
+  box-sizing: border-box; */
+  margin: 0.5em 2em 4em !important;
+}
+
+.hide {
+  display: none;
+}
+
+/* Pleco Tone Colors */
+.tone1 {
+  /* background-image: rgb(227,0,0); */
+  background: linear-gradient(
+    180deg,
+    rgba(227, 0, 0, 0.7) 0%,
+    rgba(227, 0, 0, 1) 100%
+  );
+}
+.tone2 {
+  background: linear-gradient(
+    180deg,
+    rgba(2, 179, 28, 0.7) 0%,
+    rgba(2, 179, 28, 1) 100%
+  );
+}
+.tone3 {
+  background: linear-gradient(
+    180deg,
+    rgba(50, 50, 252, 0.7) 0%,
+    rgb(50, 50, 252) 100%
+  );
+}
+.tone4 {
+  background: linear-gradient(
+    180deg,
+    rgba(160, 16, 218, 0.7) 0%,
+    rgb(160, 16, 218, 1) 100%
+  );
+}
+.tone5 {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.tone1,
+.tone2,
+.tone3,
+.tone4,
+.tone5 {
+  padding-top: 0.2em;
+  background-clip: text;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+<title>New Tab</title>
 <body id="app">
 </body>

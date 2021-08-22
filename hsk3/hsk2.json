@@ -3,7 +3,7 @@
     "identifier": "HSK2",
     "learned-percentage": 0,
     "count": 764,
-    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, converted to JSON by Vlad Volkov https://ko-fi.com/tab, 2021"
+    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, cleaned and converted to JSON by Vlad Volkov https://ko-fi.com/vlad, 2021"
   },
   "words": [
     {
@@ -213,7 +213,7 @@
       "traditional": "不錯",
       "simplified": "不错",
       "pinyin": "búcuò",
-      "english": "not bad, pretty good;correct, right",
+      "english": "not bad, pretty good, correct, right",
       "pinyinNumbered": "bu2cuo4"
     },
     {
@@ -1284,7 +1284,7 @@
       "traditional": "高中",
       "simplified": "高中",
       "pinyin": "gāozhōng",
-      "english": "senior middle school, senior high school, senior_high_school",
+      "english": "senior middle school, senior high school",
       "pinyinNumbered": "gao1zhong1"
     },
     {
@@ -1844,7 +1844,7 @@
       "traditional": "件",
       "simplified": "件",
       "pinyin": "jiàn",
-      "english": "correspondence, paper, document, bit, m.[general], , single item, letter, piece",
+      "english": "correspondence, paper, document, bit, m.[general], single item, letter, piece",
       "pinyinNumbered": "jian4"
     },
     {
@@ -2362,7 +2362,7 @@
       "traditional": "老",
       "simplified": "老",
       "pinyin": "lǎo",
-      "english": "old, aged;of long standing, outdated, tough, overgrown, dark (of colors)",
+      "english": "old, aged, of long standing, outdated, tough, overgrown, dark (of colors)",
       "pinyinNumbered": "lao3"
     },
     {
@@ -2656,7 +2656,7 @@
       "traditional": "明星",
       "simplified": "明星",
       "pinyin": "míngxīng",
-      "english": "headliner, lucida, (movie/etc.) star, impersonator, (movie, famous performer, stardom, Venus, star, etc.) star, movie_star",
+      "english": "headliner, lucida, (movie/etc.) star, impersonator, (movie, famous performer, stardom, Venus, star, etc.) star",
       "pinyinNumbered": "ming2xing1"
     },
     {
@@ -3426,7 +3426,7 @@
       "traditional": "收到",
       "simplified": "收到",
       "pinyin": "shōudào",
-      "english": "hear, find, achievement, receive, receipt, obtain, achieve, incur, get, come_to",
+      "english": "hear, find, achievement, receive, receipt, obtain, achieve, incur, get, come to",
       "pinyinNumbered": "shou1dao4"
     },
     {
@@ -3699,7 +3699,7 @@
       "traditional": "條",
       "simplified": "条",
       "pinyin": "tiáo",
-      "english": "bar, item, short note, a long narrow piece, streak, clause, stripe, sth. long and narrow, filet, m.[general], , article, strip, assize, twig, ingot, slip",
+      "english": "bar, item, short note, a long narrow piece, streak, clause, stripe, sth. long and narrow, filet, m.[general], article, strip, assize, twig, ingot, slip",
       "pinyinNumbered": "tiao2"
     },
     {
@@ -3958,7 +3958,7 @@
       "traditional": "位",
       "simplified": "位",
       "pinyin": "wèi",
-      "english": "location, digit, m.[general], , status, figure, throne, position, place, condition",
+      "english": "location, digit, m.[general], status, figure, throne, position, place, condition",
       "pinyinNumbered": "wei4"
     },
     {
@@ -4168,7 +4168,7 @@
       "traditional": "小",
       "simplified": "小",
       "pinyin": "xiǎo",
-      "english": "small, little, petty, minor;young",
+      "english": "small, little, petty, minor, young",
       "pinyinNumbered": "xiao3"
     },
     {
@@ -4686,7 +4686,7 @@
       "traditional": "英文",
       "simplified": "英文",
       "pinyin": "yīngwén",
-      "english": "English, English (language), English language, English_language",
+      "english": "English, English (language), English language",
       "pinyinNumbered": "ying1wen2"
     },
     {
@@ -5323,7 +5323,7 @@
       "traditional": "座",
       "simplified": "座",
       "pinyin": "zuò",
-      "english": "fare, stand, base, constellation, footstall, pedestal, m.[general], , customer, Aquarius, seating, plinth, place, seat",
+      "english": "fare, stand, base, constellation, footstall, pedestal, m.[general], customer, Aquarius, seating, plinth, place, seat",
       "pinyinNumbered": "zuo4"
     },
     {

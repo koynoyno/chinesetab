@@ -3,7 +3,7 @@
     "identifier": "HSK1",
     "learned-percentage": 0,
     "count": 497,
-    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, converted to JSON by Vlad Volkov https://ko-fi.com/tab, 2021"
+    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, cleaned and converted to JSON by Vlad Volkov https://ko-fi.com/vlad, 2021"
   },
   "words": [
     {
@@ -815,7 +815,7 @@
       "traditional": "哥哥",
       "simplified": "哥哥",
       "pinyin": "gēgē",
-      "english": "big brother, elder brother, big_brother",
+      "english": "big brother, elder brother",
       "pinyinNumbered": "ge1ge1"
     },
     {
@@ -1088,7 +1088,7 @@
       "traditional": "回來",
       "simplified": "回来",
       "pinyin": "huílái",
-      "english": "come back, get back, recur, revisit, come, return, be back, come_back",
+      "english": "come back, get back, recur, revisit, come, return, be back",
       "pinyinNumbered": "hui2lai2"
     },
     {
@@ -1431,7 +1431,7 @@
       "traditional": "老",
       "simplified": "老",
       "pinyin": "lǎo",
-      "english": "old, aged;of long standing, outdated, tough, overgrown, dark (of colors)",
+      "english": "old, aged, of long standing, outdated, tough, overgrown, dark (of colors)",
       "pinyinNumbered": "lao3"
     },
     {
@@ -2453,7 +2453,7 @@
       "traditional": "歲",
       "simplified": "岁",
       "pinyin": "suì",
-      "english": "year (for crops), m.[standard], , year of age, year (of age), year, annum, year for crops",
+      "english": "year (for crops), m.[standard], year of age, year (of age), year, annum, year for crops",
       "pinyinNumbered": "sui4"
     },
     {
@@ -2712,7 +2712,7 @@
       "traditional": "下班",
       "simplified": "下班",
       "pinyin": "xiàbān",
-      "english": "get_off",
+      "english": "get off",
       "pinyinNumbered": "xia4ban1"
     },
     {
@@ -2789,7 +2789,7 @@
       "traditional": "小",
       "simplified": "小",
       "pinyin": "xiǎo",
-      "english": "small, little, petty, minor;young",
+      "english": "small, little, petty, minor, young",
       "pinyinNumbered": "xiao3"
     },
     {
@@ -2964,7 +2964,7 @@
       "traditional": "頁",
       "simplified": "页",
       "pinyin": "yè",
-      "english": "page, leaf, m.[general], ,sheet of paper, sheet, piece, piece of paper, folio",
+      "english": "page, leaf, m.[general], sheet of paper, sheet, piece, piece of paper, folio",
       "pinyinNumbered": "ye4"
     },
     {
@@ -3034,7 +3034,7 @@
       "traditional": "一邊",
       "simplified": "一边",
       "pinyin": "yībiān",
-      "english": "at the same time, simultaneously;on the one/other hand",
+      "english": "at the same time, simultaneously, on the one/other hand",
       "pinyinNumbered": "yi1bian1"
     },
     {
@@ -3475,7 +3475,7 @@
       "traditional": "坐下",
       "simplified": "坐下",
       "pinyin": "zuòxià",
-      "english": "subside, sit, sit down, sink, sit_down",
+      "english": "subside, sit, sit down, sink",
       "pinyinNumbered": "zuo4xia4"
     },
     {

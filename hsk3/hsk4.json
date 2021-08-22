@@ -3,7 +3,7 @@
     "identifier": "HSK4",
     "learned-percentage": 0,
     "count": 995,
-    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, converted to JSON by Vlad Volkov https://ko-fi.com/tab, 2021"
+    "source-note": "vocabulary taken from https://github.com/infinyte7/Anki-xiehanzi created by Mani, infinyte01@gmail.com, cleaned and converted to JSON by Vlad Volkov https://ko-fi.com/vlad, 2021"
   },
   "words": [
     {
@@ -199,7 +199,7 @@
       "traditional": "保密",
       "simplified": "保密",
       "pinyin": "bǎomì",
-      "english": "maintain secrecy, hide, conceal, keep sth. secret, keep secret, hold_back",
+      "english": "maintain secrecy, hide, conceal, keep sth. secret, keep secret, hold back",
       "pinyinNumbered": "bao3mi4"
     },
     {
@@ -2355,7 +2355,7 @@
       "traditional": "匯率",
       "simplified": "汇率",
       "pinyin": "huìlù",
-      "english": "interchange, exchange rate, rate of exchange, exchange, exchange_rate",
+      "english": "interchange, exchange rate, rate of exchange, exchange",
       "pinyinNumbered": "hui4lu4"
     },
     {
@@ -2369,7 +2369,7 @@
       "traditional": "火",
       "simplified": "火",
       "pinyin": "huǒ",
-      "english": "fire;internal heat, anger, temper;firearms, ammunition",
+      "english": "fire, internal heat, anger, temper, firearms, ammunition",
       "pinyinNumbered": "huo3"
     },
     {
@@ -2411,7 +2411,7 @@
       "traditional": "獲得",
       "simplified": "获得",
       "pinyin": "huòdé",
-      "english": "find, cop, acquirement, come into, gain, draw, pick up, pull, achievement, score, procure, come by, get hold, purchase, nab, come upon, derive, latch, incur, achieve, make, bring, receive, arrive, come out, pocket, obtain, luck into, sack, win, enter upon, pick up, garner, harvest, attain, come up, line up, extract, secure, possess, earn, reap, accrue, cover, take, acquire, get, arrive_at",
+      "english": "find, cop, acquirement, come into, gain, draw, pick up, pull, achievement, score, procure, come by, get hold, purchase, nab, come upon, derive, latch, incur, achieve, make, bring, receive, arrive, come out, pocket, obtain, luck into, sack, win, enter upon, pick up, garner, harvest, attain, come up, line up, extract, secure, possess, earn, reap, accrue, cover, take, acquire, get, arrive at",
       "pinyinNumbered": "huo4de2"
     },
     {
@@ -2852,7 +2852,7 @@
       "traditional": "盡力",
       "simplified": "尽力",
       "pinyin": "jìnlì",
-      "english": "do_one's best, do all one can, render, take pains, be at pains, take pains, stretch, strain, strive, try one's best",
+      "english": "do one's best, do all one can, render, take pains, be at pains, take pains, stretch, strain, strive, try one's best",
       "pinyinNumbered": "jin4li4"
     },
     {
@@ -2985,7 +2985,7 @@
       "traditional": "卷",
       "simplified": "卷",
       "pinyin": "juàn",
-      "english": "volume, coil, furl, roll, spool, documents, m.[general], ,part, data file, tome, reel, book, examination paper, cylindrical mass of something, file, dossier",
+      "english": "volume, coil, furl, roll, spool, documents, m.[general], part, data file, tome, reel, book, examination paper, cylindrical mass of something, file, dossier",
       "pinyinNumbered": "juan4"
     },
     {
@@ -4084,7 +4084,7 @@
       "traditional": "清醒",
       "simplified": "清醒",
       "pinyin": "qīngxǐng",
-      "english": "waken, wake up, sober up, be wide-awake, be clear-headed, wide-awake, wake, be sober, awaken, be sober/wide-awake, sober, come alive, awake, come to, regain consciousness, arouse, sober_up",
+      "english": "waken, wake up, sober up, be wide-awake, be clear-headed, wide-awake, wake, be sober, awaken, be sober/wide-awake, sober, come alive, awake, come to, regain consciousness, arouse",
       "pinyinNumbered": "qing1xing3"
     },
     {
@@ -4497,7 +4497,7 @@
       "traditional": "市區",
       "simplified": "市区",
       "pinyin": "shìqū",
-      "english": "urban area, city proper, row, urban district, downtown, urban_area",
+      "english": "urban area, city proper, row, urban district, downtown",
       "pinyinNumbered": "shi4qu1"
     },
     {
@@ -5526,7 +5526,7 @@
       "traditional": "顯著",
       "simplified": "显著",
       "pinyin": "xiǎnzhù",
-      "english": "outstand, striking, noticeable, remarkable, appear, marked, notable, outstanding, stand_out",
+      "english": "outstand, striking, noticeable, remarkable, appear, marked, notable, outstanding, stand out",
       "pinyinNumbered": "xian3zhu4"
     },
     {
@@ -5904,7 +5904,7 @@
       "traditional": "研究生",
       "simplified": "研究生",
       "pinyin": "yánjiùshēng",
-      "english": "don, postgraduate, grad student, grad, graduate student, student, graduate_student",
+      "english": "don, postgraduate, grad student, grad, graduate student, student",
       "pinyinNumbered": "yan2jiu4sheng1"
     },
     {
@@ -6044,7 +6044,7 @@
       "traditional": "一再",
       "simplified": "一再",
       "pinyin": "yīzài",
-      "english": "repeatedly, again and again, time and again, over_and_over",
+      "english": "repeatedly, again and again, time and again, over and over",
       "pinyinNumbered": "yi1zai4"
     },
     {
