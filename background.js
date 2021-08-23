@@ -58,6 +58,4 @@ chrome.action.onClicked.addListener(function (tab) {
 //   }
 // });
 
-// DISABLED: uninstall survey
-// TODO: typeform
-// chrome.runtime.setUninstallURL("https://forms.gle/A2j7TKjXwUfuALqz7");
+chrome.runtime.setUninstallURL("https://telegra.ph/Oh-no-08-23");

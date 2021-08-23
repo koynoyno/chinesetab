@@ -114,7 +114,6 @@ let restoreSettings = () => {
         } 「 ${items.shareCache.pinyin} 」 ${
           items.shareCache.english
         } @ChineseTab`;
-        console.log(twitterUrl);
         chrome.tabs.update({
           url: twitterUrl,
         });
@@ -127,7 +126,6 @@ let restoreSettings = () => {
         } 「 ${items.shareCache.pinyin} 」 ${
           items.shareCache.english
         }`;
-        console.log(facebookUrl);
         chrome.tabs.update({
           url: facebookUrl,
         });
@@ -171,6 +169,7 @@ let redrawHSKLevels = (hsk) => {
 document.addEventListener("DOMContentLoaded", async () => {
   restoreSettings();
 
+  /// open Chinese Tab if the active isn't one
   chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
     let url = tabs[0].url;
     if (url !== "chrome://newtab/") {
@@ -182,7 +181,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 // DEV
-window.addEventListener("contextmenu", function(e) { e.preventDefault(); })
+window.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+});
 
 window.addEventListener("load", async () => {
   // TODO: optimize with event delegation
@@ -227,28 +228,8 @@ window.addEventListener("load", async () => {
   });
 
   // button event listeners
-  // twitterSave.addEventListener("click", () => {
-  //   chrome.storage.local.get(["shareCache", "char"], (e) => {
-  //     console.log(char)
-  //     let composeUrl = `https://twitter.com/intent/tweet?text=${e.shareCache.char} 「${e.shareCache.pinyin}」 ${e.shareCache.english} @ChineseTab`
-  //     console.log(composeUrl)
-  //     // chrome.tabs.update({
-  //     //   url: composeUrl,
-  //     // });
-  //   });
-  //   // window.close();
-  // });
-
-  // facebookSave.addEventListener("click", () => {
-  //   chrome.tabs.update({
-  //     url: "https://ko-fi.com/vlad/tiers",
-  //   });
-  //   window.close();
-  // });
-
   feedback.addEventListener("click", () => {
     chrome.tabs.update({
-      // TODO: update the link
       url: "https://chrome.google.com/webstore/detail/kpalceplnmfdppclclfnljimdjdbhcid/",
     });
     window.close();
