@@ -44,10 +44,4 @@ Memorize Chinese words ****every time you open a new tab****
 
 ## I love this extension! Any way I can help?
 
-I'm developing another browser extension that helps you to learn Chinese without an effort while browsing the Internet. Connect it to Chinese Tab and add words and sentences from the things you read.
-
-No ads, no tracking, and free for everyone.
-
-Watch me building in public, vote for features, and support building the greatest extension for fun Chinese microlearning.
-
-<a href="https://ko-fi.com/chinesetab" title="谢谢你~"><img align="left" src=images/panda_easter.png><h1><strong>I'm in!</strong></h1></a>
+<img align="left" src=images/panda_easter.png><h1><strong>Share the word!</strong></h1>
