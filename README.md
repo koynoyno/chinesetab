@@ -2,8 +2,6 @@
 
 # Chinese Tab | 中文标签页
 
-[![Chrome](images/web_store.png)](https://chrome.google.com/extensions/detail/kpalceplnmfdppclclfnljimdjdbhcid/)
-
 Memorize Chinese words ****every time you open a new tab****
 
 ## What are the features?
