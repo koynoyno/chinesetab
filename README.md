@@ -2,7 +2,7 @@
 
 # Chinese Tab | 中文标签页
 
-Memorize Chinese words ****every time you open a new tab****
+Memorize Chinese words ****every time you open a new Chrome tab****
 
 ## What are the features?
 
