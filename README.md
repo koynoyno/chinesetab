@@ -6,7 +6,7 @@ Memorize Chinese words ****every time you open a new Chrome tab****
 
 ## What are the features?
 
-📚 Standard and New HSK (2021) dictionaries
+📚 HSK 3 (2021) and classic dictionaries
 
 🀄 Simplified and traditional characters
 
@@ -21,7 +21,7 @@ Memorize Chinese words ****every time you open a new Chrome tab****
 🐼 Mandarin speaking panda Ou
 ## Sounds nice. Anything else?
 
-💨 Opens instantly (much faster than the default new tab)
+💨 Opens instantly
 
 💻 Easy on CPU, memory, and battery
 
