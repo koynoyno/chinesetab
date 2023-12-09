@@ -1,6 +1,6 @@
 <img align="right" src=images/panda.png title="酷酷酷！">
 
-# Chinese Tab | 中文标签页
+# Chinese Tab | 中文标签页 | 中文標籤頁
 
 Memorize Chinese words ****every time you open a new Chrome tab****. Works both on desktop (Chrome, Safari) and mobile (Safari, Kiwi) browsers. 
 
