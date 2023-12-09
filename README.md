@@ -4,6 +4,8 @@
 
 Memorize Chinese words ****every time you open a new Chrome tab****
 
+<img src="https://github.com/koynoyno/chinesetab/assets/46102189/6319d82b-2e64-4d25-b364-692bb44f87f8" width="200">
+
 ## What are the features?
 
 📚 HSK 3 (2021) and classic dictionaries
