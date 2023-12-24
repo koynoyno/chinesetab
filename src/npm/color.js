@@ -30,3 +30,4 @@ export default String.prototype.splitAndKeep = function (separator, method) {
 };
 
 // TODO: can it work asynchronously?
+// TODO: make it work for Zhuyin as well

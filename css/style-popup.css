@@ -1,12 +1,17 @@
+/* :root {
+  color-scheme: light dark;
+} */
+
 @font-face {
   font-family: "Noto Sans";
   src: url("../fonts/noto-sans.woff2") format("woff2");
 }
 
 body {
+  margin: 2em;
   user-select: none;
   font-family: "Noto Sans", Fallback, sans-serif;
-  width: 155px;
+  /* width: 165px; */
   display: flex;
   flex-direction: column;
   background: linear-gradient(0deg, #f1f3f4 0%, #dee1e6 100%);
@@ -54,7 +59,7 @@ body {
 }
 
 /* multiple select */
-/* #hsk {
+/* #testType {
   display: inline-block;
   vertical-align: top;
   overflow: hidden;
@@ -120,31 +125,61 @@ select,
 }
 
 #panda {
-  position: absolute;
-  bottom: 65px;
-  right: 0px !important;
-  width: 75px;
+  /* BIG CUP STYLE */
+  /* margin: 2em; */
+  /* position: absolute; */
+  /* bottom: -50px; */
+  /* right: -40px !important; */
+  /* width: 160px; */
+  /* margin: auto;
+  width: 48px;
   opacity: 0.87;
   transition: opacity .2s ease-in-out;
+  cursor: pointer;
+  transform: scaleX(-1); */
 
+  /* margin: auto; */
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 10em;
+  /* opacity: 0.87; */
+  /* transition: opacity .2s ease-in-out; */
+  /* cursor: pointer; */
+  /* transform: scaleX(-1); */
 }
 
-#panda:hover {
+#panda.darkMode,
+#kofi.darkMode {
+  filter: invert(1);
+}
+
+/* #panda:hover {
   opacity: 1;
   transition: opacity 0.225s ease-in;
 
-}
+} */
 
-/* #kofi {
-  position: absolute;
-  bottom: 60px;
-  right: 28px !important;
-  width: 30px;
+#kofi {
+  /* mix-blend-mode: darken; */
+  /* position: absolute; */
+  /* bottom: .2em; */
+  /* right: 0em; */
+  width: 4.5em;
+  padding-top: 1em;
+  margin: auto;
+  z-index: 10;
+  opacity: 0.87;
+  transition: opacity .2s ease-in-out;
+  cursor: pointer;
+  filter: drop-shadow(1px 1px 1px #222);
 }
 
 #kofi:hover {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-} */
+  opacity: 1;
+  transition: opacity 0.225s ease-in;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px; */
+}
 
 #info {
   opacity: 0.3;

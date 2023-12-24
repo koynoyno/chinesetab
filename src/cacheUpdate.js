@@ -1,21 +1,21 @@
 import { getRandomWord } from "./getRandomWord.js";
-import { getRandomNumber } from "./getRandomNumber.js";
+import { getRandomNumber } from "./npm/getRandomNumber.js";
 
 export let cacheUpdate = async (items) => {
-  const { default: hsk } = await import(`../${items.hsk}/${items.level}.json`, {
-    assert: { type: "json" },
-  });
+  const { default: testType } = await import(
+    `../tests/${items.testType}/${items.testType}_${items.level}.js`
+  );
 
   let rand;
-  let hskLength = hsk.words.length;
+  let testTypeLength = testType.words.length;
 
   // select a random word if dayLimit is set
   if (parseInt(items.dayLimit) !== 0) {
-    rand = getRandomWord(hskLength, items);
+    rand = getRandomWord(testTypeLength, items);
   } else {
-    rand = getRandomNumber(hskLength);
+    rand = getRandomNumber(testTypeLength);
   }
 
   // update and return items
-  return hsk.words[rand];
+  return testType.words[rand];
 };

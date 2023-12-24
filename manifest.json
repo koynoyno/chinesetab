@@ -1,22 +1,28 @@
 {
+  "default_locale": "en",
   "manifest_version": 3,
-  "name": "Chinese Tab",
-  "version": "1",
-  "version_name": "Abra",
-  "description": "Learn Chinese every new tab",
+  "name": "__MSG_extName__",
+  "version": "2",
+  "version_name": "二",
+  "description": "__MSG_extDescription__",
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
   "offline_enabled": true,
-  "minimum_chrome_version": "92",
-  "permissions": ["storage"],
+  "minimum_chrome_version": "99",
+  "permissions": [
+    "storage"
+  ],
   "background": {
     "service_worker": "background.js"
   },
   "commands": {
     "_execute_action": {
       "suggested_key": {
-        "default": "Alt+S"
+        "default": "Alt+S",
+        "mac": "Alt+S",
+        "chromeos": "Alt+S",
+        "linux": "Alt+S"
       }
     }
   },

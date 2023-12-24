@@ -1,3 +1,4 @@
+export default
 {
   "metadata": {
     "identifier": "HSK2",

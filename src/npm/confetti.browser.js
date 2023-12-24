@@ -656,5 +656,5 @@
 
   // end source content
 
-  window.confetti = module.exports;
+  window.confetti = module.exports;  
 })(window, {});

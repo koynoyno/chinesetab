@@ -1,13 +1,41 @@
+/* :root {
+  color-scheme: light dark;
+} */
+
 @font-face {
   font-family: "Noto Sans";
   src: url("../fonts/noto-sans.woff2") format("woff2");
+}
+
+#app,
+html,
+body {
+  height: 100%;
+  margin: 0;
+  /* panda bottom fix */
+}
+
+/* DEBUG */
+html::-webkit-scrollbar {
+  display: none;
 }
 
 body {
   opacity: 0.87;
   cursor: default;
   transition: background-color .2s cubic-bezier(0.22, 0.61, 0.36, 1);
-  overflow: hidden;
+  /* overflow: hidden; */
+  user-select: none;
+}
+
+/* to be able to select text */
+.pinyin,
+.zhuyin,
+.char,
+.english,
+#wordsSeen,
+#wordsSeenNumber {
+  user-select: text;
 }
 
 p {
@@ -15,11 +43,9 @@ p {
 }
 
 .darkMode .tone5 {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgb(255, 255, 255) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgb(255, 255, 255) 100%);
   padding-top: 1em;
   background-clip: text;
   background-size: 100%;
@@ -43,17 +69,38 @@ p {
 
 #panda {
   position: absolute;
-  bottom: -1px;
+  /* transform: rotate(180deg); */
+  /* top: -1px; */
+  bottom: 0px;
   opacity: 0.87;
   transition: opacity .2s ease-in-out;
   cursor: pointer;
-  width: 200px;
-  animation: fadeInPanda .2s;
+  width: 240px;
+  /* height: 172px; */
+  /* -webkit-animation-name: fadeInPanda, floatBubble;
+  -webkit-animation-duration: 1s, 1s; */
+  animation: fadeIn .4s,
+    floatBubble .2s normal ease-out
+}
+
+@keyframes floatBubble {
+  from {
+    bottom: -100px;
+  }
+
+  to {
+    bottom: -1px;
+  }
 }
 
 @keyframes fadeInPanda {
-  from { opacity: 0; }
-  to   { opacity: 0.87; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.87;
+  }
 }
 
 #panda:hover {
@@ -65,15 +112,29 @@ p {
   cursor: default !important;
 }
 
-#wordsSeen, #welcome {
-  font-family: "Noto Sans", Fallback, sans-serif;
+#wordsSeen,
+#welcome {
+  /* font-family: "Noto Sans", Fallback, sans-serif; */
   font-size: 2em;
   position: absolute;
-  bottom: 0px;
-  z-index: -100;
+  /* bottom: 0px; */
+  top: 0px;
+  /* z-index: -99; */
   opacity: 1;
-  padding-bottom: 1em;
+  /* padding-bottom: 1em; */
+  padding-top: 1em;
   transition: opacity .2s ease-in-out;
+}
+
+#wordsSeenNumber,
+#welcome {
+  vertical-align: middle;
+  font-size: 4em !important;
+}
+
+#easter {
+  position: absolute;
+  z-index: 100;
 }
 
 #wordsSeen.invisible {
@@ -81,14 +142,66 @@ p {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.87;
+  }
 }
 
 .char {
   margin: 0 0.1em;
   font-size: 20rem;
 }
+
+
+/* different fonts */
+/* for some reason SC works for TC fonts as well */
+/* TODO read SC/TC value to avoid any potential bugs  */
+.PingFang-font {
+  font-family: "PingFang SC" !important;
+}
+
+.Wawati-font {
+  font-family: "Wawati SC" !important;
+}
+
+.Xingkai-font {
+  font-family: "Xingkai SC" !important;
+}
+
+.HanziPen-font {
+  font-family: "HanziPen SC" !important;
+}
+
+.Hannotate-font {
+  font-family: "Hannotate SC" !important;
+}
+
+.Baoli-font {
+  font-family: "Baoli SC" !important;
+}
+
+.LingWai-font {
+  font-family: "LingWai SC" !important;
+}
+
+.Yuanti-font {
+  font-family: "Yuanti SC" !important;
+}
+
+.Times-font {
+  font-family: "Times" !important;
+}
+
+.Kaiti-font {
+  font-family: "STKaiti" !important;
+}
+
+/* nice fonts */
+
 
 a {
   color: inherit;
@@ -100,20 +213,36 @@ a {
   transition: transform .2s ease-in-out;
 }
 
+
+
 .charClickable:hover {
   transition: transform 0.225s ease-in;
   transform: scale(1.01);
 }
 
-.pinyin,
-.english {
-  font-family: "Noto Sans", Fallback, sans-serif;
+/* .zhuyin, */
+.pinyin {
+  /* font-family: "Noto Sans", Fallback, sans-serif !important; */
   font-size: 2.5rem;
   margin: 0.1em;
+  font-weight: bold;
+
+  /* padding-top: 0.5em; */
 }
+
 .english {
+  /* font-family: "Noto Sans", Fallback, sans-serif; */
+  font-size: 1.5rem;
+  /* font-weight: bold; */
+  margin: 0.1em 3em !important;
+}
+
+.zhuyin {
+  font-size: 4rem !important;
   font-weight: bold;
   margin: 0.1em 3em !important;
+  /* padding-top: 0.5em; */
+  /* padding-top: 0.1em; */
 }
 
 .hide {
@@ -123,39 +252,33 @@ a {
 /* Pleco Tone Colors */
 .tone1 {
   /* background-image: rgb(227,0,0); */
-  background: linear-gradient(
-    180deg,
-    rgba(227, 0, 0, 0.67) 0%,
-    rgba(227, 0, 0, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(227, 0, 0, 0.67) 0%,
+      rgba(227, 0, 0, 1) 100%);
 }
+
 .tone2 {
-  background: linear-gradient(
-    180deg,
-    rgba(2, 179, 28, 0.67) 0%,
-    rgba(2, 179, 28, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(2, 179, 28, 0.67) 0%,
+      rgba(2, 179, 28, 1) 100%);
 }
+
 .tone3 {
-  background: linear-gradient(
-    180deg,
-    rgba(36, 32, 255, 0.67) 0%,
-    rgb(36, 32, 255) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(36, 32, 255, 0.67) 0%,
+      rgb(36, 32, 255) 100%);
 }
+
 .tone4 {
-  background: linear-gradient(
-    180deg,
-    rgba(160, 16, 218, 0.67) 0%,
-    rgb(160, 16, 218) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(160, 16, 218, 0.67) 0%,
+      rgb(160, 16, 218) 100%);
 }
+
 .tone5 {
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.67) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.67) 0%,
+      rgba(0, 0, 0, 1) 100%);
 }
 
 .tone1,
@@ -163,7 +286,7 @@ a {
 .tone3,
 .tone4,
 .tone5 {
-  padding-top: 0.3em;
+  /* padding-top: 0.3em; */
   background-clip: text;
   background-size: 100%;
   -webkit-background-clip: text;
